@@ -1,0 +1,113 @@
+{
+    "species": {
+      "Platysternon megacephalum": {
+        "name_vi": "Rùa đầu to",
+        "conservation_status": "CR (2021)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png", "images/logo.png", "images/logo.png", "images/logo.png", "images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      
+      "Cuora amboinensis": {
+        "name_vi": "Rùa hộp lưng đen",
+        "conservation_status": "EN (2020)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Cuora galbinifrons": {
+        "name_vi": "Rùa hộp trán vàng miền Bắc",
+        "conservation_status": "CR (2020)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Cuora bourreti": {
+        "name_vi": "Rùa hộp trán vàng miền Trung",
+        "conservation_status": "CR (2020)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Cuora picturata": {
+        "name_vi": "Rùa hộp trán vàng miền Nam",
+        "conservation_status": "CR (2020)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Cuora mouhotii": {
+        "name_vi": "Rùa sa nhân",
+        "conservation_status": "EN (2020)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Cuora cyclornata": {
+        "name_vi": "Rùa hộp ba vạch",
+        "conservation_status": "CR (2020)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Cyclemys oldhamii": {
+        "name_vi": "Rùa đất Sê-pôn",
+        "conservation_status": "EN (2021)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Cyclemys pulchristriata": {
+        "name_vi": "Rùa đất Pul-kin",
+        "conservation_status": "EN (2021)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Cyclemys atripons": {
+        "name_vi": "Rùa đất A-tri-pôn",
+        "conservation_status": "EN (2021)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Geoemyda spengleri": {
+        "name_vi": "Rùa đất Speng-lơ",
+        "conservation_status": "EN (2020)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      },
+      "Heosemys grandis": {
+        "name_vi": "Rùa đất lớn",
+        "conservation_status": "CR (2021)",
+        "name_en": "",
+        "distribution": "",
+        "reference_images": ["images/logo.png"],
+        "identification_images": [],
+        "fun_fact": ""
+      }
+  }
+}
