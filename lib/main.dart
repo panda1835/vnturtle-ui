@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'pages/species_info.dart';
 import 'pages/report.dart';
 import 'pages/faq.dart';
+import 'pages/aboutus.dart';
 
 
 void main() => runApp(MyApp());
@@ -28,8 +29,9 @@ class _HomePageState extends State<HomePage> {
   final List<String> choices = [
     'Nhận diện',
     'Thông tin loài',
-    'Câu hỏi thường gặp',
     'Báo cáo vi phạm',
+    'Câu hỏi thường gặp',
+    'Về chúng tôi'
   ];
 
 void _navigateToPage(String choice) {
@@ -46,6 +48,9 @@ void _navigateToPage(String choice) {
       break;
     case 'Báo cáo vi phạm':
       page = BaoCaoViPhamPage();
+      break;
+    case 'Về chúng tôi':
+      page = VeChungToiPage();
       break;
     default:
       page = Container();
