@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'detailed_species_page.dart';
 
 class ThongTinLoaiPage extends StatefulWidget {
   @override
@@ -45,6 +46,16 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
             nameEn.toLowerCase().contains(query.toLowerCase());
       }).toList();
     });
+  }
+
+  void navigateToDetailPage(String speciesName) {
+    Map<String, dynamic> speciesInfo = speciesData[speciesName];
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => DetailedSpeciesPage(speciesInfo: speciesInfo),
+      ),
+    );
   }
 
   @override
@@ -93,46 +104,49 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                 String speciesName = filteredSpeciesNames[index];
                 Map<String, dynamic> speciesInfo = speciesData[speciesName];
 
-                return Container(
-                  margin: EdgeInsets.all(16.0),
-                  decoration: BoxDecoration(
-                    color: theme.secondaryHeaderColor,
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        width: 100,
-                        height: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8.0),
-                          image: DecorationImage(
-                            image: AssetImage(speciesInfo['reference_images'][0]),
-                            fit: BoxFit.cover,
+                return GestureDetector(
+                  onTap: () => navigateToDetailPage(speciesName),
+                  child: Container(
+                    margin: EdgeInsets.all(16.0),
+                    decoration: BoxDecoration(
+                      color: theme.secondaryHeaderColor,
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 100,
+                          height: 100,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8.0),
+                            image: DecorationImage(
+                              image: AssetImage(speciesInfo['reference_images'][0]),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(width: 16.0),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              speciesInfo['name_vi'],
-                              style:
-                                  TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(height: 8.0),
-                            Text('Tình trạng bảo tồn: ${speciesInfo['conservation_status']}'),
-                            SizedBox(height: 8.0),
-                            Text('Tên tiếng Anh: ${speciesInfo['name_en']}'),
-                            SizedBox(height: 8.0),
-                            Text('Tên khoa học: ${speciesInfo['scientific_name']}'),
-                          ],
+                        SizedBox(width: 16.0),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                speciesInfo['name_vi'],
+                                style:
+                                    TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(height: 8.0),
+                              Text('Tình trạng bảo tồn: ${speciesInfo['conservation_status']}'),
+                              SizedBox(height: 8.0),
+                              Text('Tên tiếng Anh: ${speciesInfo['name_en']}'),
+                              SizedBox(height: 8.0),
+                              Text('Tên khoa học: ${speciesInfo['scientific_name']}'),
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 );
               },
@@ -143,3 +157,4 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     );
   }
 }
+
