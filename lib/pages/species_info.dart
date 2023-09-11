@@ -48,7 +48,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
         title: Text(
           'VNTURTLE',
           style: TextStyle(
-            fontFamily: "Happy Monkey",
+            fontFamily: "Happy Monkey", 
             color: theme.primaryColor,
           ),
         ),
