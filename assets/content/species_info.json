@@ -1,6 +1,7 @@
 {
     "species": {
       "Platysternon megacephalum": {
+        "scientific_name": "",
         "name_vi": "Rùa đầu to",
         "conservation_status": "CR (2021)",
         "name_en": "",
@@ -11,6 +12,7 @@
       },
       
       "Cuora amboinensis": {
+        "scientific_name": "",
         "name_vi": "Rùa hộp lưng đen",
         "conservation_status": "EN (2020)",
         "name_en": "",
@@ -20,6 +22,7 @@
         "fun_fact": ""
       },
       "Cuora galbinifrons": {
+        "scientific_name": "",
         "name_vi": "Rùa hộp trán vàng miền Bắc",
         "conservation_status": "CR (2020)",
         "name_en": "",
@@ -29,6 +32,7 @@
         "fun_fact": ""
       },
       "Cuora bourreti": {
+        "scientific_name": "",
         "name_vi": "Rùa hộp trán vàng miền Trung",
         "conservation_status": "CR (2020)",
         "name_en": "",
@@ -38,6 +42,7 @@
         "fun_fact": ""
       },
       "Cuora picturata": {
+        "scientific_name": "",
         "name_vi": "Rùa hộp trán vàng miền Nam",
         "conservation_status": "CR (2020)",
         "name_en": "",
@@ -47,6 +52,7 @@
         "fun_fact": ""
       },
       "Cuora mouhotii": {
+        "scientific_name": "",
         "name_vi": "Rùa sa nhân",
         "conservation_status": "EN (2020)",
         "name_en": "",
@@ -56,6 +62,7 @@
         "fun_fact": ""
       },
       "Cuora cyclornata": {
+        "scientific_name": "",
         "name_vi": "Rùa hộp ba vạch",
         "conservation_status": "CR (2020)",
         "name_en": "",
@@ -65,6 +72,7 @@
         "fun_fact": ""
       },
       "Cyclemys oldhamii": {
+        "scientific_name": "",
         "name_vi": "Rùa đất Sê-pôn",
         "conservation_status": "EN (2021)",
         "name_en": "",
@@ -74,6 +82,7 @@
         "fun_fact": ""
       },
       "Cyclemys pulchristriata": {
+        "scientific_name": "",
         "name_vi": "Rùa đất Pul-kin",
         "conservation_status": "EN (2021)",
         "name_en": "",
@@ -83,6 +92,7 @@
         "fun_fact": ""
       },
       "Cyclemys atripons": {
+        "scientific_name": "",
         "name_vi": "Rùa đất A-tri-pôn",
         "conservation_status": "EN (2021)",
         "name_en": "",
@@ -92,6 +102,7 @@
         "fun_fact": ""
       },
       "Geoemyda spengleri": {
+        "scientific_name": "",
         "name_vi": "Rùa đất Speng-lơ",
         "conservation_status": "EN (2020)",
         "name_en": "",
@@ -101,6 +112,7 @@
         "fun_fact": ""
       },
       "Heosemys grandis": {
+        "scientific_name": "",
         "name_vi": "Rùa đất lớn",
         "conservation_status": "CR (2021)",
         "name_en": "",

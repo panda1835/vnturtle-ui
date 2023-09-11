@@ -32,9 +32,18 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
 
   void filterSpeciesList(String query) {
     setState(() {
-      filteredSpeciesNames = speciesNames
-          .where((name) => name.toLowerCase().contains(query.toLowerCase()))
-          .toList();
+      filteredSpeciesNames = speciesNames.where((name) {
+        Map<String, dynamic> speciesInfo = speciesData[name];
+        String nameVi = speciesInfo['name_vi'];
+        String conservationStatus = speciesInfo['conservation_status'];
+        String nameEn = speciesInfo['name_en'];
+        String nameSci = speciesInfo['scientific_name'];
+
+        return nameVi.toLowerCase().contains(query.toLowerCase()) ||
+            conservationStatus.toLowerCase().contains(query.toLowerCase()) ||
+            nameSci.toLowerCase().contains(query.toLowerCase()) ||
+            nameEn.toLowerCase().contains(query.toLowerCase());
+      }).toList();
     });
   }
 
@@ -118,6 +127,8 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                             Text('Tình trạng bảo tồn: ${speciesInfo['conservation_status']}'),
                             SizedBox(height: 8.0),
                             Text('Tên tiếng Anh: ${speciesInfo['name_en']}'),
+                            SizedBox(height: 8.0),
+                            Text('Tên khoa học: ${speciesInfo['scientific_name']}'),
                           ],
                         ),
                       ),
