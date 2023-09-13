@@ -1,0 +1,340 @@
+[
+    {
+        "Platysternon megacephalum": {
+            "scientific_name": "Platysternon megacephalum",
+            "primary_name": "Rùa đầu to",
+            "conservation_status": "CR (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Cuora amboinensis": {
+            "scientific_name": "Cuora amboinensis",
+            "primary_name": "Rùa hộp lưng đen",
+            "conservation_status": "EN (2020)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Cuora galbinifrons": {
+            "scientific_name": "Cuora galbinifrons",
+            "primary_name": "Rùa hộp trán vàng miền Bắc",
+            "conservation_status": "CR (2020)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Cuora bourreti": {
+            "scientific_name": "Cuora bourreti",
+            "primary_name": "Rùa hộp trán vàng miền Trung",
+            "conservation_status": "CR (2020)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Cuora picturata": {
+            "scientific_name": "Cuora picturata",
+            "primary_name": "Rùa hộp trán vàng miền Nam",
+            "conservation_status": "CR (2020)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Cuora mouhotii": {
+            "scientific_name": "Cuora mouhotii",
+            "primary_name": "Rùa sa nhân",
+            "conservation_status": "EN (2020)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Cuora cyclornata": {
+            "scientific_name": "Cuora cyclornata",
+            "primary_name": "Rùa hộp ba vạch",
+            "conservation_status": "CR (2020)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Cyclemys oldhamii": {
+            "scientific_name": "Cyclemys oldhamii",
+            "primary_name": "Rùa đất Sê-pôn",
+            "conservation_status": "EN (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Cyclemys pulchristriata": {
+            "scientific_name": "Cyclemys pulchristriata",
+            "primary_name": "Rùa đất Pul-kin",
+            "conservation_status": "EN (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Cyclemys atripons": {
+            "scientific_name": "Cyclemys atripons",
+            "primary_name": "Rùa đất A-tri-pôn",
+            "conservation_status": "EN (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Geoemyda spengleri": {
+            "scientific_name": "Geoemyda spengleri",
+            "primary_name": "Rùa đất Speng-lơ",
+            "conservation_status": "EN (2020)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Heosemys grandis": {
+            "scientific_name": "Heosemys grandis",
+            "primary_name": "Rùa đất lớn",
+            "conservation_status": "CR (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Heosemys annandalii": {
+            "scientific_name": "Heosemys annandalii",
+            "primary_name": "Rùa răng",
+            "conservation_status": "CR (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Malayemys subtrijuga": {
+            "scientific_name": "Malayemys subtrijuga",
+            "primary_name": "Rùa ba gờ",
+            "conservation_status": "NT (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Mauremys annamensis": {
+            "scientific_name": "Mauremys annamensis",
+            "primary_name": "Rùa Trung Bộ",
+            "conservation_status": "CR (2020)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Mauremys mutica": {
+            "scientific_name": "Mauremys mutica",
+            "primary_name": "Rùa câm",
+            "conservation_status": "CR (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Mauremys sinensis": {
+            "scientific_name": "Mauremys sinensis",
+            "primary_name": "Rùa cổ sọc",
+            "conservation_status": "CR (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Sacalia quadriocellata": {
+            "scientific_name": "Sacalia quadriocellata",
+            "primary_name": "Rùa bốn mắt",
+            "conservation_status": "CR (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Siebenrockiella crassicollis": {
+            "scientific_name": "Siebenrockiella crassicollis",
+            "primary_name": "Rùa cổ bự",
+            "conservation_status": "EN (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Indotestudo elongata": {
+            "scientific_name": "Indotestudo elongata",
+            "primary_name": "Rùa núi vàng",
+            "conservation_status": "CR (2019)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Manouria impressa": {
+            "scientific_name": "Manouria impressa",
+            "primary_name": "Rùa núi viền",
+            "conservation_status": "EN (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Amyda ornata": {
+            "scientific_name": "Amyda ornata",
+            "primary_name": "Ba ba Nam Bộ",
+            "conservation_status": "VU (2016)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Palea steindachneri": {
+            "scientific_name": "Palea steindachneri",
+            "primary_name": "Ba ba gai",
+            "conservation_status": "CR (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Pelochelys cantorii": {
+            "scientific_name": "Pelochelys cantorii",
+            "primary_name": "Giải",
+            "conservation_status": "CR (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Pelodiscus variegatus": {
+            "scientific_name": "Pelodiscus variegatus",
+            "primary_name": "Ba ba bụng đốm",
+            "conservation_status": NaN,
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    },
+    {
+        "Rafetus swinhoei": {
+            "scientific_name": "Rafetus swinhoei",
+            "primary_name": "Giải Sin-hoe",
+            "conservation_status": "CR (2021)",
+            "secondary_name": "",
+            "distribution": "",
+            "habitat": "",
+            "reference_images": [],
+            "identification_images": [],
+            "key9": ""
+        }
+    }
+]
