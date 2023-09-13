@@ -94,10 +94,10 @@ void _navigateToPage(String choice) {
         ),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        // mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(10.0),
+          Container(
+            // padding: const EdgeInsets.all(5.0),
             child: Image.asset(
               'images/icons/logo.png',
               width: 200,
@@ -112,35 +112,51 @@ void _navigateToPage(String choice) {
               color: theme.primaryColor,
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.image),
-                    iconSize: 40,
-                    onPressed: () {
-                      // Add your camera button logic here
-                    },
-                  ),
-                  Text("Thư viện")
-                ],
-              ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.camera_alt),
-                    iconSize: 100,
-                    onPressed: () {
-                      // Add your image gallery button logic here
-                    },
-                  ),
-                  Text("Chụp ảnh")
-                ],
-              ),
-            ],
-          ),
+          Container(
+            height: 300,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget> [
+                Container(
+                  width: 100,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      IconButton(
+                        icon: Icon(Icons.image),
+                        iconSize: 40,
+                        onPressed: () {
+                          // Add your camera button logic here
+                        },
+                      ),
+                      Text("Thư viện")
+                    ],
+                  )
+                ),
+                Container(
+                  width: 100,
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        IconButton(
+                          icon: Icon(Icons.camera_alt),
+                          iconSize: 100,
+                          onPressed: () {
+                            // Add your image gallery button logic here
+                          },
+                        ),
+                        Text("Chụp ảnh")
+                      ],
+                    ),
+                ),
+                Container(
+                  width: 100,
+                  child: Column()
+                )
+              ] 
+            ),
+          )
         ],
       ),
     );
