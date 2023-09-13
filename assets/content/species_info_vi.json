@@ -1,444 +1,444 @@
 {
     "Platysternon megacephalum": {
         "scientific_name": "Platysternon megacephalum",
-        "primary_name": "Big-headed Turtle",
+        "primary_name": "Rùa đầu to",
         "iucn": "CR (2021)",
         "sdvn": "EN",
-        "law": "- CITES Appendix I\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)",
         "secondary_name": "",
-        "distribution": "Cambodia, southern China, Laos, Myanmar, Thailand, Vietnam",
-        "habitat": "Fast-flowing streams and waterfalls",
+        "distribution": ": Cambodia, miền Nam Trung Quốc, Lào, Myanmar, Thái Lan, Việt Nam",
+        "habitat": ": Thác nước và suối chảy siết",
         "reference_images": [
             "images/reference_images/Platysternon_megacephalum/Platysternon_megacephalum_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting and trade"
+        "threat": ": Săn bắt và buôn bán"
     },
-    "Cuora amboinensis": {
-        "scientific_name": "Cuora amboinensis kamaroma",
-        "primary_name": "Malayan Box Turtle",
+    "Cuora amboinensis kamaroma": {
+        "scientific_name": "Cuora amboinensis",
+        "primary_name": "Rùa hộp lưng đen",
         "iucn": "EN (2020)",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)",
         "secondary_name": "",
-        "distribution": "Bangladesh, Bhutan, Brunei, Cambodia, India, Indonesia, Malaysia, Laos, Myanmar (?), Philippines (?), Thailand, Vietnam",
-        "habitat": "Lowland wetlands, ponds, marshes and slow-flowing streams",
+        "distribution": ": Bangladesh, Bhutan, Brunei, Cambodia, Ấn Độ, Indonesia, Malaysia, Lào, Myanmar (?), Philippines (?), Thái Lan, Việt Nam",
+        "habitat": ": khu vực đất trũng, ngập nước, ao, đàm lầy và thác nước chảy chậm",
         "reference_images": [
             "images/reference_images/Cuora_amboinensis/Cuora_amboinensis_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting and international trade"
+        "threat": ": Săn bắt và buôn bán động vật hoang dã"
     },
     "Cuora galbinifrons": {
         "scientific_name": "Cuora galbinifrons",
-        "primary_name": "Indochinese Box Turtle",
+        "primary_name": "Rùa hộp trán vàng miền Bắc",
         "iucn": "CR (2020)",
         "sdvn": "EN",
-        "law": "- CITES Appendix II\n- Group IB Decree 84/2021/ND-CP (amendment and supplement of Decree 06/2019/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 84/2021/NĐ-CP (sửa đổi, bổ sung Nghị định 06/2019/NĐ-CP)\n– Nghị định 160/2013/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 64/2019/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Southern China, Laos, Vietnam",
-        "habitat": "Woodlands and evergreen forests at mid- to high elevations",
+        "distribution": ": miền Nam Trung Quốc, Lào, Việt Nam",
+        "habitat": ": Rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
         "reference_images": [
             "images/reference_images/Cuora_galbinifrons/Cuora_galbinifrons_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat degradation, hunting and trade"
+        "threat": ": Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cuora bourreti": {
         "scientific_name": "Cuora bourreti",
-        "primary_name": "Bourret's Box Turtle",
+        "primary_name": "Rùa hộp trán vàng miền Trung",
         "iucn": "CR (2020)",
         "sdvn": "EN",
-        "law": "- CITES Appendix I\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
+        "law": "– Phụ lục I Công ước CITES\n– Nhóm IB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n– Nghị định 160/2013/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 64/2019/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Laos, Vietnam",
-        "habitat": "Woodlands and evergreen forests at mid- to high elevations",
+        "distribution": ": Lào, Việt Nam",
+        "habitat": ": rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
         "reference_images": [
             "images/reference_images/Cuora_bourreti/Cuora_bourreti_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat degradation, hunting and trade"
+        "threat": ": sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cuora picturata": {
         "scientific_name": "Cuora picturata",
-        "primary_name": "Southern Vietnam Box Turtle",
+        "primary_name": "Rùa hộp trán vàng miền Nam",
         "iucn": "CR (2020)",
         "sdvn": "EN",
-        "law": "- CITES Appendix I\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
+        "law": "– Phụ lục I Công ước CITES\n– Nhóm IB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n– Nghị định 160/2013/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 64/2019/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Central Vietnam",
-        "habitat": "Woodlands and evergreen forests at mid- to high elevations",
+        "distribution": ": miền Trung Việt Nam",
+        "habitat": ": Rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
         "reference_images": [
             "images/reference_images/Cuora_picturata/Cuora_picturata_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat degradation, hunting and trade"
+        "threat": ": Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cuora mouhotii": {
         "scientific_name": "Cuora mouhotii",
-        "primary_name": "Keeled Box Turtle",
+        "primary_name": "Rùa sa nhân",
         "iucn": "EN (2020)",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Bangladesh, Bhutan, China, India, Laos, Myanmar, Vietnam, Thailand (?)",
-        "habitat": "Limestone forests, caves and mountains",
+        "distribution": ": Bangladesh, Bhutan, Trung Quốc, Ấn Độ, Lào, Myanmar, Việt Nam, Thái Lan (?)",
+        "habitat": ": Rừng, hang động trên núi đá vôi",
         "reference_images": [
             "images/reference_images/Cuora_mouhotii/Cuora_mouhotii_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat degradation, hunting and trade"
+        "threat": ": Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
-    "Cuora cyclornata": {
-        "scientific_name": "Cuora (trifasciata) cyclornata",
-        "primary_name": "Vietnamese Three-striped Box Turtle",
+    "Cuora (trifasciata) cyclornata": {
+        "scientific_name": "Cuora cyclornata",
+        "primary_name": "Rùa hộp ba vạch",
         "iucn": "CR (2020)",
         "sdvn": "CR",
-        "law": "- CITES Appendix II\n- Group IB Decree 84/2021/ND-CP (amendment and supplement of Decree 06/2019/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IB Nghị định 84/2021/NĐ-CP (sửa đổi, bổ sung Nghị định 06/2019/NĐ-CP)\n– Nghị định 160/2013/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 64/2019/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "China, Laos, Vietnam",
-        "habitat": "Forest streams and marshes at low to mid-elevations",
+        "distribution": ": Trung Quốc, Lào, Việt Nam",
+        "habitat": ": các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Cuora_cyclornata/Cuora_cyclornata_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting and international trade"
+        "threat": ": Săn bắt và buôn bán động vật hoang dã"
     },
     "Cyclemys oldhamii": {
         "scientific_name": "Cyclemys oldhamii",
-        "primary_name": "Southern Asian Leaf Turtle",
+        "primary_name": "Rùa đất Sê-pôn",
         "iucn": "EN (2021)",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Cambodia, China, Laos, Myanmar, Thailand, Vietnam",
-        "habitat": "Forest streams and marshes at low to mid-elevations",
+        "distribution": ": Cambodia, Trung Quốc, Lào, Myanmar, Thái Lan, Việt Nam",
+        "habitat": ": Các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Cyclemys_oldhamii/Cyclemys_oldhamii_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cyclemys pulchristriata": {
         "scientific_name": "Cyclemys pulchristriata",
-        "primary_name": "Eastern Black-bridged Leaf Turtle",
+        "primary_name": "Rùa đất Pul-kin",
         "iucn": "EN (2021)",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Cambodia, Vietnam",
-        "habitat": "Forest streams and marshes at low to mid-elevations",
+        "distribution": ": Cambodia, Việt Nam",
+        "habitat": ": Các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Cyclemys_pulchristriata/Cyclemys_pulchristriata_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cyclemys atripons": {
         "scientific_name": "Cyclemys atripons",
-        "primary_name": "Western Black-Bridged Leaf Turtle",
+        "primary_name": "Rùa đất a-tri-pôn",
         "iucn": "EN (2021)",
         "sdvn": "",
-        "law": "- CITES Appendix II\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n\n\n",
         "secondary_name": "",
-        "distribution": "Cambodia, Thailand, Vietnam",
-        "habitat": "Forest streams and marshes at low to mid-elevations",
+        "distribution": ": Cambodia, Thái Lan, Việt Nam",
+        "habitat": ": Các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Cyclemys_atripons/Cyclemys_atripons_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Geoemyda spengleri": {
         "scientific_name": "Geoemyda spengleri",
-        "primary_name": "Black-breasted Leaf Turtle",
+        "primary_name": "Rùa đất Speng-lơ",
         "iucn": "EN (2020)",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "China, Laos, Vietnam",
-        "habitat": "Montane forests at mid- to high elevations",
+        "distribution": ": Trung Quốc, Lào, Việt Nam",
+        "habitat": ": Rừng thường xanh từ độ cao trung bình",
         "reference_images": [
             "images/reference_images/Geoemyda_spengleri/Geoemyda_spengleri_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting and international trade"
+        "threat": ": Săn bắt và buôn bán động vật hoang dã"
     },
     "Heosemys grandis": {
         "scientific_name": "Heosemys grandis",
-        "primary_name": "Giant Asian Pond Turtle",
+        "primary_name": "Rùa đất lớn",
         "iucn": "CR (2021)",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Cambodia, Laos, Malaysia (Peninsular), Myanmar, Thailand, Vietnam",
-        "habitat": "Rivers, streams, marshes, and wetlands at low to mid-elevations",
+        "distribution": ": Cambodia, Lào, Malaysia (bán đảo), Myanmar, Thái Lan, Việt Nam",
+        "habitat": ": Sông, suối, đầm lầy và vùng đất ngập nước ở độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Heosemys_grandis/Heosemys_grandis_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting and international trade"
+        "threat": ": Săn bắt và buôn bán động vật hoang dã"
     },
     "Heosemys annandalii": {
         "scientific_name": "Heosemys annandalii",
-        "primary_name": "Yellow-headed Temple Turtle",
+        "primary_name": "Rùa răng",
         "iucn": "CR (2021)",
         "sdvn": "EN",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Cambodia, Laos, Malaysia (Peninsular), Thailand, Vietnam",
-        "habitat": "Slow-flowing rivers, ponds and wetlands",
+        "distribution": ": Cambodia, Lào, Malaysia (Peninsular), Thái Lan, Việt Nam",
+        "habitat": ": sông, ao chảy chậm, vùng đất ngập nước",
         "reference_images": [
             "images/reference_images/Heosemys_annandalii/Heosemys_annandalii_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting and international trade"
+        "threat": ": Săn bắt và buôn bán động vật hoang dã"
     },
     "Malayemys subtrijuga": {
         "scientific_name": "Malayemys subtrijuga",
-        "primary_name": "Mekong Snail-eating Turtle",
+        "primary_name": "Rùa ba gờ",
         "iucn": "NT (2021)",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Cambodia, Laos, Thailand (?), Vietnam",
-        "habitat": "Ponds, streams, swamps, marshes, and wetlands at low elevations",
+        "distribution": ": Cambodia, Lào, Thái Lan (?), Việt Nam",
+        "habitat": ": Ao, suối, đầm lầy và vùng đất ngập nước ở độ cao thấp",
         "reference_images": [
             "images/reference_images/Malayemys_subtrijuga/Malayemys_subtrijuga_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss and hunting"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Mauremys annamensis": {
         "scientific_name": "Mauremys annamensis",
-        "primary_name": "Vietnamese Pond Turtle",
+        "primary_name": "Rùa Trung Bộ",
         "iucn": "CR (2020)",
         "sdvn": "CR",
-        "law": "- CITES Appendix II\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
+        "law": "– Phụ lục I Công ước CITES\n– Nhóm IB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n– Nghị định 160/2013/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 64/2019/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Central Vietnam",
-        "habitat": "Ponds, marshes, wetlands and slow-moving streams at low elevations",
+        "distribution": ": Central Việt Nam",
+        "habitat": ": ao, hồ, vùng đất ngập nước, suối chảy chậm ở độ cao thấp",
         "reference_images": [
             "images/reference_images/Mauremys_annamensis/Mauremys_annamensis_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss, hunting and trade for local consumption"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã để tiêu thụ tại địa phương"
     },
     "Mauremys mutica": {
         "scientific_name": "Mauremys mutica",
-        "primary_name": "Asian Yellow Pond Turtle",
+        "primary_name": "Rùa câm",
         "iucn": "CR (2021)",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "China, Japan, Taiwan, Vietnam",
-        "habitat": "Ponds, marshes, wetlands and slow-moving streams",
+        "distribution": ": Trung Quốc, Nhật Bản, Đài Loan, Việt Nam",
+        "habitat": ": ao, hồ, đầm lầy, vùng đất ngập nước và suối chảy chậm",
         "reference_images": [
             "images/reference_images/Mauremys_mutica/Mauremys_mutica_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Mauremys sinensis": {
         "scientific_name": "Mauremys sinensis",
-        "primary_name": "Chinese Striped-neck Turtle",
+        "primary_name": "Rùa cổ sọc",
         "iucn": "CR (2021)",
         "sdvn": "",
-        "law": "- CITES Appendix III\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n\n\n",
         "secondary_name": "",
-        "distribution": "China, Taiwan, Vietnam",
-        "habitat": "Rivers, ponds and wetlands at low elevations",
+        "distribution": ": Trung Quốc, Đài Loan, Việt Nam",
+        "habitat": ": sông, ao, hồ và vùng đất ngập nước ở độ cao thấp",
         "reference_images": [
             "images/reference_images/Mauremys_sinensis/Mauremys_sinensis_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Sacalia quadriocellata": {
         "scientific_name": "Sacalia quadriocellata",
-        "primary_name": "Four-eyed Turtle",
+        "primary_name": "Rùa bốn mắt",
         "iucn": "CR (2021)",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "China, Laos, Vietnam",
-        "habitat": "Woodland streams in montane forests",
+        "distribution": ": Trung Quốc, Lào, Việt Nam",
+        "habitat": ": suối trong rừng thường xanh",
         "reference_images": [
             "images/reference_images/Sacalia_quadriocellata/Sacalia_quadriocellata_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting and trade"
+        "threat": ": Săn bắt và buôn bán động vật hoang dã"
     },
     "Siebenrockiella crassicollis": {
         "scientific_name": "Siebenrockiella crassicollis",
-        "primary_name": "Black Marsh Turtle",
+        "primary_name": "Rùa cổ bự",
         "iucn": "EN (2021)",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Cambodia, Indonesia, Laos, Malaysia, Myanmar, Singapore, Thailand, Vietnam",
-        "habitat": "Slow-flowing rivers, streams, ponds and marshes",
+        "distribution": ": Cambodia, Indonesia, Lào, Malaysia, Myanmar, Singapore, Thái Lan, Việt Nam",
+        "habitat": ": suối, sông chảy chậm, ao và đầm lầy",
         "reference_images": [
             "images/reference_images/Siebenrockiella_crassicollis/Siebenrockiella_crassicollis_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting and trade"
+        "threat": ": Săn bắt và buôn bán động vật hoang"
     },
     "Indotestudo elongata": {
         "scientific_name": "Indotestudo elongata",
-        "primary_name": "Elongated Tortoise",
+        "primary_name": "Rùa núi vàng",
         "iucn": "CR (2019)",
         "sdvn": "EN",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Bangladesh, Bhutan, Cambodia, India, Laos, Malaysia, Myanmar, Nepal, Thailand, Vietnam",
-        "habitat": "Forests, grasslands and scrublands at low-mid elevations",
+        "distribution": ": Bangladesh, Bhutan, Cambodia, Ấn Độ, Lào, Malaysia, Myanmar, Nepal, Thái Lan, Việt Nam",
+        "habitat": ": Forests, grasslands and scrublands at low-mid elevations",
         "reference_images": [
             "images/reference_images/Indotestudo_elongata/Indotestudo_elongata_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting, local consumption, international trade and habitat loss"
+        "threat": ": Sắt bắt, tiêu thụ tại địa phương và buôn bán động vật hoang dã xuyên biên giới và mất sinh cảnh sống"
     },
     "Manouria impressa": {
         "scientific_name": "Manouria impressa",
-        "primary_name": "Impressed Tortoise",
+        "primary_name": "Rùa núi viền",
         "iucn": "EN (2021)",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Cambodia, China, Laos, Malaysia, Myanmar, Thailand, Vietnam",
-        "habitat": "Hilly and montane forests at mid-to high elevations",
+        "distribution": ": Cambodia, Trung Quốc, Lào, Malaysia, Myanmar, Thái Lan, Việt Nam",
+        "habitat": ": đồi núi và rừng thường xanh từ độ cao trung bình",
         "reference_images": [
             "images/reference_images/Manouria_impressa/Manouria_impressa_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Amyda ornata": {
         "scientific_name": "Amyda ornata",
-        "primary_name": "Asiatic Softshell Turtle",
+        "primary_name": "Ba ba Nam bộ",
         "iucn": "VU (2016)",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Bangladesh, Cambodia, India, Laos, Myanmar, Thailand, Vietnam",
-        "habitat": "Various lakes, streams and rivers",
+        "distribution": ": Bangladesh, Cambodia, Ấn Độ, Lào, Myanmar, Thái Lan, Việt Nam",
+        "habitat": ": sông, hồ và suối",
         "reference_images": [
             "images/reference_images/Amyda_ornata/Amyda_ornata_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting, international trade and local consumption"
+        "threat": ": Săn bắt, buôn bán động vật hoang dã xuyên biên giới và tiêu thụ tại địa phương"
     },
     "Palea steindachneri": {
         "scientific_name": "Palea steindachneri",
-        "primary_name": "Wattle-necked Softshell Turtle",
+        "primary_name": "Ba ba gai",
         "iucn": "CR (2021)",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IIB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "China, Vietnam",
-        "habitat": "Streams, rivers, lakes, ponds and marshes at low-mid elevations",
+        "distribution": ": Trung Quốc, Việt Nam",
+        "habitat": ": suối, sông, hồ, ao và đầm lầy ở độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Palea_steindachneri/Palea_steindachneri_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Pelochelys cantorii": {
         "scientific_name": "Pelochelys cantorii",
-        "primary_name": "Cantor's Giant Softshell Turtle",
+        "primary_name": "Giải",
         "iucn": "CR (2021)",
         "sdvn": "EN",
-        "law": "- CITES Appendix II\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n– Nghị định 160/2013/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 64/2019/NĐ-CP)\n\n\n",
         "secondary_name": "",
-        "distribution": "Bangladesh, Cambodia, China, India, Indonesia, Laos, Malaysia, Myanmar, Philippines, Thailand, Vietnam",
-        "habitat": "Large rivers, lakes and coastal waters",
+        "distribution": ": Bangladesh, Cambodia, Trung Quốc, Ấn Độ, Indonesia, Lào, Malaysia, Myanmar, Philippines, Thái Lan, Việt Nam",
+        "habitat": ": sông, hồ lớn và vùng nước gần biển",
         "reference_images": [
             "images/reference_images/Pelochelys_cantorii/Pelochelys_cantorii_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting and local consumption"
+        "threat": ": Săn bắt và tiêu thụ tại địa phương"
     },
     "Pelodiscus variegatus": {
         "scientific_name": "Pelodiscus variegatus",
-        "primary_name": "Spotted Softshell Turtle",
+        "primary_name": "Ba ba bụng đốm",
         "iucn": "",
         "sdvn": "",
         "law": "",
         "secondary_name": "",
-        "distribution": "China, Vietnam",
-        "habitat": "Rivers, streams, lakes, ponds and wetlands",
+        "distribution": ": Trung Quốc, Việt Nam",
+        "habitat": ": sông, suối, hồ, ao và đầm lấy",
         "reference_images": [
             "images/reference_images/Pelodiscus_variegatus/Pelodiscus_variegatus_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Hunting, local consumption and habitat loss"
+        "threat": ": Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống loss"
     },
     "Rafetus swinhoei": {
         "scientific_name": "Rafetus swinhoei",
-        "primary_name": "Swinhoe's Softshell Turtle",
+        "primary_name": "Giải Sin-hoe (rùa Hoàn Kiếm)",
         "iucn": "CR (2021)",
         "sdvn": "CR",
-        "law": "- CITES Appendix II\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\nHistoric: large river system of China and Vietnam\nCurrent: Suzhou Zoo, China and Dong Mo lake and Xuan Khanh lake, Hanoi, Vietnam\n\n",
+        "law": "– Phụ lục II Công ước CITES\n– Nhóm IB Nghị định 06/2019/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 84/2021/NĐ-CP)\n– Nghị định 160/2013/NĐ-CP (sửa đổi, bổ sung bởi Nghị định 64/2019/NĐ-CP)\n\nQuá khứ: hệ thống cá sông lớn tại Trung Quốc và Việt Nam\nHiện tại: Vườn thú Tô Châu, Trung Quốc và hồ Đồng Mô và hồ Xuân Khanh, Việt Nam\n\n",
         "secondary_name": "",
         "distribution": ":",
-        "habitat": "Large rivers, lakes and wetlands",
+        "habitat": ": sông, hồ lớn và vùng đất ngập nước",
         "reference_images": [
             "images/reference_images/Rafetus_swinhoei/Rafetus_swinhoei_thumbnail.jpg"
         ],
         "identification_images": [],
         "fun_fact": "",
         "name_vi": "",
-        "threat": "Habitat loss, hunting and trade for local consumption"
+        "threat": ": Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã tại địa phương"
     }
 }
