@@ -43,5 +43,10 @@
         "vi": "Tuyệt chủng",
         "en": "Extinct",
         "hex_color": "#4C4338"
+    },
+    "Null": {
+        "vi": "Chưa được đề cập",
+        "en": "Not mentioned in IUCN Redlist",
+        "hex_color": "#000000"
     }
 }
