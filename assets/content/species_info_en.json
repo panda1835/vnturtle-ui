@@ -2,7 +2,7 @@
     "Platysternon megacephalum": {
         "scientific_name": "Platysternon megacephalum",
         "primary_name": "Big-headed Turtle",
-        "iucn": "CR (2021)",
+        "iucn": "CR",
         "sdvn": "EN",
         "law": "- CITES Appendix I\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -19,7 +19,7 @@
     "Cuora amboinensis": {
         "scientific_name": "Cuora amboinensis kamaroma",
         "primary_name": "Malayan Box Turtle",
-        "iucn": "EN (2020)",
+        "iucn": "EN",
         "sdvn": "VU",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)",
         "secondary_name": "",
@@ -36,7 +36,7 @@
     "Cuora galbinifrons": {
         "scientific_name": "Cuora galbinifrons",
         "primary_name": "Indochinese Box Turtle",
-        "iucn": "CR (2020)",
+        "iucn": "CR",
         "sdvn": "EN",
         "law": "- CITES Appendix II\n- Group IB Decree 84/2021/ND-CP (amendment and supplement of Decree 06/2019/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -53,7 +53,7 @@
     "Cuora bourreti": {
         "scientific_name": "Cuora bourreti",
         "primary_name": "Bourret's Box Turtle",
-        "iucn": "CR (2020)",
+        "iucn": "CR",
         "sdvn": "EN",
         "law": "- CITES Appendix I\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -70,7 +70,7 @@
     "Cuora picturata": {
         "scientific_name": "Cuora picturata",
         "primary_name": "Southern Vietnam Box Turtle",
-        "iucn": "CR (2020)",
+        "iucn": "CR",
         "sdvn": "EN",
         "law": "- CITES Appendix I\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -87,7 +87,7 @@
     "Cuora mouhotii": {
         "scientific_name": "Cuora mouhotii",
         "primary_name": "Keeled Box Turtle",
-        "iucn": "EN (2020)",
+        "iucn": "EN",
         "sdvn": "",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -104,7 +104,7 @@
     "Cuora cyclornata": {
         "scientific_name": "Cuora (trifasciata) cyclornata",
         "primary_name": "Vietnamese Three-striped Box Turtle",
-        "iucn": "CR (2020)",
+        "iucn": "CR",
         "sdvn": "CR",
         "law": "- CITES Appendix II\n- Group IB Decree 84/2021/ND-CP (amendment and supplement of Decree 06/2019/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -121,7 +121,7 @@
     "Cyclemys oldhamii": {
         "scientific_name": "Cyclemys oldhamii",
         "primary_name": "Southern Asian Leaf Turtle",
-        "iucn": "EN (2021)",
+        "iucn": "EN",
         "sdvn": "",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -138,7 +138,7 @@
     "Cyclemys pulchristriata": {
         "scientific_name": "Cyclemys pulchristriata",
         "primary_name": "Eastern Black-bridged Leaf Turtle",
-        "iucn": "EN (2021)",
+        "iucn": "EN",
         "sdvn": "",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -155,7 +155,7 @@
     "Cyclemys atripons": {
         "scientific_name": "Cyclemys atripons",
         "primary_name": "Western Black-Bridged Leaf Turtle",
-        "iucn": "EN (2021)",
+        "iucn": "EN",
         "sdvn": "",
         "law": "- CITES Appendix II\n\n\n",
         "secondary_name": "",
@@ -172,7 +172,7 @@
     "Geoemyda spengleri": {
         "scientific_name": "Geoemyda spengleri",
         "primary_name": "Black-breasted Leaf Turtle",
-        "iucn": "EN (2020)",
+        "iucn": "EN",
         "sdvn": "",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -189,7 +189,7 @@
     "Heosemys grandis": {
         "scientific_name": "Heosemys grandis",
         "primary_name": "Giant Asian Pond Turtle",
-        "iucn": "CR (2021)",
+        "iucn": "CR",
         "sdvn": "VU",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -206,7 +206,7 @@
     "Heosemys annandalii": {
         "scientific_name": "Heosemys annandalii",
         "primary_name": "Yellow-headed Temple Turtle",
-        "iucn": "CR (2021)",
+        "iucn": "CR",
         "sdvn": "EN",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -223,7 +223,7 @@
     "Malayemys subtrijuga": {
         "scientific_name": "Malayemys subtrijuga",
         "primary_name": "Mekong Snail-eating Turtle",
-        "iucn": "NT (2021)",
+        "iucn": "NT",
         "sdvn": "VU",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -240,7 +240,7 @@
     "Mauremys annamensis": {
         "scientific_name": "Mauremys annamensis",
         "primary_name": "Vietnamese Pond Turtle",
-        "iucn": "CR (2020)",
+        "iucn": "CR",
         "sdvn": "CR",
         "law": "- CITES Appendix II\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -257,7 +257,7 @@
     "Mauremys mutica": {
         "scientific_name": "Mauremys mutica",
         "primary_name": "Asian Yellow Pond Turtle",
-        "iucn": "CR (2021)",
+        "iucn": "CR",
         "sdvn": "",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -274,7 +274,7 @@
     "Mauremys sinensis": {
         "scientific_name": "Mauremys sinensis",
         "primary_name": "Chinese Striped-neck Turtle",
-        "iucn": "CR (2021)",
+        "iucn": "CR",
         "sdvn": "",
         "law": "- CITES Appendix III\n\n\n",
         "secondary_name": "",
@@ -291,7 +291,7 @@
     "Sacalia quadriocellata": {
         "scientific_name": "Sacalia quadriocellata",
         "primary_name": "Four-eyed Turtle",
-        "iucn": "CR (2021)",
+        "iucn": "CR",
         "sdvn": "",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -308,7 +308,7 @@
     "Siebenrockiella crassicollis": {
         "scientific_name": "Siebenrockiella crassicollis",
         "primary_name": "Black Marsh Turtle",
-        "iucn": "EN (2021)",
+        "iucn": "EN",
         "sdvn": "",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -325,7 +325,7 @@
     "Indotestudo elongata": {
         "scientific_name": "Indotestudo elongata",
         "primary_name": "Elongated Tortoise",
-        "iucn": "CR (2019)",
+        "iucn": "CR",
         "sdvn": "EN",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -342,7 +342,7 @@
     "Manouria impressa": {
         "scientific_name": "Manouria impressa",
         "primary_name": "Impressed Tortoise",
-        "iucn": "EN (2021)",
+        "iucn": "EN",
         "sdvn": "VU",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -359,7 +359,7 @@
     "Amyda ornata": {
         "scientific_name": "Amyda ornata",
         "primary_name": "Asiatic Softshell Turtle",
-        "iucn": "VU (2016)",
+        "iucn": "VU",
         "sdvn": "VU",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -376,7 +376,7 @@
     "Palea steindachneri": {
         "scientific_name": "Palea steindachneri",
         "primary_name": "Wattle-necked Softshell Turtle",
-        "iucn": "CR (2021)",
+        "iucn": "CR",
         "sdvn": "VU",
         "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -393,7 +393,7 @@
     "Pelochelys cantorii": {
         "scientific_name": "Pelochelys cantorii",
         "primary_name": "Cantor's Giant Softshell Turtle",
-        "iucn": "CR (2021)",
+        "iucn": "CR",
         "sdvn": "EN",
         "law": "- CITES Appendix II\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
@@ -427,7 +427,7 @@
     "Rafetus swinhoei": {
         "scientific_name": "Rafetus swinhoei",
         "primary_name": "Swinhoe's Softshell Turtle",
-        "iucn": "CR (2021)",
+        "iucn": "CR",
         "sdvn": "CR",
         "law": "- CITES Appendix II\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\nHistoric: large river system of China and Vietnam\nCurrent: Suzhou Zoo, China and Dong Mo lake and Xuan Khanh lake, Hanoi, Vietnam\n\n",
         "secondary_name": "",
