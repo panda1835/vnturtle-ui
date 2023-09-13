@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'package:cached_network_image/cached_network_image.dart';
-
-import 'package:flutter/services.dart';
 import 'detailed_species_page.dart';
+import 'package:flutter/services.dart' show rootBundle;
+
 
 class ThongTinLoaiPage extends StatefulWidget {
   @override
@@ -14,23 +13,39 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
   List<String> speciesNames = [];
   List<String> filteredSpeciesNames = [];
   Map<String, dynamic> speciesData = {};
+  Map<String, dynamic> conservationStatusData = {};
   TextEditingController searchController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
+    loadConservationStatus();
     loadSpeciesData();
+  }
+
+  Future<void> loadConservationStatus() async {
+    String jsonString =
+        await rootBundle.loadString('content/conservation_status.json');
+    conservationStatusData = jsonDecode(jsonString);
   }
 
   Future<void> loadSpeciesData() async {
     String jsonString =
-        await DefaultAssetBundle.of(context).loadString('content/species_info_vi.json');
+        await rootBundle.loadString('content/species_info_vi.json');
     speciesData = jsonDecode(jsonString);
 
     setState(() {
       speciesNames = speciesData.keys.toList();
       filteredSpeciesNames = speciesNames;
+
+      // Add the conservation status data to each species info
+      // speciesData.forEach((key, value) {
+      //   String conservationStatus = value['iucn'];
+      //   Map<String, dynamic> statusInfo = conservationStatusData[conservationStatus];
+      //   value['conservation_status'] = statusInfo;
+      // });
     });
+
   }
 
   void filterSpeciesList(String query) {
@@ -56,6 +71,24 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
       context,
       MaterialPageRoute(
         builder: (context) => DetailedSpeciesPage(speciesInfo: speciesInfo),
+      ),
+    );
+  }
+
+  Widget buildConservationStatusText(Map<String, dynamic> speciesInfo) {
+    String conservationStatus = speciesInfo['iucn'];
+    // Map<String, dynamic> statusInfo = speciesInfo['conservation_status'];
+
+    String hexColor = conservationStatusData[conservationStatus]['hex_color'];
+    String viName = conservationStatusData[conservationStatus]['vi'];
+
+    String newText = '$viName ($conservationStatus)';
+
+    return Text(
+      newText,
+      style: TextStyle(
+        color: Color(int.parse(hexColor.substring(1, 7), radix: 16) + 0xFF000000),
+        fontWeight: FontWeight.bold
       ),
     );
   }
@@ -130,7 +163,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                             borderRadius: BorderRadius.circular(8.0),
                             image: DecorationImage(
                               image: AssetImage(speciesInfo['reference_images'][0]),
-                              // image: AssetImage('images/reference_images/Heosemys_grandis/Heosemys_grandis_cover.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -146,7 +178,12 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                                     TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
                               ),
                               SizedBox(height: 8.0),
-                              Text('Tình trạng bảo tồn: ${speciesInfo['iucn']}'),
+                              Row(
+                                children: [
+                                  Text('Tình trạng bảo tồn: '),
+                                  buildConservationStatusText(speciesInfo),
+                                ],
+                              ),
                               SizedBox(height: 8.0),
                               Text('Tên khoa học: ${speciesInfo['scientific_name']}'),
                               SizedBox(height: 8.0),
