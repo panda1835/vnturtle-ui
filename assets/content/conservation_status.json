@@ -44,9 +44,9 @@
         "en": "Extinct",
         "hex_color": "#4C4338"
     },
-    "Null": {
+    "NM": {
         "vi": "Chưa được đề cập",
-        "en": "Not mentioned in IUCN Redlist",
+        "en": "Not Mentioned in the IUCN Redlist",
         "hex_color": "#000000"
     }
 }
