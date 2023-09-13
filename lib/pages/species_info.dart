@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'package:cached_network_image/cached_network_image.dart';
+
 import 'package:flutter/services.dart';
 import 'detailed_species_page.dart';
 
@@ -22,8 +24,8 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
 
   Future<void> loadSpeciesData() async {
     String jsonString =
-        await DefaultAssetBundle.of(context).loadString('content/species_info.json');
-    speciesData = jsonDecode(jsonString)['species'];
+        await DefaultAssetBundle.of(context).loadString('content/species_info_vi.json');
+    speciesData = jsonDecode(jsonString);
 
     setState(() {
       speciesNames = speciesData.keys.toList();
@@ -35,9 +37,9 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     setState(() {
       filteredSpeciesNames = speciesNames.where((name) {
         Map<String, dynamic> speciesInfo = speciesData[name];
-        String nameVi = speciesInfo['name_vi'];
-        String conservationStatus = speciesInfo['conservation_status'];
-        String nameEn = speciesInfo['name_en'];
+        String nameVi = speciesInfo['primary_name'];
+        String conservationStatus = speciesInfo['iucn'];
+        String nameEn = speciesInfo['secondary_name'];
         String nameSci = speciesInfo['scientific_name'];
 
         return nameVi.toLowerCase().contains(query.toLowerCase()) ||
@@ -108,7 +110,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                   onTap: () => navigateToDetailPage(speciesName),
                   child: Container(
                     margin: EdgeInsets.all(16.0),
-                    decoration: BoxDecoration(
+                    decoration: BoxDecoration( 
                       color: theme.secondaryHeaderColor,
                       borderRadius: BorderRadius.circular(8.0),
                     ),
@@ -122,6 +124,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                             borderRadius: BorderRadius.circular(8.0),
                             image: DecorationImage(
                               image: AssetImage(speciesInfo['reference_images'][0]),
+                              // image: AssetImage('images/reference_images/Heosemys_grandis/Heosemys_grandis_cover.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -132,14 +135,14 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                speciesInfo['name_vi'],
+                                speciesInfo['primary_name'],
                                 style:
                                     TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
                               ),
                               SizedBox(height: 8.0),
-                              Text('Tình trạng bảo tồn: ${speciesInfo['conservation_status']}'),
+                              Text('Tình trạng bảo tồn: ${speciesInfo['iucn']}'),
                               SizedBox(height: 8.0),
-                              Text('Tên tiếng Anh: ${speciesInfo['name_en']}'),
+                              Text('Tên tiếng Anh: ${speciesInfo['secondary_name']}'),
                               SizedBox(height: 8.0),
                               Text('Tên khoa học: ${speciesInfo['scientific_name']}'),
                             ],

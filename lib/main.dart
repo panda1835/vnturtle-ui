@@ -99,7 +99,7 @@ void _navigateToPage(String choice) {
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Image.asset(
-              'images/logo.png',
+              'images/icons/logo.png',
               width: 200,
               height: 200,
             ),

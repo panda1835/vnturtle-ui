@@ -27,7 +27,7 @@ class DetailedSpeciesPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                speciesInfo['name_vi'],
+                speciesInfo['primary_name'],
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
@@ -92,7 +92,7 @@ class DetailedSpeciesPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Text(
-              'Tình trạng bảo tồn: ${speciesInfo['conservation_status']}',
+              'Tình trạng bảo tồn: ${speciesInfo['iucn']}',
               style: TextStyle(fontSize: 18.0),
             ),
           ),
