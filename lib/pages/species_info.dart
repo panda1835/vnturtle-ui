@@ -109,11 +109,17 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                 return GestureDetector(
                   onTap: () => navigateToDetailPage(speciesName),
                   child: Container(
-                    margin: EdgeInsets.all(16.0),
+                    padding: EdgeInsets.all(8),
+                    margin: EdgeInsets.all(5.0),
                     decoration: BoxDecoration( 
                       color: theme.secondaryHeaderColor,
                       borderRadius: BorderRadius.circular(8.0),
+                      border: Border.all(
+                        color: Colors.black38, // Border color
+                        width: 0.5, // Border width
+                      ),
                     ),
+
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -142,9 +148,9 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                               SizedBox(height: 8.0),
                               Text('Tình trạng bảo tồn: ${speciesInfo['iucn']}'),
                               SizedBox(height: 8.0),
-                              Text('Tên tiếng Anh: ${speciesInfo['secondary_name']}'),
-                              SizedBox(height: 8.0),
                               Text('Tên khoa học: ${speciesInfo['scientific_name']}'),
+                              SizedBox(height: 8.0),
+                              Text('Tên tiếng Anh: ${speciesInfo['secondary_name']}'),
                             ],
                           ),
                         ),
