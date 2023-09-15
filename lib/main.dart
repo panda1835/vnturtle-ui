@@ -4,7 +4,6 @@ import 'pages/species_info.dart';
 import 'pages/report.dart';
 import 'pages/faq.dart';
 import 'pages/aboutus.dart';
-import 'pages/image_upload_widget.dart';
 import 'pages/result_page.dart';
 
 void main() => runApp(MyApp());

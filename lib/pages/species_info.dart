@@ -37,13 +37,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     setState(() {
       speciesNames = speciesData.keys.toList();
       filteredSpeciesNames = speciesNames;
-
-      // Add the conservation status data to each species info
-      // speciesData.forEach((key, value) {
-      //   String conservationStatus = value['iucn'];
-      //   Map<String, dynamic> statusInfo = conservationStatusData[conservationStatus];
-      //   value['conservation_status'] = statusInfo;
-      // });
     });
 
   }
@@ -112,8 +105,8 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(16.0),
+          const Padding(
+            padding: EdgeInsets.all(16.0),
             child: Text(
               'Thông Tin Loài',
               style: TextStyle(
@@ -126,7 +119,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
             child: TextField(
               controller: searchController,
               onChanged: filterSpeciesList,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: 'Tìm kiếm',
                 prefixIcon: Icon(Icons.search),
               ),
