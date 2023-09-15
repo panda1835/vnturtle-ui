@@ -1,0 +1,24 @@
+{
+    "predictions": {
+        "prediction1": {
+            "scientific_name": "Platysternon megacephalum",
+            "score": "70"
+        },
+        "prediction2": {
+            "scientific_name": "Cuora amboinensis",
+            "score": "20"
+        },
+        "prediction3": {
+            "scientific_name": "Cuora galbinifrons",
+            "score": "5"
+        },
+        "prediction4": {
+            "scientific_name": "Cuora bourreti",
+            "score": "3"
+        },
+        "prediction5": {
+            "scientific_name": "Cuora mouhotii",
+            "score": "2"
+        }
+    }
+}
