@@ -78,32 +78,13 @@ class _HomePageState extends State<HomePage> {
     print('Mime: $mime');
     print('Size : ${byte / (1024 * 1024)}');
     print('URL: $url');
-
-    // Placeholder API call function for testing
-    Map<String, dynamic> jsonResponse = await _placeholderApiCall(url);
     
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => ResultPage(jsonResponse: jsonResponse),
+        builder: (context) => ResultPage(imageUrl: url),
       ),
     );
-  }
-
-  Future<Map<String, dynamic>> _placeholderApiCall(String imagePath) async {
-    // Placeholder API call function that returns a mock JSON response
-    // In a real implementation, you would make an actual API request here
-    // and receive the JSON response
-    await Future.delayed(Duration(seconds: 1)); // Simulating API delay
-    return {
-      "predictions": {
-        "prediction1": {"scientific_name": "Platysternon megacephalum", "score": "70"},
-        "prediction2": {"scientific_name": "Cuora amboinensis", "score": "20"},
-        "prediction3": {"scientific_name": "Cuora galbinifrons", "score": "5"},
-        "prediction4": {"scientific_name": "Cuora bourreti", "score": "3"},
-        "prediction5": {"scientific_name": "Cuora mouhotii", "score": "2"}
-      }
-    };
   }
 
   @override
@@ -158,19 +139,7 @@ class _HomePageState extends State<HomePage> {
                 color: theme.primaryColor,
               ),
             ),
-            // Container(
-              // child: ElevatedButton.icon(
-              //   onPressed: () async {
-              //     final events = await controller!.pickFiles();
-              //     if (events.isEmpty) return;
-              //     _handleDroppedImage(events.first);
-              //   },
-              //   icon: Icon(Icons.search),
-              //   label: Text(
-              //     'Choose File',
-              //     style: TextStyle(color: Colors.white, fontSize: 15),
-              //   ),
-              // ),
+    
               Stack(
                 children: [
                   DropzoneView(
