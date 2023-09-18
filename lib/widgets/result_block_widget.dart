@@ -42,10 +42,12 @@ class ResultBlock extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
+                    margin: EdgeInsets.only(top:10, bottom: 10),
                     width: 200.0,
                     child: Text(
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        fontSize: 20,
                       ),
                       nameVi
                     )
@@ -54,7 +56,8 @@ class ResultBlock extends StatelessWidget {
                   Text(
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: theme.primaryColor
+                      color: theme.primaryColor,
+                      fontSize: 20,
                     ),
                     '$score%'
                   ),
