@@ -44,7 +44,8 @@ class _HomePageState extends State<HomePage> {
     // 'Báo cáo vi phạm',
     'Câu hỏi thường gặp',
     'Về chúng tôi',
-    'Gọi đến đường dây nóng 1800 1522 để báo cáo hành vi vi phạm'
+    'Đường dây nóng bảo vệ động vật hoang dã',
+    '1800 1522'
   ];
 
   DropzoneViewController? controller;
@@ -53,9 +54,9 @@ class _HomePageState extends State<HomePage> {
   void _navigateToPage(String choice) {
     Widget page;
     switch (choice) {
-      case 'Nhận diện':
-        page = HomePage();
-        break;
+      // case 'Nhận diện':
+      //   page = HomePage();
+      //   break;
       case 'Thông tin loài':
         page = ThongTinLoaiPage();
         break;
@@ -115,11 +116,20 @@ class _HomePageState extends State<HomePage> {
         child: ListView.builder(
           itemCount: choices.length,
           itemBuilder: (context, index) {
-            if (index == choices.length-1){
+            if (index == choices.length-2){
               return Padding(
                 padding: const EdgeInsets.only(top: 25, left: 16.0, right: 16),
                 child: Text(
                   choices[index],
+                ),
+              );
+            }
+            if (index == choices.length-1){
+              return Padding(
+                padding: const EdgeInsets.only(top: 5, left: 16.0),
+                child: Text(
+                  choices[index],
+                  style: TextStyle(color: Colors.red),
                 ),
               );
             }
