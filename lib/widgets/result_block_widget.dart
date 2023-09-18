@@ -19,6 +19,7 @@ class ResultBlock extends StatelessWidget {
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
     return Card(
+      elevation: 5,
       margin: EdgeInsets.all(10),
         child: Padding(
           padding: EdgeInsets.all(10),
@@ -33,7 +34,7 @@ class ResultBlock extends StatelessWidget {
                 children: [
                   // Use the reference_images field from species_info_vi.json
                   for (final imagePath in imagePaths)
-                    Image.asset(imagePath),
+                    Image.asset(imagePath, height: 150,),
                 ],
               ),
             ),
