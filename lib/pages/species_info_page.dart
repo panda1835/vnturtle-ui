@@ -59,11 +59,10 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
   }
 
   void navigateToDetailPage(String speciesName) {
-    Map<String, dynamic> speciesInfo = speciesData[speciesName];
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => DetailedSpeciesPage(speciesInfo: speciesInfo),
+        builder: (context) => DetailedSpeciesPage(speciesName: speciesName),
       ),
     );
   }
