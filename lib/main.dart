@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dropzone/flutter_dropzone.dart';
 import 'pages/species_info_page.dart';
-import 'pages/report.dart';
 import 'pages/faq.dart';
 import 'pages/aboutus.dart';
 import 'pages/result_page.dart';
@@ -62,9 +61,9 @@ class _HomePageState extends State<HomePage> {
       case 'Câu hỏi thường gặp':
         page = CauHoiThuongGapPage();
         break;
-      case 'Báo cáo vi phạm':
-        page = BaoCaoViPhamPage();
-        break;
+      // case 'Báo cáo vi phạm':
+      //   page = BaoCaoViPhamPage();
+      //   break;
       case 'Về chúng tôi':
         page = VeChungToiPage();
         break;
@@ -163,23 +162,26 @@ class _HomePageState extends State<HomePage> {
                       onLeave: ()=> setState(()=> highlight = false),
                   ),
 
-                  Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton.icon(
-                          onPressed: () async {
-                            final events = await controller!.pickFiles();
-                            if(events.isEmpty) return;
-                            _handleDroppedImage(events.first);
-                          },
-                          icon: Icon(Icons.search),
-                          label: Text(
-                            'Choose File',
-                            style: TextStyle(color: Colors.white, fontSize: 15),
-                          ),
-                        )
-                      ],
+                  Padding(
+                    padding: const EdgeInsets.only(top: 40.0),
+                    child: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ElevatedButton.icon(
+                            onPressed: () async {
+                              final events = await controller!.pickFiles();
+                              if(events.isEmpty) return;
+                              _handleDroppedImage(events.first);
+                            },
+                            icon: Icon(Icons.upload),
+                            label: Text(
+                              'Choose File',
+                              style: TextStyle(color: Colors.white, fontSize: 15),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ]
