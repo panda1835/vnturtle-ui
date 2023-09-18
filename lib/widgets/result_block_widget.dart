@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../pages/detailed_species_page.dart';
 import 'package:http/http.dart' as http;
 
+import '../pages/confirm_page.dart';
+
 class ResultBlock extends StatefulWidget {
   // final String scientificName;
   final String nameVi;
@@ -25,7 +27,7 @@ class ResultBlock extends StatefulWidget {
 class _ResultBlockState extends State<ResultBlock> {
   bool _isReported = false;
 
-  Future<void> _sendReport() async {
+  Future<void> _reportImage() async {
     await Future.delayed(Duration(seconds: 1));
     setState(() {
           _isReported = true;
@@ -60,14 +62,14 @@ class _ResultBlockState extends State<ResultBlock> {
           child: Column(
             children: [
               Text(
-                'Không tìm thấy kết quả? Hãy cho chúng mình biết',
+                'Không tìm thấy kết quả? Hãy cho chúng mình biết.',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: 10,
               ),
               ElevatedButton(
-                onPressed: _isReported ? null : _sendReport,
+                onPressed: _isReported ? null : _reportImage,
                 child: Text("Báo cáo ảnh"),
               ),
               SizedBox(
@@ -141,7 +143,14 @@ class _ResultBlockState extends State<ResultBlock> {
                 Container(
                   width: 130,
                   child: ElevatedButton(
-                    onPressed: _isReported ? null : _sendReport,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ConfirmPage(scientificName: widget.scientificName,),
+                        ),
+                      );
+                    },
                     child: Text('Xác nhận'),
                   ),
                 ),
