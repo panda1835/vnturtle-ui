@@ -24,7 +24,6 @@ class _CauHoiThuongGapPageState extends State<CauHoiThuongGapPage> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     
     Widget buildContent() {
       if (faqData.isEmpty) {
