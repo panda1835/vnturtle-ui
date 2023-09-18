@@ -112,6 +112,7 @@ class _ResultPageState extends State<ResultPage> {
                             imagePaths: (speciesInfo[entry.value['scientific_name']]
                                     ['reference_images'] as List<dynamic>)
                                 .cast<String>(),
+                            imageUrl: "",
                           ),
 
                         ResultBlock(
@@ -119,6 +120,7 @@ class _ResultPageState extends State<ResultPage> {
                             nameVi: '',
                             score: '',
                             imagePaths: [],
+                            imageUrl: widget.imageUrl,
                           ),
                       ],
                     ),
