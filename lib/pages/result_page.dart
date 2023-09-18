@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'result_block_widget.dart';
+import '../widgets/result_block_widget.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dropzone/flutter_dropzone.dart';
 import 'pages/species_info_page.dart';
-import 'pages/faq.dart';
-import 'pages/aboutus.dart';
+import 'pages/faq_page.dart';
+import 'pages/about_us_page.dart';
 import 'pages/result_page.dart';
 
 void main() => runApp(MyApp());
