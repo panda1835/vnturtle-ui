@@ -18,10 +18,38 @@ class ResultBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
+    if (scientificName == 'No match'){
+      return Card(
+        elevation: 5,
+        margin: EdgeInsets.all(10),
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: Column(
+            children: [
+              Text(
+                'Không tìm thấy kết quả? Hãy cho chúng mình biết',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+              SizedBox(height: 10,),
+              ElevatedButton(onPressed: (){}, child: Text("Báo cáo ảnh")),
+              SizedBox(height: 10,),
+              Text(
+                'Báo cáo của bạn đã được hệ thống ghi nhận.',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold
+                ),
+              )
+            ]
+          ),
+        )
+      );
+    }
     return Card(
       elevation: 5,
       margin: EdgeInsets.all(10),
-        child: Padding(
+      child: Padding(
           padding: EdgeInsets.all(10),
           child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

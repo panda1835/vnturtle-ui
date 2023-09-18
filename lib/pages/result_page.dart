@@ -113,6 +113,13 @@ class _ResultPageState extends State<ResultPage> {
                                     ['reference_images'] as List<dynamic>)
                                 .cast<String>(),
                           ),
+
+                        ResultBlock(
+                            scientificName: 'No match',
+                            nameVi: '',
+                            score: '',
+                            imagePaths: [],
+                          ),
                       ],
                     ),
                   ),
