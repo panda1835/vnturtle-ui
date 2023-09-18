@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
           itemBuilder: (context, index) {
             if (index == choices.length-1){
               return Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.only(top: 25, left: 16.0, right: 16),
                 child: Text(
                   choices[index],
                 ),
