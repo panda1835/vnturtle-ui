@@ -15,6 +15,7 @@ class ResultBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ThemeData theme = Theme.of(context);
     return Card(
       margin: EdgeInsets.all(10),
         child: Padding(
@@ -40,9 +41,23 @@ class ResultBlock extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text(nameVi),
+                  Container(
+                    width: 200.0,
+                    child: Text(
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                      nameVi
+                    )
+                  ),
                   SizedBox(width: 20.0),
-                  Text('$score%'),
+                  Text(
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: theme.primaryColor
+                    ),
+                    '$score%'
+                  ),
                 ],
               ),
             ),
@@ -50,18 +65,24 @@ class ResultBlock extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                ElevatedButton(
-                  onPressed: () {
-                    // Handle Xác nhận button press
-                  },
-                  child: Text('Xác nhận'),
+                Container(
+                  width: 130,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Handle Xác nhận button press
+                    },
+                    child: Text('Xác nhận'),
+                  ),
                 ),
                 SizedBox(width: 8.0),
-                ElevatedButton(
-                  onPressed: () {
-                    // Handle Thông tin thêm button press
-                  },
-                  child: Text('Thông tin thêm'),
+                Container(
+                  width: 130,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Handle Thông tin thêm button press
+                    },
+                    child: Text('Thông tin thêm'),
+                  ),
                 ),
                 SizedBox(width: 16.0),
               ],
