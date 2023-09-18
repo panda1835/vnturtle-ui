@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
         scaffoldBackgroundColor: Colors.green.shade50,
-        buttonTheme: ButtonThemeData(buttonColor: Colors.black),
+        // buttonTheme: ButtonThemeData(buttonColor: Colors.black),
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.green.shade50,
           iconTheme: IconThemeData(color: Colors.black),
@@ -41,9 +41,10 @@ class _HomePageState extends State<HomePage> {
   final List<String> choices = [
     // 'Nhận diện',
     'Thông tin loài',
-    'Báo cáo vi phạm',
+    // 'Báo cáo vi phạm',
     'Câu hỏi thường gặp',
-    'Về chúng tôi'
+    'Về chúng tôi',
+    'Gọi đến đường dây nóng 1800 1522 để báo cáo hành vi vi phạm'
   ];
 
   DropzoneViewController? controller;
@@ -52,9 +53,9 @@ class _HomePageState extends State<HomePage> {
   void _navigateToPage(String choice) {
     Widget page;
     switch (choice) {
-      // case 'Nhận diện':
-      //   page = HomePage();
-      //   break;
+      case 'Nhận diện':
+        page = HomePage();
+        break;
       case 'Thông tin loài':
         page = ThongTinLoaiPage();
         break;
@@ -103,23 +104,25 @@ class _HomePageState extends State<HomePage> {
     final theme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: theme.secondaryHeaderColor,
       appBar: AppBar(
         backgroundColor: theme.secondaryHeaderColor,
         title: Text(
           'VNTURTLE',
-          style: TextStyle(
-            fontFamily: "Happy Monkey",
-            color: theme.primaryColor,
-          ),
         ),
-        centerTitle: true,
       ),
       drawer: Drawer(
         backgroundColor: theme.secondaryHeaderColor,
         child: ListView.builder(
           itemCount: choices.length,
           itemBuilder: (context, index) {
+            if (index == choices.length-1){
+              return Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  choices[index],
+                ),
+              );
+            }
             return ListTile(
               title: Text(choices[index]),
               tileColor: theme.primaryColorLight,
