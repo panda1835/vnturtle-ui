@@ -92,13 +92,8 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'VNTURTLE',
-          style: TextStyle(
-            fontFamily: "Happy Monkey", 
-            color: theme.primaryColor,
-          ),
+          'VNTURTLE', 
         ),
-        centerTitle: true,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

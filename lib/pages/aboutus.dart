@@ -19,10 +19,6 @@ class _VeChungToiPageState extends State<VeChungToiPage> {
       appBar: AppBar(
         title: Text(
           'VNTURTLE', 
-          style: TextStyle(
-            fontFamily: "Happy Monkey",
-            color: theme.primaryColor,
-          ),
         ),
       ),
       body: FutureBuilder(

@@ -67,13 +67,8 @@ class _ResultPageState extends State<ResultPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'VNTURTLE',
-          style: TextStyle(
-            fontFamily: "Happy Monkey",
-            color: theme.primaryColor,
-          ),
+          'VNTURTLE', 
         ),
-        centerTitle: true,
       ),
       body: ListView(
         children: [

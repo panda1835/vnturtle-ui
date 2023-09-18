@@ -5,7 +5,9 @@ class BaoCaoViPhamPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Báo cáo vi phạm'),
+        title: Text(
+          'VNTURTLE', 
+        ),
       ),
       body: Center(
         child: Text('Báo cáo vi phạm page'),

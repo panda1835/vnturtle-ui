@@ -71,10 +71,6 @@ class _CauHoiThuongGapPageState extends State<CauHoiThuongGapPage> {
       appBar: AppBar(
         title: Text(
           'VNTURTLE', 
-          style: TextStyle(
-            fontFamily: "Happy Monkey",
-            color: theme.primaryColor,
-          ),
         ),
       ),
       body: Visibility(

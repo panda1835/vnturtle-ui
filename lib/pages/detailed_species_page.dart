@@ -12,11 +12,7 @@ class DetailedSpeciesPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'VNTURTLE',
-          style: TextStyle(
-            fontFamily: 'Happy Monkey',
-            color: theme.primaryColor,
-          ),
+          'VNTURTLE', 
         ),
       ),
       body: ListView(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dropzone/flutter_dropzone.dart';
-import 'pages/species_info.dart';
+import 'pages/species_info_page.dart';
 import 'pages/report.dart';
 import 'pages/faq.dart';
 import 'pages/aboutus.dart';
@@ -15,6 +15,17 @@ class MyApp extends StatelessWidget {
       title: 'VNTURTLE',
       theme: ThemeData(
         primarySwatch: Colors.green,
+        scaffoldBackgroundColor: Colors.green.shade50,
+        buttonTheme: ButtonThemeData(buttonColor: Colors.black),
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.green.shade50,
+          iconTheme: IconThemeData(color: Colors.black),
+          titleTextStyle: TextStyle(
+            color: Colors.green,
+            fontFamily: "Happy Monkey",
+            fontSize: 20,
+          )
+        )
       ),
       home: HomePage(),
     );
