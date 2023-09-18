@@ -16,7 +16,6 @@ class _VeChungToiPageState extends State<VeChungToiPage> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Scaffold(
-      backgroundColor: theme.secondaryHeaderColor,
       appBar: AppBar(
         title: Text(
           'VNTURTLE', 

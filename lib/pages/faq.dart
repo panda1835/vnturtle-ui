@@ -68,7 +68,6 @@ class _CauHoiThuongGapPageState extends State<CauHoiThuongGapPage> {
     }
 
     return Scaffold(
-      backgroundColor: theme.secondaryHeaderColor,
       appBar: AppBar(
         title: Text(
           'VNTURTLE', 

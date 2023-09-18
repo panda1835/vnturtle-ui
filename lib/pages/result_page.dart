@@ -65,7 +65,6 @@ class _ResultPageState extends State<ResultPage> {
     final theme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: theme.secondaryHeaderColor,
       appBar: AppBar(
         backgroundColor: theme.secondaryHeaderColor,
         title: Text(

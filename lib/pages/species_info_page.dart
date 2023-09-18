@@ -90,7 +90,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Scaffold(
-      backgroundColor: theme.secondaryHeaderColor,
       appBar: AppBar(
         backgroundColor: theme.secondaryHeaderColor,
         title: Text(
