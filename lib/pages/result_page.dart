@@ -96,7 +96,7 @@ class _ResultPageState extends State<ResultPage> {
                 
                 for (final entry in jsonResponse['predictions'].entries)
                   ResultBlock(
-                    // scientificName: entry.key,
+                    scientificName: entry.value['scientific_name'],
                     nameVi: speciesInfo[entry.value['scientific_name']]['primary_name'],
                     score: entry.value['score'],
                     imagePaths: (speciesInfo[entry.value['scientific_name']]['reference_images'] as List<dynamic>).cast<String>(),

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import '../pages/detailed_species_page.dart';
 
 class ResultBlock extends StatelessWidget {
   // final String scientificName;
   final String nameVi;
+  final String scientificName;
   final String score;
   final List<String> imagePaths;
 
   const ResultBlock({
-    // required this.scientificName,
+    required this.scientificName,
     required this.nameVi,
     required this.score,
     required this.imagePaths,
@@ -82,7 +84,9 @@ class ResultBlock extends StatelessWidget {
                   width: 130,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Handle Thông tin thêm button press
+                      showModalBottomSheet(
+                        context: context, 
+                        builder: (BuildContext context) => DetailedSpeciesPage(speciesName: scientificName));
                     },
                     child: Text('Thông tin thêm'),
                   ),
