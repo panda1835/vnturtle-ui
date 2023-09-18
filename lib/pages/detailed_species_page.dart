@@ -108,7 +108,7 @@ class DetailedSpeciesPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Text(
-                    'Tên tiếng Anh: ${speciesInfo['name_en']}',
+                    'Tên tiếng Anh: ${speciesInfo['secondary_name']}',
                     style: TextStyle(fontSize: 18.0),
                   ),
                 ),
