@@ -4,7 +4,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
 class ResultPage extends StatefulWidget {
-  // final Map<String, dynamic> jsonResponse;
   final String imageUrl;
 
   const ResultPage({required this.imageUrl});
@@ -17,7 +16,7 @@ class _ResultPageState extends State<ResultPage> {
   bool _isLoading = true;
   late Map<String, dynamic> jsonResponse;
   Map<String, dynamic> speciesInfo = {};
-  
+
   @override
   void initState() {
     super.initState();
@@ -26,7 +25,8 @@ class _ResultPageState extends State<ResultPage> {
   }
 
   Future<Map<String, dynamic>> loadSpeciesInfo() async {
-    final jsonString = await rootBundle.loadString('content/species_info_vi.json');
+    final jsonString =
+        await rootBundle.loadString('content/species_info_vi.json');
     return json.decode(jsonString);
   }
 
@@ -42,9 +42,18 @@ class _ResultPageState extends State<ResultPage> {
     await Future.delayed(Duration(seconds: 1)); // Simulating API delay
     return {
       "predictions": {
-        "prediction1": {"scientific_name": "Platysternon megacephalum", "score": "70"},
-        "prediction2": {"scientific_name": "Cuora amboinensis", "score": "20"},
-        "prediction3": {"scientific_name": "Cuora galbinifrons", "score": "5"},
+        "prediction1": {
+          "scientific_name": "Platysternon megacephalum",
+          "score": "70"
+        },
+        "prediction2": {
+          "scientific_name": "Cuora amboinensis",
+          "score": "20"
+        },
+        "prediction3": {
+          "scientific_name": "Cuora galbinifrons",
+          "score": "5"
+        },
         "prediction4": {"scientific_name": "Cuora bourreti", "score": "3"},
         "prediction5": {"scientific_name": "Cuora mouhotii", "score": "2"}
       }
@@ -62,47 +71,52 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'VNTURTLE', 
-        ),
+        title: Text('VNTURTLE'),
       ),
-      body: ListView(
+      body: Column(
         children: [
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Text(
-                'Kết quả',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+          // First Half - Title and Image
+          Expanded(
+            flex: 1,
+            child: Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.network(
+                    widget.imageUrl,
+                    // fit: BoxFit.cover,
+                    height: 150,
+                  ),
+                ],
               ),
             ),
           ),
-          Image.network(widget.imageUrl),
-          SizedBox(height: 16.0),
-          if (_isLoading)
-            Center(
-              child: CircularProgressIndicator(),
-            )
-          else
-            Column(
-              children: [
-                SizedBox(height: 16.0),
-                
-                for (final entry in jsonResponse['predictions'].entries)
-                  ResultBlock(
-                    scientificName: entry.value['scientific_name'],
-                    nameVi: speciesInfo[entry.value['scientific_name']]['primary_name'],
-                    score: entry.value['score'],
-                    imagePaths: (speciesInfo[entry.value['scientific_name']]['reference_images'] as List<dynamic>).cast<String>(),
+          // Second Half - List View (wrapped with SingleChildScrollView)
+          Expanded(
+            flex: 2,
+            child: _isLoading
+                ? Center(
+                    child: CircularProgressIndicator(),
+                  )
+                : SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        for (final entry
+                            in jsonResponse['predictions'].entries)
+                          ResultBlock(
+                            scientificName: entry.value['scientific_name'],
+                            nameVi: speciesInfo[entry.value['scientific_name']]['primary_name'],
+                            score: entry.value['score'],
+                            imagePaths: (speciesInfo[entry.value['scientific_name']]
+                                    ['reference_images'] as List<dynamic>)
+                                .cast<String>(),
+                          ),
+                      ],
+                    ),
                   ),
-              ],
-            ),
+          ),
         ],
       ),
     );
