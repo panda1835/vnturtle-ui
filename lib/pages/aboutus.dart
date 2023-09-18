@@ -24,7 +24,6 @@ class _VeChungToiPageState extends State<VeChungToiPage> {
             color: theme.primaryColor,
           ),
         ),
-        backgroundColor: theme.secondaryHeaderColor,
       ),
       body: FutureBuilder(
         future: _loadAboutUsContent(),

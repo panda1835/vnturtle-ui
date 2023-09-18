@@ -91,7 +91,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: theme.secondaryHeaderColor,
         title: Text(
           'VNTURTLE',
           style: TextStyle(

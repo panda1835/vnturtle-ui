@@ -66,7 +66,6 @@ class _ResultPageState extends State<ResultPage> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: theme.secondaryHeaderColor,
         title: Text(
           'VNTURTLE',
           style: TextStyle(

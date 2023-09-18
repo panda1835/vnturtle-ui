@@ -76,7 +76,6 @@ class _CauHoiThuongGapPageState extends State<CauHoiThuongGapPage> {
             color: theme.primaryColor,
           ),
         ),
-        backgroundColor: theme.secondaryHeaderColor,
       ),
       body: Visibility(
         visible: faqData.isNotEmpty,

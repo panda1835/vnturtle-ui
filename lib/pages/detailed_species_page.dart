@@ -11,7 +11,6 @@ class DetailedSpeciesPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: theme.secondaryHeaderColor,
         title: Text(
           'VNTURTLE',
           style: TextStyle(
