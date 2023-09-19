@@ -16,6 +16,12 @@ class _ResultPageState extends State<ResultPage> {
   bool _isLoading = true;
   late Map<String, dynamic> jsonResponse;
   Map<String, dynamic> speciesInfo = {};
+  
+  double image_height = 180;
+  double bbox_top=0;
+  double bbox_left=0;
+  double bbox_width=0;
+  double bbox_height=0;
 
   @override
   void initState() {
@@ -54,8 +60,20 @@ class _ResultPageState extends State<ResultPage> {
           "scientific_name": "Cuora galbinifrons",
           "score": "5"
         },
-        "prediction4": {"scientific_name": "Cuora bourreti", "score": "3"},
-        "prediction5": {"scientific_name": "Cuora mouhotii", "score": "2"}
+        "prediction4": {
+          "scientific_name": "Cuora bourreti", 
+          "score": "3"
+        },
+        "prediction5": {
+          "scientific_name": "Cuora mouhotii", 
+          "score": "2"
+        }
+      },
+      "bbox": {
+        "top": 50,
+        "left": 25,
+        "width": 150,
+        "height": 100
       }
     };
   }
@@ -64,6 +82,10 @@ class _ResultPageState extends State<ResultPage> {
     // Simulating an API request delay
     // Placeholder API call function for testing
     jsonResponse = await _placeholderApiCall(url);
+    bbox_top = jsonResponse['bbox']['top'];
+    bbox_left = jsonResponse['bbox']['left'];
+    bbox_width = jsonResponse['bbox']['width'];
+    bbox_height = jsonResponse['bbox']['height'];
     setState(() {
       _isLoading = false;
     });
@@ -80,16 +102,32 @@ class _ResultPageState extends State<ResultPage> {
           // First Half - Title and Image
           Container(
             height: 200,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+            child: Stack(
               children: [
-                Image.network(
-                  widget.imageUrl,
-                  // fit: BoxFit.cover,
-                  height: 180,
+                // Center(
+                  Image.network(
+                      widget.imageUrl,
+                      height: image_height,
+                  ),
+                // ),
+                Positioned(
+                  top: bbox_top,
+                  left: bbox_left,
+                  width: bbox_width,
+                  height: bbox_height,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      border: Border.all(
+                        color: Colors.red,
+                        width: 2.0,
+                      ),
+                    ),
+                  ),
                 ),
-                ],
-              ),
+
+              ]
+            ),
             ),
           // Second Half - List View (wrapped with SingleChildScrollView)
           Expanded(
