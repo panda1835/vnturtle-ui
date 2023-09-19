@@ -78,21 +78,19 @@ class _ResultPageState extends State<ResultPage> {
       body: Column(
         children: [
           // First Half - Title and Image
-          Expanded(
-            flex: 1,
-            child: Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.network(
-                    widget.imageUrl,
-                    // fit: BoxFit.cover,
-                    height: 150,
-                  ),
+          Container(
+            height: 200,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.network(
+                  widget.imageUrl,
+                  // fit: BoxFit.cover,
+                  height: 180,
+                ),
                 ],
               ),
             ),
-          ),
           // Second Half - List View (wrapped with SingleChildScrollView)
           Expanded(
             flex: 2,
