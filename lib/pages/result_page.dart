@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import '../widgets/result_block_widget.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:image_size_getter/image_size_getter.dart';
+import 'package:http/http.dart' as http;
+import 'package:path_provider/path_provider.dart';
+
 
 class ResultPage extends StatefulWidget {
   final String imageUrl;
@@ -17,7 +21,7 @@ class _ResultPageState extends State<ResultPage> {
   late Map<String, dynamic> jsonResponse;
   Map<String, dynamic> speciesInfo = {};
   
-  double image_height = 180;
+  double display_image_height = 180;
   double bbox_top=0;
   double bbox_left=0;
   double bbox_width=0;
@@ -47,45 +51,38 @@ class _ResultPageState extends State<ResultPage> {
     // and receive the JSON response
     await Future.delayed(Duration(seconds: 1)); // Simulating API delay
     return {
-      "predictions": {
-        "prediction1": {
-          "scientific_name": "Platysternon megacephalum",
-          "score": "70"
-        },
-        "prediction2": {
-          "scientific_name": "Cuora amboinensis",
-          "score": "20"
-        },
-        "prediction3": {
-          "scientific_name": "Cuora galbinifrons",
-          "score": "5"
-        },
-        "prediction4": {
-          "scientific_name": "Cuora bourreti", 
-          "score": "3"
-        },
-        "prediction5": {
-          "scientific_name": "Cuora mouhotii", 
-          "score": "2"
-        }
-      },
       "bbox": {
-        "top": 50,
-        "left": 25,
-        "width": 150,
-        "height": 100
+        "height": 723,
+        "left": 459,
+        "top": 545,
+        "width": 1021
+      },
+      "image_size": {
+        "height": 1500,
+        "width": 2000
+      },
+      "predictions": {
+        "Cuora bourreti": 0.02,
+        "Cuora mouhotii": 0.59,
+        "Cuora picturata": 0.02,
+        "Geoemyda spengleri": 0.2,
+        "Mauremys mutica": 0.16
       }
     };
   }
 
+  // Convert bounding box to pixels
+  double _convertBboxToPixels(double bboxValue, int imageHeight) {
+    double ratio = display_image_height / imageHeight;
+    return bboxValue * ratio;
+  }
+
   Future<void> _processData(url) async {
-    // Simulating an API request delay
-    // Placeholder API call function for testing
     jsonResponse = await _placeholderApiCall(url);
-    bbox_top = jsonResponse['bbox']['top'];
-    bbox_left = jsonResponse['bbox']['left'];
-    bbox_width = jsonResponse['bbox']['width'];
-    bbox_height = jsonResponse['bbox']['height'];
+    bbox_top = _convertBboxToPixels(jsonResponse['bbox']['top'], jsonResponse['image_size']['height']);
+    bbox_left = _convertBboxToPixels(jsonResponse['bbox']['left'], jsonResponse['image_size']['height']);
+    bbox_width = _convertBboxToPixels(jsonResponse['bbox']['width'], jsonResponse['image_size']['height']);
+    bbox_height = _convertBboxToPixels(jsonResponse['bbox']['height'], jsonResponse['image_size']['height']);
     setState(() {
       _isLoading = false;
     });
@@ -107,7 +104,7 @@ class _ResultPageState extends State<ResultPage> {
                 // Center(
                   Image.network(
                       widget.imageUrl,
-                      height: image_height,
+                      height: display_image_height,
                   ),
                 // ),
                 Positioned(
@@ -142,10 +139,10 @@ class _ResultPageState extends State<ResultPage> {
                         for (final entry
                             in jsonResponse['predictions'].entries)
                           ResultBlock(
-                            scientificName: entry.value['scientific_name'],
-                            nameVi: speciesInfo[entry.value['scientific_name']]['primary_name'],
-                            score: entry.value['score'],
-                            imagePaths: (speciesInfo[entry.value['scientific_name']]
+                            scientificName: entry.key,
+                            nameVi: speciesInfo[entry.key]['primary_name'],
+                            score: entry.value,
+                            imagePaths: (speciesInfo[entry.key]
                                     ['reference_images'] as List<dynamic>)
                                 .cast<String>(),
                             imageUrl: "",
@@ -154,7 +151,7 @@ class _ResultPageState extends State<ResultPage> {
                         ResultBlock(
                             scientificName: 'No match',
                             nameVi: '',
-                            score: '',
+                            score: 0,
                             imagePaths: [],
                             imageUrl: widget.imageUrl,
                           ),

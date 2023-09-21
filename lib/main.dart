@@ -169,30 +169,25 @@ class _HomePageState extends State<HomePage> {
                 DropzoneView(
                     onCreated: (controller) => this.controller = controller,
                     onDrop: _handleDroppedImage,
-                    onHover:() => setState(()=> highlight = true),
-                    onLeave: ()=> setState(()=> highlight = false),
+                    // onHover:() => setState(()=> highlight = true),
+                    // onLeave: ()=> setState(()=> highlight = false),
                 ),
 
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0),
                   child: Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton.icon(
-                          onPressed: () async {
-                            final events = await controller!.pickFiles();
-                            if(events.isEmpty) return;
-                            _handleDroppedImage(events.first);
-                          },
-                          icon: Icon(Icons.upload),
-                          label: Text(
-                            'Choose File',
-                            style: TextStyle(color: Colors.white, fontSize: 15),
-                          ),
-                        )
-                      ],
-                    ),
+                    child: ElevatedButton.icon(
+                      onPressed: () async {
+                        final events = await controller!.pickFiles();
+                        if(events.isEmpty) return;
+                        _handleDroppedImage(events.first);
+                      },
+                      icon: Icon(Icons.upload),
+                      label: Text(
+                        'Choose File',
+                        style: TextStyle(color: Colors.white, fontSize: 15),
+                      ),
+                    )
                   ),
                 ),
               ]
