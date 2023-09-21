@@ -8,7 +8,7 @@ class ResultBlock extends StatefulWidget {
   // final String scientificName;
   final String nameVi;
   final String scientificName;
-  final String score;
+  final double score;
   final List<String> imagePaths;
   final String imageUrl;
 
@@ -126,7 +126,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       )),
                   SizedBox(width: 20.0),
                   Text(
-                    '${widget.score}%',
+                    '${(widget.score*100).toString()}%',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: theme.primaryColor,
