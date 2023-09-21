@@ -1,24 +1,19 @@
 {
-    "predictions": {
-        "prediction1": {
-            "scientific_name": "Platysternon megacephalum",
-            "score": "70"
-        },
-        "prediction2": {
-            "scientific_name": "Cuora amboinensis",
-            "score": "20"
-        },
-        "prediction3": {
-            "scientific_name": "Cuora galbinifrons",
-            "score": "5"
-        },
-        "prediction4": {
-            "scientific_name": "Cuora bourreti",
-            "score": "3"
-        },
-        "prediction5": {
-            "scientific_name": "Cuora mouhotii",
-            "score": "2"
-        }
-    }
+  "bbox": {
+    "height": 723,
+    "left": 459,
+    "top": 545,
+    "width": 1021
+  },
+  "image_size": {
+    "height": 1500,
+    "width": 2000
+  },
+  "predictions": {
+    "Cuora bourreti": 0.02,
+    "Cuora mouhotii": 0.59,
+    "Cuora picturata": 0.02,
+    "Geoemyda spengleri": 0.2,
+    "Mauremys mutica": 0.16
+  }
 }
