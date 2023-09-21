@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import '../widgets/result_block_widget.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:image_size_getter/image_size_getter.dart';
 import 'package:http/http.dart' as http;
-import 'package:path_provider/path_provider.dart';
-
 
 class ResultPage extends StatefulWidget {
   final String imageUrl;
