@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import '../widgets/result_block_widget.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:http/http.dart' as http;
+import 'package:file_picker/file_picker.dart';
+import 'package:dio/dio.dart';
 
 class ResultPage extends StatefulWidget {
-  final String imageUrl;
+  final FilePickerResult image;
 
-  const ResultPage({required this.imageUrl});
+  const ResultPage({required this.image});
 
   @override
   _ResultPageState createState() => _ResultPageState();
@@ -15,9 +16,20 @@ class ResultPage extends StatefulWidget {
 
 class _ResultPageState extends State<ResultPage> {
   bool _isLoading = true;
-  late Map<String, dynamic> jsonResponse;
+  Map<String, dynamic> jsonResponse = {
+    "bbox": {
+      "height": 0,
+      "left": 0,
+      "top": 0,
+      "width": 0
+    },
+    "image_size": {
+      "height": 10,
+      "width": 10
+    },
+    "predictions": {}
+  };
   Map<String, dynamic> speciesInfo = {};
-  
   double display_image_height = 180;
   double bbox_top=0;
   double bbox_left=0;
@@ -27,8 +39,8 @@ class _ResultPageState extends State<ResultPage> {
   @override
   void initState() {
     super.initState();
-    _processData(widget.imageUrl);
     loadData();
+    runPrediction();
   }
 
   Future<Map<String, dynamic>> loadSpeciesInfo() async {
@@ -42,30 +54,23 @@ class _ResultPageState extends State<ResultPage> {
     // Use the speciesInfo variable to access the JSON data
   }
 
-  Future<Map<String, dynamic>> _placeholderApiCall(String imagePath) async {
-    // Placeholder API call function that returns a mock JSON response
-    // In a real implementation, you would make an actual API request here
-    // and receive the JSON response
-    await Future.delayed(Duration(seconds: 1)); // Simulating API delay
-    return {
-      "bbox": {
-        "height": 723,
-        "left": 459,
-        "top": 545,
-        "width": 1021
-      },
-      "image_size": {
-        "height": 1500,
-        "width": 2000
-      },
-      "predictions": {
-        "Cuora bourreti": 0.02,
-        "Cuora mouhotii": 0.59,
-        "Cuora picturata": 0.02,
-        "Geoemyda spengleri": 0.2,
-        "Mauremys mutica": 0.16
-      }
-    };
+  Future<Map<String, dynamic>> uploadImage() async {
+    var dio = Dio();
+    var uri = "https://vnturtle-flask-f50c26c573de.herokuapp.com/predict";
+
+    var formData = FormData.fromMap({
+      'file': MultipartFile.fromBytes(
+        widget.image.files.single.bytes!,
+        filename: 'image.jpg',
+      ),
+    });
+
+    var response = await dio.post(uri, data: formData);
+
+    var jsonResponse = json.decode(response.toString());
+
+    // await Future.delayed(Duration(seconds: 1)); // Simulating API delay
+    return jsonResponse;
   }
 
   // Convert bounding box to pixels
@@ -74,12 +79,15 @@ class _ResultPageState extends State<ResultPage> {
     return bboxValue * ratio;
   }
 
-  Future<void> _processData(url) async {
-    jsonResponse = await _placeholderApiCall(url);
+  Future<void> runPrediction() async {
+
+    jsonResponse = await uploadImage();
+
     bbox_top = _convertBboxToPixels(jsonResponse['bbox']['top'], jsonResponse['image_size']['height']);
     bbox_left = _convertBboxToPixels(jsonResponse['bbox']['left'], jsonResponse['image_size']['height']);
     bbox_width = _convertBboxToPixels(jsonResponse['bbox']['width'], jsonResponse['image_size']['height']);
     bbox_height = _convertBboxToPixels(jsonResponse['bbox']['height'], jsonResponse['image_size']['height']);
+    
     setState(() {
       _isLoading = false;
     });
@@ -99,8 +107,8 @@ class _ResultPageState extends State<ResultPage> {
             child: Stack(
               children: [
                 // Center(
-                  Image.network(
-                      widget.imageUrl,
+                  Image.memory(
+                      widget.image.files.single.bytes!,
                       height: display_image_height,
                   ),
                 // ),
@@ -145,12 +153,12 @@ class _ResultPageState extends State<ResultPage> {
                             imageUrl: "",
                           ),
 
-                        ResultBlock(
+                        const ResultBlock(
                             scientificName: 'No match',
                             nameVi: '',
                             score: 0,
                             imagePaths: [],
-                            imageUrl: widget.imageUrl,
+                            imageUrl: "",
                           ),
                       ],
                     ),

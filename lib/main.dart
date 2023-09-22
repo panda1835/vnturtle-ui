@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dropzone/flutter_dropzone.dart';
 import 'pages/species_info_page.dart';
 import 'pages/faq_page.dart';
 import 'pages/about_us_page.dart';
 import 'pages/result_page.dart';
+import 'package:file_picker/file_picker.dart';
 
 void main() => runApp(MyApp());
 
@@ -48,14 +48,11 @@ class _HomePageState extends State<HomePage> {
     '1800 1522'
   ];
 
-  DropzoneViewController? controller;
-  bool highlight = false;
-
   void _navigateToPage(String choice) {
     Widget page;
     switch (choice) {
       // case 'Nhận diện':
-      //   page = HomePage();
+      //   page = ImageUploadPage();
       //   break;
       case 'Thông tin loài':
         page = ThongTinLoaiPage();
@@ -79,25 +76,19 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void _handleDroppedImage(dynamic event) async {
-    
-    final name = event.name;
-
-    final mime = await controller!.getFileMIME(event);
-    final byte = await controller!.getFileSize(event);
-    final url = await controller!.createFileUrl(event);
-
-    print('Name : $name');
-    print('Mime: $mime');
-    print('Size : ${byte / (1024 * 1024)}');
-    print('URL: $url');
-    
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => ResultPage(imageUrl: url),
-      ),
+  Future<void> _handleImagePicker() async {
+    FilePickerResult? image = await FilePicker.platform.pickFiles(
+      type: FileType.image,
     );
+
+    if (image != null) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ResultPage(image: image),
+        ),
+      );
+    }
   }
 
   @override
@@ -166,32 +157,21 @@ class _HomePageState extends State<HomePage> {
     
             Stack(
               children: [
-                DropzoneView(
-                    onCreated: (controller) => this.controller = controller,
-                    onDrop: _handleDroppedImage,
-                    // onHover:() => setState(()=> highlight = true),
-                    // onLeave: ()=> setState(()=> highlight = false),
-                ),
-
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0),
                   child: Center(
                     child: ElevatedButton.icon(
-                      onPressed: () async {
-                        final events = await controller!.pickFiles();
-                        if(events.isEmpty) return;
-                        _handleDroppedImage(events.first);
-                      },
+                      onPressed: _handleImagePicker,
                       icon: Icon(Icons.upload),
                       label: Text(
-                        'Choose File',
+                        'Tải ảnh lên',
                         style: TextStyle(color: Colors.white, fontSize: 15),
                       ),
-                    )
+                    ),
                   ),
                 ),
-              ]
-            )
+              ],
+            ),
           ]
         ),
       )
