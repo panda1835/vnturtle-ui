@@ -29,6 +29,7 @@ class _ResultPageState extends State<ResultPage> {
     },
     "predictions": {}
   };
+
   Map<String, dynamic> speciesInfo = {};
   double display_image_height = 180;
   double bbox_top=0;
@@ -95,6 +96,7 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   Widget build(BuildContext context) {
+  
     return Scaffold(
       appBar: AppBar(
         title: Text('VNTURTLE'),
@@ -142,7 +144,8 @@ class _ResultPageState extends State<ResultPage> {
                     child: Column(
                       children: [
                         for (final entry
-                            in jsonResponse['predictions'].entries)
+                            in jsonResponse['predictions']!.entries.toList()
+                            ..sort((a, b) => (b.value as double).compareTo(a.value as double)))
                           ResultBlock(
                             scientificName: entry.key,
                             nameVi: speciesInfo[entry.key]['primary_name'],
