@@ -54,19 +54,22 @@ class DetailedSpeciesPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 8.0),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: speciesInfo['identification_images']
-                        .map<Widget>(
-                          (image) => Image.asset(
-                            image,
-                            width: 200,
-                            height: 200,
-                            fit: BoxFit.cover,
-                          ),
-                        )
-                        .toList(),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: speciesInfo['identification_images']
+                          .map<Widget>(
+                            (image) => Image.asset(
+                              image,
+                              width: 200,
+                              height: 200,
+                              fit: BoxFit.cover,
+                            ),
+                          )
+                          .toList(),
+                    ),
                   ),
                 ),
                 SizedBox(height: 16.0),
@@ -81,19 +84,22 @@ class DetailedSpeciesPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 8.0),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: speciesInfo['reference_images']
-                        .map<Widget>(
-                          (image) => Image.asset(
-                            image,
-                            width: 200,
-                            height: 200,
-                            fit: BoxFit.cover,
-                          ),
-                        )
-                        .toList(),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: speciesInfo['reference_images']
+                          .map<Widget>(
+                            (image) => Image.asset(
+                              image,
+                              width: 200,
+                              height: 200,
+                              fit: BoxFit.cover,
+                            ),
+                          )
+                          .toList(),
+                    ),
                   ),
                 ),
                 SizedBox(height: 16.0),

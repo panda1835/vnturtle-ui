@@ -9,10 +9,11 @@
         "distribution": "Cambodia, miền Nam Trung Quốc, Lào, Myanmar, Thái Lan, Việt Nam",
         "habitat": "Thác nước và suối chảy siết",
         "reference_images": [
-            "images/reference_images/Platysternon_megacephalum/Platysternon_megacephalum_thumbnail.jpg"
+            "images/reference_images/Platysternon_megacephalum/Platysternon_megacephalum_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán"
     },
@@ -26,10 +27,11 @@
         "distribution": "Bangladesh, Bhutan, Brunei, Cambodia, Ấn Độ, Indonesia, Malaysia, Lào, Myanmar (?), Philippines (?), Thái Lan, Việt Nam",
         "habitat": "khu vực đất trũng, ngập nước, ao, đàm lầy và thác nước chảy chậm",
         "reference_images": [
-            "images/reference_images/Cuora_amboinensis/Cuora_amboinensis_thumbnail.jpg"
+            "images/reference_images/Cuora_amboinensis/Cuora_amboinensis_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
@@ -43,10 +45,11 @@
         "distribution": "miền Nam Trung Quốc, Lào, Việt Nam",
         "habitat": "Rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
         "reference_images": [
-            "images/reference_images/Cuora_galbinifrons/Cuora_galbinifrons_thumbnail.jpg"
+            "images/reference_images/Cuora_galbinifrons/Cuora_galbinifrons_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -60,10 +63,11 @@
         "distribution": "Lào, Việt Nam",
         "habitat": "rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
         "reference_images": [
-            "images/reference_images/Cuora_bourreti/Cuora_bourreti_thumbnail.jpg"
+            "images/reference_images/Cuora_bourreti/Cuora_bourreti_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -77,10 +81,11 @@
         "distribution": "miền Trung Việt Nam",
         "habitat": "Rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
         "reference_images": [
-            "images/reference_images/Cuora_picturata/Cuora_picturata_thumbnail.jpg"
+            "images/reference_images/Cuora_picturata/Cuora_picturata_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -94,10 +99,11 @@
         "distribution": "Bangladesh, Bhutan, Trung Quốc, Ấn Độ, Lào, Myanmar, Việt Nam, Thái Lan (?)",
         "habitat": "Rừng, hang động trên núi đá vôi",
         "reference_images": [
-            "images/reference_images/Cuora_mouhotii/Cuora_mouhotii_thumbnail.jpg"
+            "images/reference_images/Cuora_mouhotii/Cuora_mouhotii_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -111,10 +117,11 @@
         "distribution": "Trung Quốc, Lào, Việt Nam",
         "habitat": "các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
-            "images/reference_images/Cuora_cyclornata/Cuora_cyclornata_thumbnail.jpg"
+            "images/reference_images/Cuora_cyclornata/Cuora_cyclornata_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
@@ -128,10 +135,11 @@
         "distribution": "Cambodia, Trung Quốc, Lào, Myanmar, Thái Lan, Việt Nam",
         "habitat": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
-            "images/reference_images/Cyclemys_oldhamii/Cyclemys_oldhamii_thumbnail.jpg"
+            "images/reference_images/Cyclemys_oldhamii/Cyclemys_oldhamii_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -145,10 +153,11 @@
         "distribution": "Cambodia, Việt Nam",
         "habitat": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
-            "images/reference_images/Cyclemys_pulchristriata/Cyclemys_pulchristriata_thumbnail.jpg"
+            "images/reference_images/Cyclemys_pulchristriata/Cyclemys_pulchristriata_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -162,10 +171,11 @@
         "distribution": "Cambodia, Thái Lan, Việt Nam",
         "habitat": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
-            "images/reference_images/Cyclemys_atripons/Cyclemys_atripons_thumbnail.jpg"
+            "images/reference_images/Cyclemys_atripons/Cyclemys_atripons_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -179,10 +189,11 @@
         "distribution": "Trung Quốc, Lào, Việt Nam",
         "habitat": "Rừng thường xanh từ độ cao trung bình",
         "reference_images": [
-            "images/reference_images/Geoemyda_spengleri/Geoemyda_spengleri_thumbnail.jpg"
+            "images/reference_images/Geoemyda_spengleri/Geoemyda_spengleri_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
@@ -196,10 +207,11 @@
         "distribution": "Cambodia, Lào, Malaysia (bán đảo), Myanmar, Thái Lan, Việt Nam",
         "habitat": "Sông, suối, đầm lầy và vùng đất ngập nước ở độ cao thấp đến trung bình",
         "reference_images": [
-            "images/reference_images/Heosemys_grandis/Heosemys_grandis_thumbnail.jpg"
+            "images/reference_images/Heosemys_grandis/Heosemys_grandis_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
@@ -213,10 +225,11 @@
         "distribution": "Cambodia, Lào, Malaysia (Peninsular), Thái Lan, Việt Nam",
         "habitat": "sông, ao chảy chậm, vùng đất ngập nước",
         "reference_images": [
-            "images/reference_images/Heosemys_annandalii/Heosemys_annandalii_thumbnail.jpg"
+            "images/reference_images/Heosemys_annandalii/Heosemys_annandalii_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
@@ -230,10 +243,11 @@
         "distribution": "Cambodia, Lào, Thái Lan (?), Việt Nam",
         "habitat": "Ao, suối, đầm lầy và vùng đất ngập nước ở độ cao thấp",
         "reference_images": [
-            "images/reference_images/Malayemys_subtrijuga/Malayemys_subtrijuga_thumbnail.jpg"
+            "images/reference_images/Malayemys_subtrijuga/Malayemys_subtrijuga_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -247,10 +261,11 @@
         "distribution": "Central Việt Nam",
         "habitat": "ao, hồ, vùng đất ngập nước, suối chảy chậm ở độ cao thấp",
         "reference_images": [
-            "images/reference_images/Mauremys_annamensis/Mauremys_annamensis_thumbnail.jpg"
+            "images/reference_images/Mauremys_annamensis/Mauremys_annamensis_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã để tiêu thụ tại địa phương"
     },
@@ -264,10 +279,11 @@
         "distribution": "Trung Quốc, Nhật Bản, Đài Loan, Việt Nam",
         "habitat": "ao, hồ, đầm lầy, vùng đất ngập nước và suối chảy chậm",
         "reference_images": [
-            "images/reference_images/Mauremys_mutica/Mauremys_mutica_thumbnail.jpg"
+            "images/reference_images/Mauremys_mutica/Mauremys_mutica_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -281,10 +297,11 @@
         "distribution": "Trung Quốc, Đài Loan, Việt Nam",
         "habitat": "sông, ao, hồ và vùng đất ngập nước ở độ cao thấp",
         "reference_images": [
-            "images/reference_images/Mauremys_sinensis/Mauremys_sinensis_thumbnail.jpg"
+            "images/reference_images/Mauremys_sinensis/Mauremys_sinensis_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -298,10 +315,11 @@
         "distribution": "Trung Quốc, Lào, Việt Nam",
         "habitat": "suối trong rừng thường xanh",
         "reference_images": [
-            "images/reference_images/Sacalia_quadriocellata/Sacalia_quadriocellata_thumbnail.jpg"
+            "images/reference_images/Sacalia_quadriocellata/Sacalia_quadriocellata_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
@@ -315,10 +333,11 @@
         "distribution": "Cambodia, Indonesia, Lào, Malaysia, Myanmar, Singapore, Thái Lan, Việt Nam",
         "habitat": "suối, sông chảy chậm, ao và đầm lầy",
         "reference_images": [
-            "images/reference_images/Siebenrockiella_crassicollis/Siebenrockiella_crassicollis_thumbnail.jpg"
+            "images/reference_images/Siebenrockiella_crassicollis/Siebenrockiella_crassicollis_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang"
     },
@@ -332,10 +351,11 @@
         "distribution": "Bangladesh, Bhutan, Cambodia, Ấn Độ, Lào, Malaysia, Myanmar, Nepal, Thái Lan, Việt Nam",
         "habitat": "Forests, grasslands and scrublands at low-mid elevations",
         "reference_images": [
-            "images/reference_images/Indotestudo_elongata/Indotestudo_elongata_thumbnail.jpg"
+            "images/reference_images/Indotestudo_elongata/Indotestudo_elongata_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sắt bắt, tiêu thụ tại địa phương và buôn bán động vật hoang dã xuyên biên giới và mất sinh cảnh sống"
     },
@@ -349,10 +369,11 @@
         "distribution": "Cambodia, Trung Quốc, Lào, Malaysia, Myanmar, Thái Lan, Việt Nam",
         "habitat": "đồi núi và rừng thường xanh từ độ cao trung bình",
         "reference_images": [
-            "images/reference_images/Manouria_impressa/Manouria_impressa_thumbnail.jpg"
+            "images/reference_images/Manouria_impressa/Manouria_impressa_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -366,10 +387,11 @@
         "distribution": "Bangladesh, Cambodia, Ấn Độ, Lào, Myanmar, Thái Lan, Việt Nam",
         "habitat": "sông, hồ và suối",
         "reference_images": [
-            "images/reference_images/Amyda_ornata/Amyda_ornata_thumbnail.jpg"
+            "images/reference_images/Amyda_ornata/Amyda_ornata_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt, buôn bán động vật hoang dã xuyên biên giới và tiêu thụ tại địa phương"
     },
@@ -383,10 +405,11 @@
         "distribution": "Trung Quốc, Việt Nam",
         "habitat": "suối, sông, hồ, ao và đầm lầy ở độ cao thấp đến trung bình",
         "reference_images": [
-            "images/reference_images/Palea_steindachneri/Palea_steindachneri_thumbnail.jpg"
+            "images/reference_images/Palea_steindachneri/Palea_steindachneri_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
@@ -400,10 +423,11 @@
         "distribution": "Bangladesh, Cambodia, Trung Quốc, Ấn Độ, Indonesia, Lào, Malaysia, Myanmar, Philippines, Thái Lan, Việt Nam",
         "habitat": "sông, hồ lớn và vùng nước gần biển",
         "reference_images": [
-            "images/reference_images/Pelochelys_cantorii/Pelochelys_cantorii_thumbnail.jpg"
+            "images/reference_images/Pelochelys_cantorii/Pelochelys_cantorii_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và tiêu thụ tại địa phương"
     },
@@ -417,10 +441,11 @@
         "distribution": "Trung Quốc, Việt Nam",
         "habitat": "sông, suối, hồ, ao và đầm lấy",
         "reference_images": [
-            "images/reference_images/Pelodiscus_variegatus/Pelodiscus_variegatus_thumbnail.jpg"
+            "images/reference_images/Pelodiscus_variegatus/Pelodiscus_variegatus_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống loss"
     },
@@ -434,10 +459,11 @@
         "distribution": ":",
         "habitat": "sông, hồ lớn và vùng đất ngập nước",
         "reference_images": [
-            "images/reference_images/Rafetus_swinhoei/Rafetus_swinhoei_thumbnail.jpg"
+            "images/reference_images/Rafetus_swinhoei/Rafetus_swinhoei_thumbnail.jpg",
+            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
         ],
-        "identification_images": [],
-        "fun_fact": "",
+        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "fun_fact": "Text here",
         "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã tại địa phương"
     }
