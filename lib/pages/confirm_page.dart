@@ -35,22 +35,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
   Future<void> _makeAPICall() async {
     // Make the POST request to the API
     // Replace API_URL with your actual API endpoint
-    // const String API_URL = 'https://example.com/api';
-    // try {
-    //   final response = await http.post(Uri.parse(API_URL));
-    //   if (response.statusCode == 200) {
-    //     // Handle the successful response
-    //     setState(() {
-    //       _isContributed = true;
-    //     });
-    //   } else {
-    //     // Handle other response statuses
-    //     print('API call failed with status: ${response.statusCode}');
-    //   }
-    // } catch (error) {
-    //   // Handle the error
-    //   print('Error making the API call: $error');
-    // }
+    
     await Future.delayed(Duration(seconds: 1));
     setState(() {
       _isContributed = true;
@@ -128,7 +113,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                       ),
                     ),
                     TextSpan(
-                      text: ' để được hỗ trợ',
+                      text: ' để được hỗ trợ.',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.black,
