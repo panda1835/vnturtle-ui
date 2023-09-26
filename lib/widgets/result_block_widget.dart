@@ -8,7 +8,7 @@ class ResultBlock extends StatefulWidget {
   // final String scientificName;
   final String nameVi;
   final String scientificName;
-  final double score;
+  final int score;
   final List<String> imagePaths;
   final String imageUrl;
 
@@ -62,7 +62,7 @@ class _ResultBlockState extends State<ResultBlock> {
           child: Column(
             children: [
               Text(
-                'Không tìm thấy kết quả? Hãy cho chúng mình biết.',
+                'Nếu không tìm thấy loài rùa tương ứng thì hãy cho chúng mình biết.',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               SizedBox(
@@ -126,7 +126,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       )),
                   SizedBox(width: 20.0),
                   Text(
-                    '${(widget.score*100).toString()}%',
+                    '${widget.score.toString()}%',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: theme.primaryColor,

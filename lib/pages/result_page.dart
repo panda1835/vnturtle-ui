@@ -149,7 +149,7 @@ class _ResultPageState extends State<ResultPage> {
                           ResultBlock(
                             scientificName: entry.key,
                             nameVi: speciesInfo[entry.key]['primary_name'],
-                            score: entry.value,
+                            score: ((entry.value*100).toInt()),
                             imagePaths: (speciesInfo[entry.key]
                                     ['reference_images'] as List<dynamic>)
                                 .cast<String>(),
