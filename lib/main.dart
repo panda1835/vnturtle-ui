@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: theme.secondaryHeaderColor,
-        title: Text(
+        title: const Text(
           'VNTURTLE',
         ),
         centerTitle: true,

@@ -22,5 +22,25 @@
     "aboutUs": "About Us",
     "@aboutUs": {
         "description": ""
+    },
+
+    "search": "Search",
+    "@search": {
+        "description": ""
+    },
+
+    "conservationStatus": "Conservation Status",
+    "@conservationStatus": {
+        "description": ""
+    },
+
+    "scientificName": "Scientific Name",
+    "@scientificName": {
+        "description": ""
+    },
+
+    "secondaryName": "Vietnamese Name",
+    "@secondaryName": {
+        "description": ""
     }
 }

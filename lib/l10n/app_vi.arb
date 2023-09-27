@@ -3,5 +3,9 @@
     "uploadButton": "Tải ảnh lên",
     "speciesInfo": "Thông tin loài",
     "fAQ": "Câu hỏi thường gặp",
-    "aboutUs": "Về chúng tôi"
+    "aboutUs": "Về chúng tôi",
+    "search": "Tìm kiếm",
+    "conservationStatus": "Tình trạng bảo tồn",
+    "scientificName": "Tên khoa học",
+    "secondaryName": "Tên tiếng Anh"
 }

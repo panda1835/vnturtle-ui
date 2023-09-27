@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:vnturtle/provider/locale_provider.dart';
+import 'package:vnturtle/widgets/language_switch.dart';
 import 'dart:convert';
 import 'detailed_species_page.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ThongTinLoaiPage extends StatefulWidget {
   @override
@@ -88,19 +92,25 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Text(
           'VNTURTLE', 
         ),
+        centerTitle: true,
+        actions: [
+          LanguageSwitchWidget(),
+          const SizedBox(width: 12,)
+        ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Padding(
+            Padding(
             padding: EdgeInsets.all(16.0),
             child: Text(
-              'Thông Tin Loài',
+              AppLocalizations.of(context)!.speciesInfo,
               style: TextStyle(
                 fontSize: 24.0, 
                 fontWeight: FontWeight.bold),
@@ -111,8 +121,8 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
             child: TextField(
               controller: searchController,
               onChanged: filterSpeciesList,
-              decoration: const InputDecoration(
-                hintText: 'Tìm kiếm',
+              decoration: InputDecoration(
+                hintText: AppLocalizations.of(context)!.search,
                 prefixIcon: Icon(Icons.search),
               ),
             ),
@@ -165,14 +175,14 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                               SizedBox(height: 8.0),
                               Row(
                                 children: [
-                                  Text('Tình trạng bảo tồn: '),
+                                  Text('${AppLocalizations.of(context)!.conservationStatus}: '),
                                   buildConservationStatusText(speciesInfo),
                                 ],
                               ),
                               SizedBox(height: 8.0),
-                              Text('Tên khoa học: ${speciesInfo['scientific_name']}'),
+                              Text('${AppLocalizations.of(context)!.scientificName}: ${speciesInfo['scientific_name']}'),
                               SizedBox(height: 8.0),
-                              Text('Tên tiếng Anh: ${speciesInfo['secondary_name']}'),
+                              Text('${AppLocalizations.of(context)!.secondaryName}: ${speciesInfo['secondary_name']}'),
                             ],
                           ),
                         ),
