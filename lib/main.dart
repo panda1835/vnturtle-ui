@@ -59,38 +59,22 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final List<String> choices = [
-    // 'Nhận diện',
-    'Thông tin loài',
-    // 'Báo cáo vi phạm',
-    'Câu hỏi thường gặp',
-    'Về chúng tôi',
-    'Đường dây nóng bảo vệ động vật hoang dã',
-    '1800 1522'
-  ];
 
-  void _navigateToPage(String choice) {
+  void _navigateToPage(BuildContext context, String choice) {
     Widget page;
-    switch (choice) {
-      // case 'Nhận diện':
-      //   page = ImageUploadPage();
-      //   break;
-      case 'Thông tin loài':
-        page = ThongTinLoaiPage();
-        break;
-      case 'Câu hỏi thường gặp':
-        page = CauHoiThuongGapPage();
-        break;
-      // case 'Báo cáo vi phạm':
-      //   page = BaoCaoViPhamPage();
-      //   break;
-      case 'Về chúng tôi':
-        page = VeChungToiPage();
-        break;
-      default:
-        page = Container();
-    }
 
+    if (choice == AppLocalizations.of(context)!.speciesInfo){
+      page = ThongTinLoaiPage();
+    }
+    else if (choice == AppLocalizations.of(context)!.fAQ){
+      page = CauHoiThuongGapPage();
+    }
+    else if (choice == AppLocalizations.of(context)!.aboutUs){
+      page = VeChungToiPage();
+    }
+    else {
+      page = Container();
+    }
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => page),
@@ -114,6 +98,15 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final List<String> choices = [
+      // 'Nhận diện',
+      AppLocalizations.of(context)!.speciesInfo,
+      // 'Báo cáo vi phạm',
+      AppLocalizations.of(context)!.fAQ,
+      AppLocalizations.of(context)!.aboutUs,
+      'Đường dây nóng bảo vệ động vật hoang dã',
+      '1800 1522'
+    ];
     final theme = Theme.of(context);
 
     return Scaffold(
@@ -154,7 +147,7 @@ class _HomePageState extends State<HomePage> {
               title: Text(choices[index]),
               tileColor: theme.primaryColorLight,
               onTap: () {
-                _navigateToPage(choices[index]);
+                _navigateToPage(context, choices[index]);
               },
             );
           },

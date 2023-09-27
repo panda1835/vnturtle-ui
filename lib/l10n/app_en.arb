@@ -4,8 +4,23 @@
         "description": "The current language"
     },
 
-    "uploadButton": "Upload an image",
+    "uploadButton": "Upload an Image",
     "@language": {
+        "description": ""
+    },
+
+    "speciesInfo": "Species Information",
+    "@speciesInfo": {
+        "description": ""
+    },
+
+    "fAQ": "Frequently Asked Questions",
+    "@fAQ": {
+        "description": ""
+    },
+
+    "aboutUs": "About Us",
+    "@aboutUs": {
         "description": ""
     }
 }

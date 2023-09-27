@@ -1,4 +1,7 @@
 {
     "language": "Tiếng Việt",
-    "uploadButton": "Tải ảnh lên"
+    "uploadButton": "Tải ảnh lên",
+    "speciesInfo": "Thông tin loài",
+    "fAQ": "Câu hỏi thường gặp",
+    "aboutUs": "Về chúng tôi"
 }
