@@ -1,0 +1,11 @@
+{
+    "language": "English",
+    "@language": {
+        "description": "The current language"
+    },
+
+    "uploadButton": "Upload an image",
+    "@language": {
+        "description": ""
+    }
+}

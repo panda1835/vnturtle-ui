@@ -1,33 +1,54 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:vnturtle/l10n/l10n.dart';
+import 'package:vnturtle/provider/locale_provider.dart';
+import 'package:vnturtle/widgets/language_switch.dart';
 import 'pages/species_info_page.dart';
 import 'pages/faq_page.dart';
 import 'pages/about_us_page.dart';
 import 'pages/result_page.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:provider/provider.dart';
+
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'VNTURTLE',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-        scaffoldBackgroundColor: Colors.green.shade50,
-        cardColor: Colors.green.shade100,
-        // buttonTheme: ButtonThemeData(buttonColor: Colors.black),
-        appBarTheme: AppBarTheme(
-          backgroundColor: Colors.green.shade50,
-          iconTheme: IconThemeData(color: Colors.black),
-          titleTextStyle: TextStyle(
-            color: Colors.green,
-            fontFamily: "Happy Monkey",
-            fontSize: 20,
-          )
-        )
-      ),
-      home: HomePage(),
+    return ChangeNotifierProvider(
+      create: (content) => LocaleProvider(),
+      builder: (context, child) {
+        final provider = Provider.of<LocaleProvider>(context);
+        return MaterialApp(
+          title: 'VNTURTLE',
+          theme: ThemeData(
+            primarySwatch: Colors.green,
+            scaffoldBackgroundColor: Colors.green.shade50,
+            cardColor: Colors.green.shade100,
+            // buttonTheme: ButtonThemeData(buttonColor: Colors.black),
+            appBarTheme: AppBarTheme(
+              backgroundColor: Colors.green.shade50,
+              iconTheme: const IconThemeData(color: Colors.black),
+              titleTextStyle: const TextStyle(
+                color: Colors.green,
+                fontFamily: "Happy Monkey",
+                fontSize: 20,
+              )
+            )
+          ),
+          supportedLocales: L10n.all,
+          locale: provider.locale,
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate
+          ],
+          home: HomePage(),
+        );
+      }
     );
   }
 }
@@ -101,6 +122,11 @@ class _HomePageState extends State<HomePage> {
         title: Text(
           'VNTURTLE',
         ),
+        centerTitle: true,
+        actions: [
+          LanguageSwitchWidget(),
+          const SizedBox(width: 12,)
+        ],
       ),
       drawer: Drawer(
         backgroundColor: theme.secondaryHeaderColor,
@@ -164,7 +190,7 @@ class _HomePageState extends State<HomePage> {
                       onPressed: _handleImagePicker,
                       icon: Icon(Icons.upload),
                       label: Text(
-                        'Tải ảnh lên',
+                        AppLocalizations.of(context)!.uploadButton,
                         style: TextStyle(color: Colors.white, fontSize: 15),
                       ),
                     ),
