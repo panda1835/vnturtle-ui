@@ -47,5 +47,30 @@
     "secondaryName": "Vietnamese name",
     "@secondaryName": {
         "description": ""
+    },
+
+    "confirmButton": "Confirm",
+    "@confirmButton": {
+        "description": ""
+    },
+
+    "moreInfoButton": "Information",
+    "@moreInfoButton": {
+        "description": ""
+    },
+
+    "noMatchFoundPrompt": "No match found? Let us know.",
+    "@noMatchFoundPrompt": {
+        "description": ""
+    },
+
+    "reportNoMatchButton": "Report image",
+    "@reportNoMatchButton": {
+        "description": ""
+    },
+    
+    "imageReportedNoti": "We have received your report",
+    "@imageReportedNoti": {
+        "description": ""
     }
 }

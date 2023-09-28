@@ -8,5 +8,10 @@
     "hotline": "Đường dây nóng bảo vệ động vật hoang dã",
     "conservationStatus": "Tình trạng bảo tồn",
     "scientificName": "Tên khoa học",
-    "secondaryName": "Tên tiếng Anh"
+    "secondaryName": "Tên tiếng Anh",
+    "confirmButton": "Xác nhận",
+    "moreInfoButton": "Thông tin",
+    "noMatchFoundPrompt": "Nếu không tìm thấy loài rùa tương ứng thì hãy cho chúng mình biết.",
+    "reportNoMatchButton": "Báo cáo ảnh",
+    "imageReportedNoti": "Báo cáo của bạn đã được hệ thống ghi nhận."
 }

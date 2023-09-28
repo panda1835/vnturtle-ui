@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
+// ignore: must_be_immutable
 class DetailedSpeciesPage extends StatelessWidget {
   final String speciesName;
   Map<String, dynamic> speciesData = {};

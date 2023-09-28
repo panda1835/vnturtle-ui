@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vnturtle/widgets/language_switch.dart';
 import '../widgets/result_block_widget.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
@@ -16,6 +17,7 @@ class ResultPage extends StatefulWidget {
 
 class _ResultPageState extends State<ResultPage> {
   bool _isLoading = true;
+  String currentLocale = '';
   Map<String, dynamic> jsonResponse = {
     "bbox": {
       "height": 0,
@@ -40,19 +42,13 @@ class _ResultPageState extends State<ResultPage> {
   @override
   void initState() {
     super.initState();
-    loadData();
     runPrediction();
   }
 
-  Future<Map<String, dynamic>> loadSpeciesInfo() async {
+  Future<Map<String, dynamic>> loadSpeciesInfo(String locale) async {
     final jsonString =
-        await rootBundle.loadString('content/species_info_vi.json');
+        await rootBundle.loadString('content/species_info_$locale.json');
     return json.decode(jsonString);
-  }
-
-  void loadData() async {
-    speciesInfo = await loadSpeciesInfo();
-    // Use the speciesInfo variable to access the JSON data
   }
 
   Future<Map<String, dynamic>> uploadImage() async {
@@ -96,10 +92,23 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   Widget build(BuildContext context) {
-  
+    if (currentLocale != Localizations.localeOf(context).languageCode){
+      setState(() {
+        currentLocale = Localizations.localeOf(context).languageCode;
+      });
+      loadSpeciesInfo(currentLocale).then((value) => setState(() {
+        speciesInfo = value;
+      },));
+    }
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('VNTURTLE'),
+        title: const Text('VNTURTLE'),
+        centerTitle: true,
+        actions: [
+          LanguageSwitchWidget(),
+          const SizedBox(width: 12,)
+        ],
       ),
       body: Column(
         children: [
