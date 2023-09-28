@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:vnturtle/provider/locale_provider.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 import 'dart:convert';
 import 'detailed_species_page.dart';
@@ -18,31 +16,26 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
   List<String> filteredSpeciesNames = [];
   Map<String, dynamic> speciesData = {};
   Map<String, dynamic> conservationStatusData = {};
+
+  String currentLocale = '';
+
   TextEditingController searchController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
-    loadConservationStatus();
-    loadSpeciesData();
   }
 
-  Future<void> loadConservationStatus() async {
+  Future<Map<String, dynamic>> loadConservationStatus() async {
     String jsonString =
         await rootBundle.loadString('content/conservation_status.json');
-    conservationStatusData = jsonDecode(jsonString);
+    return jsonDecode(jsonString);
   }
 
-  Future<void> loadSpeciesData() async {
+  Future<Map<String, dynamic>> loadSpeciesData(locale) async {
     String jsonString =
-        await rootBundle.loadString('content/species_info_vi.json');
-    speciesData = jsonDecode(jsonString);
-
-    setState(() {
-      speciesNames = speciesData.keys.toList();
-      filteredSpeciesNames = speciesNames;
-    });
-
+        await rootBundle.loadString('content/species_info_$locale.json');
+    return jsonDecode(jsonString);
   }
 
   void filterSpeciesList(String query) {
@@ -76,7 +69,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     // Map<String, dynamic> statusInfo = speciesInfo['conservation_status'];
 
     String hexColor = conservationStatusData[conservationStatus]['hex_color'];
-    String viName = conservationStatusData[conservationStatus]['vi'];
+    String viName = conservationStatusData[conservationStatus][currentLocale];
 
     String newText = '$viName ($conservationStatus)';
 
@@ -93,9 +86,26 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
+    if (currentLocale != Localizations.localeOf(context).languageCode){
+      setState(() {
+        currentLocale = Localizations.localeOf(context).languageCode;
+      });
+      loadConservationStatus().then((value) {
+        setState(() {
+          conservationStatusData = value;
+        });
+      });
+
+      loadSpeciesData(currentLocale).then((value) => setState(() {
+        speciesData = value;
+        speciesNames = speciesData.keys.toList();
+        filteredSpeciesNames = speciesNames;
+      },));
+    }
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'VNTURTLE', 
         ),
         centerTitle: true,
@@ -107,15 +117,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-            Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Text(
-              AppLocalizations.of(context)!.speciesInfo,
-              style: TextStyle(
-                fontSize: 24.0, 
-                fontWeight: FontWeight.bold),
-            ),
-          ),
+          const SizedBox(height: 16.0),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: TextField(
@@ -127,6 +129,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
               ),
             ),
           ),
+          const SizedBox(height: 16.0),
           Expanded(
             child: ListView.builder(
               itemCount: filteredSpeciesNames.length,
@@ -162,7 +165,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 16.0),
+                        const SizedBox(width: 16.0),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -172,16 +175,16 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                                 style:
                                     TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(height: 8.0),
+                              const SizedBox(height: 8.0),
                               Row(
                                 children: [
                                   Text('${AppLocalizations.of(context)!.conservationStatus}: '),
                                   buildConservationStatusText(speciesInfo),
                                 ],
                               ),
-                              SizedBox(height: 8.0),
+                              const SizedBox(height: 8.0),
                               Text('${AppLocalizations.of(context)!.scientificName}: ${speciesInfo['scientific_name']}'),
-                              SizedBox(height: 8.0),
+                              const SizedBox(height: 8.0),
                               Text('${AppLocalizations.of(context)!.secondaryName}: ${speciesInfo['secondary_name']}'),
                             ],
                           ),
