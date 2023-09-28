@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import '../pages/detailed_species_page.dart';
-import 'package:http/http.dart' as http;
 
 import '../pages/confirm_page.dart';
+
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ResultBlock extends StatefulWidget {
   // final String scientificName;
@@ -32,22 +33,6 @@ class _ResultBlockState extends State<ResultBlock> {
     setState(() {
           _isReported = true;
     });
-
-    // Send the POST request to the API
-    // Replace the API_URL with the actual API endpoint
-    // const String API_URL = 'https://example.com/report';
-    // try {
-    //   final response = await http.post(Uri.parse(API_URL));
-    //   if (response.statusCode == 200) {
-    //     setState(() {
-    //       _isReported = true;
-    //     });
-    //   }
-    // } catch (error) {
-    //   // Handle error
-    //   print('Error sending report: $error');
-    // }
-
   }
 
   @override
@@ -56,29 +41,29 @@ class _ResultBlockState extends State<ResultBlock> {
     if (widget.scientificName == 'No match') {
       return Card(
         elevation: 5,
-        margin: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
         child: Padding(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           child: Column(
             children: [
               Text(
-                'Nếu không tìm thấy loài rùa tương ứng thì hãy cho chúng mình biết.',
-                style: TextStyle(fontWeight: FontWeight.bold),
+                AppLocalizations.of(context)!.noMatchFoundPrompt,
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ElevatedButton(
                 onPressed: _isReported ? null : _reportImage,
-                child: Text("Báo cáo ảnh"),
+                child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               if (_isReported)
                 Text(
-                  'Báo cáo của bạn đã được hệ thống ghi nhận.',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  AppLocalizations.of(context)!.imageReportedNoti,
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 )
             ],
           ),
@@ -87,9 +72,9 @@ class _ResultBlockState extends State<ResultBlock> {
     }
     return Card(
       elevation: 5,
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       child: Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -115,16 +100,16 @@ class _ResultBlockState extends State<ResultBlock> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                      margin: EdgeInsets.only(top: 10, bottom: 10),
+                      margin: const EdgeInsets.only(top: 10, bottom: 10),
                       width: 200.0,
                       child: Text(
                         widget.nameVi,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
                         ),
                       )),
-                  SizedBox(width: 20.0),
+                  const SizedBox(width: 20.0),
                   Text(
                     '${widget.score.toString()}%',
                     style: TextStyle(
@@ -151,10 +136,10 @@ class _ResultBlockState extends State<ResultBlock> {
                         ),
                       );
                     },
-                    child: Text('Xác nhận'),
+                    child: Text(AppLocalizations.of(context)!.confirmButton),
                   ),
                 ),
-                SizedBox(width: 8.0),
+                const SizedBox(width: 8.0),
                 Container(
                   width: 130,
                   child: ElevatedButton(
@@ -164,10 +149,10 @@ class _ResultBlockState extends State<ResultBlock> {
                           builder: (BuildContext context) =>
                               DetailedSpeciesPage(speciesName: widget.scientificName));
                     },
-                    child: Text('Thông tin thêm'),
+                    child: Text(AppLocalizations.of(context)!.moreInfoButton),
                   ),
                 ),
-                SizedBox(width: 16.0),
+                const SizedBox(width: 16.0),
               ],
             ),
           ],
