@@ -29,17 +29,22 @@
         "description": ""
     },
 
-    "conservationStatus": "Conservation Status",
+    "hotline": "Hotline to report wildlife crime",
+    "@hotline": {
+        "description": ""
+    },
+
+    "conservationStatus": "Conservation status",
     "@conservationStatus": {
         "description": ""
     },
 
-    "scientificName": "Scientific Name",
+    "scientificName": "Scientific name",
     "@scientificName": {
         "description": ""
     },
 
-    "secondaryName": "Vietnamese Name",
+    "secondaryName": "Vietnamese name",
     "@secondaryName": {
         "description": ""
     }

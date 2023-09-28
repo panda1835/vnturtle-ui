@@ -104,8 +104,8 @@ class _HomePageState extends State<HomePage> {
       // 'Báo cáo vi phạm',
       AppLocalizations.of(context)!.fAQ,
       AppLocalizations.of(context)!.aboutUs,
-      'Đường dây nóng bảo vệ động vật hoang dã',
-      '1800 1522'
+      AppLocalizations.of(context)!.hotline,
+      '18001522'
     ];
     final theme = Theme.of(context);
 
