@@ -26,7 +26,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa đầu to là loài đang được pháp luật bảo vệ .... Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt và buôn bán",
+        "threats": "Săn bắt và buôn bán",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -39,7 +39,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora amboinensis": {
         "scientific_name": "Cuora amboinensis kamaroma",
@@ -68,7 +69,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa hộp lưng đen là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt và buôn bán động vật hoang dã",
+        "threats": "Săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -81,7 +82,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora galbinifrons": {
         "scientific_name": "Cuora galbinifrons",
@@ -110,7 +112,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa hộp trán vàng miền Bắc là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -123,7 +125,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora bourreti": {
         "scientific_name": "Cuora bourreti",
@@ -152,7 +155,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa hộp trán vàng miền Trung là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -165,7 +168,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora picturata": {
         "scientific_name": "Cuora picturata",
@@ -194,7 +198,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa hộp trán vàng miền Nam là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -207,7 +211,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora mouhotii": {
         "scientific_name": "Cuora mouhotii",
@@ -236,7 +241,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa sa nhân là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -249,7 +254,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora (trifasciata) cyclornata": {
         "scientific_name": "Cuora cyclornata",
@@ -278,7 +284,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa hộp ba vạch là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt và buôn bán động vật hoang dã",
+        "threats": "Săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -291,7 +297,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cyclemys oldhamii": {
         "scientific_name": "Cyclemys oldhamii",
@@ -320,7 +327,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa đất Sê-pôn là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -333,7 +340,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cyclemys pulchristriata": {
         "scientific_name": "Cyclemys pulchristriata",
@@ -362,7 +370,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa đất Pul-kin là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -375,7 +383,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cyclemys atripons": {
         "scientific_name": "Cyclemys atripons",
@@ -404,7 +413,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa đất a-tri-pôn là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -417,7 +426,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Geoemyda spengleri": {
         "scientific_name": "Geoemyda spengleri",
@@ -446,7 +456,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa đất Speng-lơ là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt và buôn bán động vật hoang dã",
+        "threats": "Săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -459,7 +469,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Heosemys grandis": {
         "scientific_name": "Heosemys grandis",
@@ -488,7 +499,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa đất lớn là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt và buôn bán động vật hoang dã",
+        "threats": "Săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -501,7 +512,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Heosemys annandalii": {
         "scientific_name": "Heosemys annandalii",
@@ -530,7 +542,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa răng là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt và buôn bán động vật hoang dã",
+        "threats": "Săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -543,7 +555,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Malayemys subtrijuga": {
         "scientific_name": "Malayemys subtrijuga",
@@ -572,7 +585,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa ba gờ là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -585,7 +598,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Mauremys annamensis": {
         "scientific_name": "Mauremys annamensis",
@@ -614,7 +628,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa Trung Bộ là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã để tiêu thụ tại địa phương",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã để tiêu thụ tại địa phương",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -627,7 +641,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Mauremys mutica": {
         "scientific_name": "Mauremys mutica",
@@ -656,7 +671,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa câm là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -669,7 +684,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Mauremys sinensis": {
         "scientific_name": "Mauremys sinensis",
@@ -698,7 +714,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa cổ sọc là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -711,7 +727,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Sacalia quadriocellata": {
         "scientific_name": "Sacalia quadriocellata",
@@ -740,7 +757,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa bốn mắt là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt và buôn bán động vật hoang dã",
+        "threats": "Săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -753,7 +770,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Siebenrockiella crassicollis": {
         "scientific_name": "Siebenrockiella crassicollis",
@@ -782,7 +800,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa cổ bự là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt và buôn bán động vật hoang",
+        "threats": "Săn bắt và buôn bán động vật hoang",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -795,7 +813,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Indotestudo elongata": {
         "scientific_name": "Indotestudo elongata",
@@ -824,7 +843,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa núi vàng là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Sắt bắt, tiêu thụ tại địa phương và buôn bán động vật hoang dã xuyên biên giới và mất sinh cảnh sống",
+        "threats": "Sắt bắt, tiêu thụ tại địa phương và buôn bán động vật hoang dã xuyên biên giới và mất sinh cảnh sống",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -837,7 +856,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Manouria impressa": {
         "scientific_name": "Manouria impressa",
@@ -866,7 +886,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Rùa núi viền là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -879,7 +899,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Amyda ornata": {
         "scientific_name": "Amyda ornata",
@@ -908,7 +929,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Ba ba Nam bộ là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt, buôn bán động vật hoang dã xuyên biên giới và tiêu thụ tại địa phương",
+        "threats": "Săn bắt, buôn bán động vật hoang dã xuyên biên giới và tiêu thụ tại địa phương",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -921,7 +942,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Palea steindachneri": {
         "scientific_name": "Palea steindachneri",
@@ -950,7 +972,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Ba ba gai là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -963,7 +985,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Pelochelys cantorii": {
         "scientific_name": "Pelochelys cantorii",
@@ -992,7 +1015,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Giải là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Săn bắt và tiêu thụ tại địa phương",
+        "threats": "Săn bắt và tiêu thụ tại địa phương",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -1005,7 +1028,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Pelodiscus variegatus": {
         "scientific_name": "Pelodiscus variegatus",
@@ -1034,7 +1058,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Ba ba bụng đốm là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống",
+        "threats": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -1047,7 +1071,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Pelodiscus sinensis": {
         "scientific_name": "Pelodiscus sinensis",
@@ -1076,7 +1101,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Ba ba trơn là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống",
+        "threats": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -1089,7 +1114,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Rafetus swinhoei": {
         "scientific_name": "Rafetus swinhoei",
@@ -1118,7 +1144,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Giải Sin-hoe (rùa Hoàn Kiếm) là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
-        "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã tại địa phương",
+        "threats": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã tại địa phương",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -1131,6 +1157,7 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     }
 }

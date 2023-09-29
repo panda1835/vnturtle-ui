@@ -24,7 +24,7 @@
         ],
         "fun_fact": "",
         "warning": "Big-headed Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and trade",
+        "threats": "Hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -37,7 +37,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora amboinensis": {
         "scientific_name": "Cuora amboinensis kamaroma",
@@ -64,7 +65,7 @@
         ],
         "fun_fact": "",
         "warning": "Malayan Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade",
+        "threats": "Hunting and international trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -77,7 +78,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora galbinifrons": {
         "scientific_name": "Cuora galbinifrons",
@@ -104,7 +106,7 @@
         ],
         "fun_fact": "",
         "warning": "Indochinese Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat degradation, hunting and trade",
+        "threats": "Habitat degradation, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -117,7 +119,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora bourreti": {
         "scientific_name": "Cuora bourreti",
@@ -144,7 +147,7 @@
         ],
         "fun_fact": "",
         "warning": "Bourret's Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat degradation, hunting and trade",
+        "threats": "Habitat degradation, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -157,7 +160,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora picturata": {
         "scientific_name": "Cuora picturata",
@@ -184,7 +188,7 @@
         ],
         "fun_fact": "",
         "warning": "Southern Vietnam Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat degradation, hunting and trade",
+        "threats": "Habitat degradation, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -197,7 +201,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora mouhotii": {
         "scientific_name": "Cuora mouhotii",
@@ -224,7 +229,7 @@
         ],
         "fun_fact": "",
         "warning": "Keeled Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat degradation, hunting and trade",
+        "threats": "Habitat degradation, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -237,7 +242,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cuora cyclornata": {
         "scientific_name": "Cuora (trifasciata) cyclornata",
@@ -264,7 +270,7 @@
         ],
         "fun_fact": "",
         "warning": "Vietnamese Three-striped Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade",
+        "threats": "Hunting and international trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -277,7 +283,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cyclemys oldhamii": {
         "scientific_name": "Cyclemys oldhamii",
@@ -304,7 +311,7 @@
         ],
         "fun_fact": "",
         "warning": "Southern Asian Leaf Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade",
+        "threats": "Habitat loss, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -317,7 +324,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cyclemys pulchristriata": {
         "scientific_name": "Cyclemys pulchristriata",
@@ -344,7 +352,7 @@
         ],
         "fun_fact": "",
         "warning": "Eastern Black-bridged Leaf Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade",
+        "threats": "Habitat loss, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -357,7 +365,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Cyclemys atripons": {
         "scientific_name": "Cyclemys atripons",
@@ -384,7 +393,7 @@
         ],
         "fun_fact": "",
         "warning": "Western Black-Bridged Leaf Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade",
+        "threats": "Habitat loss, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -397,7 +406,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Geoemyda spengleri": {
         "scientific_name": "Geoemyda spengleri",
@@ -424,7 +434,7 @@
         ],
         "fun_fact": "",
         "warning": "Black-breasted Leaf Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade",
+        "threats": "Hunting and international trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -437,7 +447,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Heosemys grandis": {
         "scientific_name": "Heosemys grandis",
@@ -464,7 +475,7 @@
         ],
         "fun_fact": "",
         "warning": "Giant Asian Pond Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade",
+        "threats": "Hunting and international trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -477,7 +488,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Heosemys annandalii": {
         "scientific_name": "Heosemys annandalii",
@@ -504,7 +516,7 @@
         ],
         "fun_fact": "",
         "warning": "Yellow-headed Temple Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade",
+        "threats": "Hunting and international trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -517,7 +529,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Malayemys subtrijuga": {
         "scientific_name": "Malayemys subtrijuga",
@@ -544,7 +557,7 @@
         ],
         "fun_fact": "",
         "warning": "Mekong Snail-eating Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss and hunting",
+        "threats": "Habitat loss and hunting",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -557,7 +570,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Mauremys annamensis": {
         "scientific_name": "Mauremys annamensis",
@@ -584,7 +598,7 @@
         ],
         "fun_fact": "",
         "warning": "Vietnamese Pond Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade for local consumption",
+        "threats": "Habitat loss, hunting and trade for local consumption",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -597,7 +611,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Mauremys mutica": {
         "scientific_name": "Mauremys mutica",
@@ -624,7 +639,7 @@
         ],
         "fun_fact": "",
         "warning": "Asian Yellow Pond Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade",
+        "threats": "Habitat loss, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -637,7 +652,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Mauremys sinensis": {
         "scientific_name": "Mauremys sinensis",
@@ -664,7 +680,7 @@
         ],
         "fun_fact": "",
         "warning": "Chinese Striped-neck Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade",
+        "threats": "Habitat loss, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -677,7 +693,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Sacalia quadriocellata": {
         "scientific_name": "Sacalia quadriocellata",
@@ -704,7 +721,7 @@
         ],
         "fun_fact": "",
         "warning": "Four-eyed Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and trade",
+        "threats": "Hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -717,7 +734,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Siebenrockiella crassicollis": {
         "scientific_name": "Siebenrockiella crassicollis",
@@ -744,7 +762,7 @@
         ],
         "fun_fact": "",
         "warning": "Black Marsh Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and trade",
+        "threats": "Hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -757,7 +775,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Indotestudo elongata": {
         "scientific_name": "Indotestudo elongata",
@@ -784,7 +803,7 @@
         ],
         "fun_fact": "",
         "warning": "Elongated Tortoise is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting, local consumption, international trade and habitat loss",
+        "threats": "Hunting, local consumption, international trade and habitat loss",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -797,7 +816,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Manouria impressa": {
         "scientific_name": "Manouria impressa",
@@ -824,7 +844,7 @@
         ],
         "fun_fact": "",
         "warning": "Impressed Tortoise is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade",
+        "threats": "Habitat loss, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -837,7 +857,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Amyda ornata": {
         "scientific_name": "Amyda ornata",
@@ -864,7 +885,7 @@
         ],
         "fun_fact": "",
         "warning": "Asiatic Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting, international trade and local consumption",
+        "threats": "Hunting, international trade and local consumption",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -877,7 +898,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Palea steindachneri": {
         "scientific_name": "Palea steindachneri",
@@ -904,7 +926,7 @@
         ],
         "fun_fact": "",
         "warning": "Wattle-necked Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade",
+        "threats": "Habitat loss, hunting and trade",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -917,7 +939,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Pelochelys cantorii": {
         "scientific_name": "Pelochelys cantorii",
@@ -944,7 +967,7 @@
         ],
         "fun_fact": "",
         "warning": "Cantor's Giant Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and local consumption",
+        "threats": "Hunting and local consumption",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -957,7 +980,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Pelodiscus variegatus": {
         "scientific_name": "Pelodiscus variegatus",
@@ -984,7 +1008,7 @@
         ],
         "fun_fact": "",
         "warning": "Spotted Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting, local consumption and habitat loss",
+        "threats": "Hunting, local consumption and habitat loss",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -997,7 +1021,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Pelodiscus sinensis": {
         "scientific_name": "Pelodiscus sinensis",
@@ -1036,7 +1061,7 @@
         ],
         "fun_fact": "Text here",
         "warning": "Chinese softshell turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống",
+        "threats": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -1049,7 +1074,8 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     },
     "Rafetus swinhoei": {
         "scientific_name": "Rafetus swinhoei",
@@ -1076,7 +1102,7 @@
         ],
         "fun_fact": "",
         "warning": "Swinhoe's Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade for local consumption",
+        "threats": "Habitat loss, hunting and trade for local consumption",
         "laws": {
             "CITES": "",
             "LDT": "",
@@ -1089,6 +1115,7 @@
             "order": "",
             "family": "",
             "genus": ""
-        }
+        },
+        "characteristics": ""
     }
 }
