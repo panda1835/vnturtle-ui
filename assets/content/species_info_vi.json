@@ -10,11 +10,23 @@
         "habitat": "Thác nước và suối chảy siết",
         "reference_images": [
             "images/reference_images/Platysternon_megacephalum/Platysternon_megacephalum_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa đầu to là loài đang được pháp luật bảo vệ .... Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán"
     },
     "Cuora amboinensis": {
@@ -28,11 +40,23 @@
         "habitat": "khu vực đất trũng, ngập nước, ao, đàm lầy và thác nước chảy chậm",
         "reference_images": [
             "images/reference_images/Cuora_amboinensis/Cuora_amboinensis_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa hộp lưng đen là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
     "Cuora galbinifrons": {
@@ -46,11 +70,23 @@
         "habitat": "Rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
         "reference_images": [
             "images/reference_images/Cuora_galbinifrons/Cuora_galbinifrons_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa hộp trán vàng miền Bắc là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cuora bourreti": {
@@ -64,11 +100,23 @@
         "habitat": "rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
         "reference_images": [
             "images/reference_images/Cuora_bourreti/Cuora_bourreti_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa hộp trán vàng miền Trung là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cuora picturata": {
@@ -82,11 +130,23 @@
         "habitat": "Rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
         "reference_images": [
             "images/reference_images/Cuora_picturata/Cuora_picturata_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa hộp trán vàng miền Nam là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cuora mouhotii": {
@@ -100,11 +160,23 @@
         "habitat": "Rừng, hang động trên núi đá vôi",
         "reference_images": [
             "images/reference_images/Cuora_mouhotii/Cuora_mouhotii_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa sa nhân là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sự xuống cấp sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cuora (trifasciata) cyclornata": {
@@ -118,11 +190,23 @@
         "habitat": "các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Cuora_cyclornata/Cuora_cyclornata_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa hộp ba vạch là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
     "Cyclemys oldhamii": {
@@ -136,11 +220,23 @@
         "habitat": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Cyclemys_oldhamii/Cyclemys_oldhamii_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa đất Sê-pôn là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cyclemys pulchristriata": {
@@ -154,11 +250,23 @@
         "habitat": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Cyclemys_pulchristriata/Cyclemys_pulchristriata_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa đất Pul-kin là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Cyclemys atripons": {
@@ -172,11 +280,23 @@
         "habitat": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Cyclemys_atripons/Cyclemys_atripons_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa đất a-tri-pôn là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Geoemyda spengleri": {
@@ -190,11 +310,23 @@
         "habitat": "Rừng thường xanh từ độ cao trung bình",
         "reference_images": [
             "images/reference_images/Geoemyda_spengleri/Geoemyda_spengleri_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa đất Speng-lơ là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
     "Heosemys grandis": {
@@ -208,11 +340,23 @@
         "habitat": "Sông, suối, đầm lầy và vùng đất ngập nước ở độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Heosemys_grandis/Heosemys_grandis_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa đất lớn là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
     "Heosemys annandalii": {
@@ -226,11 +370,23 @@
         "habitat": "sông, ao chảy chậm, vùng đất ngập nước",
         "reference_images": [
             "images/reference_images/Heosemys_annandalii/Heosemys_annandalii_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa răng là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
     "Malayemys subtrijuga": {
@@ -244,11 +400,23 @@
         "habitat": "Ao, suối, đầm lầy và vùng đất ngập nước ở độ cao thấp",
         "reference_images": [
             "images/reference_images/Malayemys_subtrijuga/Malayemys_subtrijuga_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa ba gờ là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Mauremys annamensis": {
@@ -262,11 +430,23 @@
         "habitat": "ao, hồ, vùng đất ngập nước, suối chảy chậm ở độ cao thấp",
         "reference_images": [
             "images/reference_images/Mauremys_annamensis/Mauremys_annamensis_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa Trung Bộ là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã để tiêu thụ tại địa phương"
     },
     "Mauremys mutica": {
@@ -280,11 +460,23 @@
         "habitat": "ao, hồ, đầm lầy, vùng đất ngập nước và suối chảy chậm",
         "reference_images": [
             "images/reference_images/Mauremys_mutica/Mauremys_mutica_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa câm là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Mauremys sinensis": {
@@ -298,11 +490,23 @@
         "habitat": "sông, ao, hồ và vùng đất ngập nước ở độ cao thấp",
         "reference_images": [
             "images/reference_images/Mauremys_sinensis/Mauremys_sinensis_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa cổ sọc là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Sacalia quadriocellata": {
@@ -316,11 +520,23 @@
         "habitat": "suối trong rừng thường xanh",
         "reference_images": [
             "images/reference_images/Sacalia_quadriocellata/Sacalia_quadriocellata_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa bốn mắt là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang dã"
     },
     "Siebenrockiella crassicollis": {
@@ -334,11 +550,23 @@
         "habitat": "suối, sông chảy chậm, ao và đầm lầy",
         "reference_images": [
             "images/reference_images/Siebenrockiella_crassicollis/Siebenrockiella_crassicollis_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa cổ bự là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và buôn bán động vật hoang"
     },
     "Indotestudo elongata": {
@@ -352,11 +580,23 @@
         "habitat": "Forests, grasslands and scrublands at low-mid elevations",
         "reference_images": [
             "images/reference_images/Indotestudo_elongata/Indotestudo_elongata_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa núi vàng là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sắt bắt, tiêu thụ tại địa phương và buôn bán động vật hoang dã xuyên biên giới và mất sinh cảnh sống"
     },
     "Manouria impressa": {
@@ -370,11 +610,23 @@
         "habitat": "đồi núi và rừng thường xanh từ độ cao trung bình",
         "reference_images": [
             "images/reference_images/Manouria_impressa/Manouria_impressa_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Rùa núi viền là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Amyda ornata": {
@@ -388,11 +640,23 @@
         "habitat": "sông, hồ và suối",
         "reference_images": [
             "images/reference_images/Amyda_ornata/Amyda_ornata_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Ba ba Nam bộ là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt, buôn bán động vật hoang dã xuyên biên giới và tiêu thụ tại địa phương"
     },
     "Palea steindachneri": {
@@ -406,11 +670,23 @@
         "habitat": "suối, sông, hồ, ao và đầm lầy ở độ cao thấp đến trung bình",
         "reference_images": [
             "images/reference_images/Palea_steindachneri/Palea_steindachneri_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Ba ba gai là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã"
     },
     "Pelochelys cantorii": {
@@ -424,11 +700,23 @@
         "habitat": "sông, hồ lớn và vùng nước gần biển",
         "reference_images": [
             "images/reference_images/Pelochelys_cantorii/Pelochelys_cantorii_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Giải là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Săn bắt và tiêu thụ tại địa phương"
     },
     "Pelodiscus variegatus": {
@@ -442,11 +730,23 @@
         "habitat": "sông, suối, hồ, ao và đầm lấy",
         "reference_images": [
             "images/reference_images/Pelodiscus_variegatus/Pelodiscus_variegatus_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Ba ba bụng đốm là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống"
     },
     "Pelodiscus sinensis": {
@@ -460,11 +760,23 @@
         "habitat": "sông, suối, hồ, ao và các khu vực đất ngập nước",
         "reference_images": [
             "images/reference_images/Pelodiscus_sinensis/Pelodiscus_sinensis_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Ba ba trơn là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống"
     },
     "Rafetus swinhoei": {
@@ -478,11 +790,23 @@
         "habitat": "sông, hồ lớn và vùng đất ngập nước",
         "reference_images": [
             "images/reference_images/Rafetus_swinhoei/Rafetus_swinhoei_thumbnail.jpg",
-            "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
         ],
-        "identification_images": ["images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg", "images/placeholder-image.jpeg"],
+        "identification_images": [
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg",
+            "images/placeholder-image.jpeg"
+        ],
         "fun_fact": "Text here",
-        "warning": "Đây là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
+        "warning": "Giải Sin-hoe (rùa Hoàn Kiếm) là loài đang được pháp luật bảo vệ. Nếu bạn bắt gặp hành vi buôn bán hãy báo cáo cho cơ quan chức năng.",
         "threat": "Mất sinh cảnh sống, nạn săn bắt và buôn bán động vật hoang dã tại địa phương"
     }
 }
