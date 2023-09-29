@@ -4,7 +4,6 @@
         "primary_name": "Big-headed Turtle",
         "iucn": "CR",
         "sdvn": "EN",
-        "law": "- CITES Appendix I\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Cambodia, southern China, Laos, Myanmar, Thailand, Vietnam",
         "habitat": "Fast-flowing streams and waterfalls",
@@ -25,14 +24,19 @@
         ],
         "fun_fact": "",
         "warning": "Big-headed Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and trade"
+        "threat": "Hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Cuora amboinensis": {
         "scientific_name": "Cuora amboinensis kamaroma",
         "primary_name": "Malayan Box Turtle",
         "iucn": "EN",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)",
         "secondary_name": "",
         "distribution": "Bangladesh, Bhutan, Brunei, Cambodia, India, Indonesia, Malaysia, Laos, Myanmar (?), Philippines (?), Thailand, Vietnam",
         "habitat": "Lowland wetlands, ponds, marshes and slow-flowing streams",
@@ -53,14 +57,19 @@
         ],
         "fun_fact": "",
         "warning": "Malayan Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade"
+        "threat": "Hunting and international trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Cuora galbinifrons": {
         "scientific_name": "Cuora galbinifrons",
         "primary_name": "Indochinese Box Turtle",
         "iucn": "CR",
         "sdvn": "EN",
-        "law": "- CITES Appendix II\n- Group IB Decree 84/2021/ND-CP (amendment and supplement of Decree 06/2019/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Southern China, Laos, Vietnam",
         "habitat": "Woodlands and evergreen forests at mid- to high elevations",
@@ -81,14 +90,19 @@
         ],
         "fun_fact": "",
         "warning": "Indochinese Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat degradation, hunting and trade"
+        "threat": "Habitat degradation, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Cuora bourreti": {
         "scientific_name": "Cuora bourreti",
         "primary_name": "Bourret's Box Turtle",
         "iucn": "CR",
         "sdvn": "EN",
-        "law": "- CITES Appendix I\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Laos, Vietnam",
         "habitat": "Woodlands and evergreen forests at mid- to high elevations",
@@ -109,14 +123,19 @@
         ],
         "fun_fact": "",
         "warning": "Bourret's Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat degradation, hunting and trade"
+        "threat": "Habitat degradation, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Cuora picturata": {
         "scientific_name": "Cuora picturata",
         "primary_name": "Southern Vietnam Box Turtle",
         "iucn": "CR",
         "sdvn": "EN",
-        "law": "- CITES Appendix I\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Central Vietnam",
         "habitat": "Woodlands and evergreen forests at mid- to high elevations",
@@ -137,14 +156,19 @@
         ],
         "fun_fact": "",
         "warning": "Southern Vietnam Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat degradation, hunting and trade"
+        "threat": "Habitat degradation, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Cuora mouhotii": {
         "scientific_name": "Cuora mouhotii",
         "primary_name": "Keeled Box Turtle",
         "iucn": "EN",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Bangladesh, Bhutan, China, India, Laos, Myanmar, Vietnam, Thailand (?)",
         "habitat": "Limestone forests, caves and mountains",
@@ -165,14 +189,19 @@
         ],
         "fun_fact": "",
         "warning": "Keeled Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat degradation, hunting and trade"
+        "threat": "Habitat degradation, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Cuora cyclornata": {
         "scientific_name": "Cuora (trifasciata) cyclornata",
         "primary_name": "Vietnamese Three-striped Box Turtle",
         "iucn": "CR",
         "sdvn": "CR",
-        "law": "- CITES Appendix II\n- Group IB Decree 84/2021/ND-CP (amendment and supplement of Decree 06/2019/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "China, Laos, Vietnam",
         "habitat": "Forest streams and marshes at low to mid-elevations",
@@ -193,14 +222,19 @@
         ],
         "fun_fact": "",
         "warning": "Vietnamese Three-striped Box Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade"
+        "threat": "Hunting and international trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Cyclemys oldhamii": {
         "scientific_name": "Cyclemys oldhamii",
         "primary_name": "Southern Asian Leaf Turtle",
         "iucn": "EN",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Cambodia, China, Laos, Myanmar, Thailand, Vietnam",
         "habitat": "Forest streams and marshes at low to mid-elevations",
@@ -221,14 +255,19 @@
         ],
         "fun_fact": "",
         "warning": "Southern Asian Leaf Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": "Habitat loss, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Cyclemys pulchristriata": {
         "scientific_name": "Cyclemys pulchristriata",
         "primary_name": "Eastern Black-bridged Leaf Turtle",
         "iucn": "EN",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Cambodia, Vietnam",
         "habitat": "Forest streams and marshes at low to mid-elevations",
@@ -249,14 +288,19 @@
         ],
         "fun_fact": "",
         "warning": "Eastern Black-bridged Leaf Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": "Habitat loss, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Cyclemys atripons": {
         "scientific_name": "Cyclemys atripons",
         "primary_name": "Western Black-Bridged Leaf Turtle",
         "iucn": "EN",
         "sdvn": "",
-        "law": "- CITES Appendix II\n\n\n",
         "secondary_name": "",
         "distribution": "Cambodia, Thailand, Vietnam",
         "habitat": "Forest streams and marshes at low to mid-elevations",
@@ -277,14 +321,19 @@
         ],
         "fun_fact": "",
         "warning": "Western Black-Bridged Leaf Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": "Habitat loss, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Geoemyda spengleri": {
         "scientific_name": "Geoemyda spengleri",
         "primary_name": "Black-breasted Leaf Turtle",
         "iucn": "EN",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "China, Laos, Vietnam",
         "habitat": "Montane forests at mid- to high elevations",
@@ -305,14 +354,19 @@
         ],
         "fun_fact": "",
         "warning": "Black-breasted Leaf Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade"
+        "threat": "Hunting and international trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Heosemys grandis": {
         "scientific_name": "Heosemys grandis",
         "primary_name": "Giant Asian Pond Turtle",
         "iucn": "CR",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Cambodia, Laos, Malaysia (Peninsular), Myanmar, Thailand, Vietnam",
         "habitat": "Rivers, streams, marshes, and wetlands at low to mid-elevations",
@@ -333,14 +387,19 @@
         ],
         "fun_fact": "",
         "warning": "Giant Asian Pond Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade"
+        "threat": "Hunting and international trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Heosemys annandalii": {
         "scientific_name": "Heosemys annandalii",
         "primary_name": "Yellow-headed Temple Turtle",
         "iucn": "CR",
         "sdvn": "EN",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Cambodia, Laos, Malaysia (Peninsular), Thailand, Vietnam",
         "habitat": "Slow-flowing rivers, ponds and wetlands",
@@ -361,14 +420,19 @@
         ],
         "fun_fact": "",
         "warning": "Yellow-headed Temple Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and international trade"
+        "threat": "Hunting and international trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Malayemys subtrijuga": {
         "scientific_name": "Malayemys subtrijuga",
         "primary_name": "Mekong Snail-eating Turtle",
         "iucn": "NT",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Cambodia, Laos, Thailand (?), Vietnam",
         "habitat": "Ponds, streams, swamps, marshes, and wetlands at low elevations",
@@ -389,14 +453,19 @@
         ],
         "fun_fact": "",
         "warning": "Mekong Snail-eating Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss and hunting"
+        "threat": "Habitat loss and hunting",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Mauremys annamensis": {
         "scientific_name": "Mauremys annamensis",
         "primary_name": "Vietnamese Pond Turtle",
         "iucn": "CR",
         "sdvn": "CR",
-        "law": "- CITES Appendix II\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Central Vietnam",
         "habitat": "Ponds, marshes, wetlands and slow-moving streams at low elevations",
@@ -417,14 +486,19 @@
         ],
         "fun_fact": "",
         "warning": "Vietnamese Pond Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade for local consumption"
+        "threat": "Habitat loss, hunting and trade for local consumption",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Mauremys mutica": {
         "scientific_name": "Mauremys mutica",
         "primary_name": "Asian Yellow Pond Turtle",
         "iucn": "CR",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "China, Japan, Taiwan, Vietnam",
         "habitat": "Ponds, marshes, wetlands and slow-moving streams",
@@ -445,14 +519,19 @@
         ],
         "fun_fact": "",
         "warning": "Asian Yellow Pond Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": "Habitat loss, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Mauremys sinensis": {
         "scientific_name": "Mauremys sinensis",
         "primary_name": "Chinese Striped-neck Turtle",
         "iucn": "CR",
         "sdvn": "",
-        "law": "- CITES Appendix III\n\n\n",
         "secondary_name": "",
         "distribution": "China, Taiwan, Vietnam",
         "habitat": "Rivers, ponds and wetlands at low elevations",
@@ -473,14 +552,19 @@
         ],
         "fun_fact": "",
         "warning": "Chinese Striped-neck Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": "Habitat loss, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Sacalia quadriocellata": {
         "scientific_name": "Sacalia quadriocellata",
         "primary_name": "Four-eyed Turtle",
         "iucn": "CR",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "China, Laos, Vietnam",
         "habitat": "Woodland streams in montane forests",
@@ -501,14 +585,19 @@
         ],
         "fun_fact": "",
         "warning": "Four-eyed Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and trade"
+        "threat": "Hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Siebenrockiella crassicollis": {
         "scientific_name": "Siebenrockiella crassicollis",
         "primary_name": "Black Marsh Turtle",
         "iucn": "EN",
         "sdvn": "",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Cambodia, Indonesia, Laos, Malaysia, Myanmar, Singapore, Thailand, Vietnam",
         "habitat": "Slow-flowing rivers, streams, ponds and marshes",
@@ -529,14 +618,19 @@
         ],
         "fun_fact": "",
         "warning": "Black Marsh Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and trade"
+        "threat": "Hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Indotestudo elongata": {
         "scientific_name": "Indotestudo elongata",
         "primary_name": "Elongated Tortoise",
         "iucn": "CR",
         "sdvn": "EN",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Bangladesh, Bhutan, Cambodia, India, Laos, Malaysia, Myanmar, Nepal, Thailand, Vietnam",
         "habitat": "Forests, grasslands and scrublands at low-mid elevations",
@@ -557,14 +651,19 @@
         ],
         "fun_fact": "",
         "warning": "Elongated Tortoise is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting, local consumption, international trade and habitat loss"
+        "threat": "Hunting, local consumption, international trade and habitat loss",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Manouria impressa": {
         "scientific_name": "Manouria impressa",
         "primary_name": "Impressed Tortoise",
         "iucn": "EN",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Cambodia, China, Laos, Malaysia, Myanmar, Thailand, Vietnam",
         "habitat": "Hilly and montane forests at mid-to high elevations",
@@ -585,14 +684,19 @@
         ],
         "fun_fact": "",
         "warning": "Impressed Tortoise is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": "Habitat loss, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Amyda ornata": {
         "scientific_name": "Amyda ornata",
         "primary_name": "Asiatic Softshell Turtle",
         "iucn": "VU",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Bangladesh, Cambodia, India, Laos, Myanmar, Thailand, Vietnam",
         "habitat": "Various lakes, streams and rivers",
@@ -613,14 +717,19 @@
         ],
         "fun_fact": "",
         "warning": "Asiatic Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting, international trade and local consumption"
+        "threat": "Hunting, international trade and local consumption",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Palea steindachneri": {
         "scientific_name": "Palea steindachneri",
         "primary_name": "Wattle-necked Softshell Turtle",
         "iucn": "CR",
         "sdvn": "VU",
-        "law": "- CITES Appendix II\n- Group IIB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "China, Vietnam",
         "habitat": "Streams, rivers, lakes, ponds and marshes at low-mid elevations",
@@ -641,14 +750,19 @@
         ],
         "fun_fact": "",
         "warning": "Wattle-necked Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade"
+        "threat": "Habitat loss, hunting and trade",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Pelochelys cantorii": {
         "scientific_name": "Pelochelys cantorii",
         "primary_name": "Cantor's Giant Softshell Turtle",
         "iucn": "CR",
         "sdvn": "EN",
-        "law": "- CITES Appendix II\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\n\n",
         "secondary_name": "",
         "distribution": "Bangladesh, Cambodia, China, India, Indonesia, Laos, Malaysia, Myanmar, Philippines, Thailand, Vietnam",
         "habitat": "Large rivers, lakes and coastal waters",
@@ -669,14 +783,19 @@
         ],
         "fun_fact": "",
         "warning": "Cantor's Giant Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting and local consumption"
+        "threat": "Hunting and local consumption",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Pelodiscus variegatus": {
         "scientific_name": "Pelodiscus variegatus",
         "primary_name": "Spotted Softshell Turtle",
         "iucn": "NM",
         "sdvn": "",
-        "law": "",
         "secondary_name": "",
         "distribution": "China, Vietnam",
         "habitat": "Rivers, streams, lakes, ponds and wetlands",
@@ -697,14 +816,19 @@
         ],
         "fun_fact": "",
         "warning": "Spotted Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Hunting, local consumption and habitat loss"
+        "threat": "Hunting, local consumption and habitat loss",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Pelodiscus sinensis": {
         "scientific_name": "Pelodiscus sinensis",
         "primary_name": "Chinese softshell turtle",
         "iucn": "VU",
         "sdvn": "",
-        "law": "Luật lâm nghiệp (2017)",
         "secondary_name": "Ba ba trơn",
         "distribution": "Trung Quốc, Việt Nam, Đài Loan, Hàn Quốc, Nga, và Nhật Bản",
         "habitat": "sông, suối, hồ, ao và các khu vực đất ngập nước",
@@ -737,14 +861,19 @@
         ],
         "fun_fact": "Text here",
         "warning": "Chinese softshell turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống"
+        "threat": "Sắn bắt, tiêu thụ tại địa phương và mất sinh cảnh sống",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     },
     "Rafetus swinhoei": {
         "scientific_name": "Rafetus swinhoei",
         "primary_name": "Swinhoe's Softshell Turtle",
         "iucn": "CR",
         "sdvn": "CR",
-        "law": "- CITES Appendix II\n- Group IB Decree 06/2019/ND-CP (amended and supplemented by Decree 84/2021/ND-CP)\n- Decree 160/2013/ND-CP (amended and supplemented by Decree 64/2019/ND-CP)\n\nHistoric: large river system of China and Vietnam\nCurrent: Suzhou Zoo, China and Dong Mo lake and Xuan Khanh lake, Hanoi, Vietnam\n\n",
         "secondary_name": "",
         "distribution": ":",
         "habitat": "Large rivers, lakes and wetlands",
@@ -765,6 +894,12 @@
         ],
         "fun_fact": "",
         "warning": "Swinhoe's Softshell Turtle is protected under Vietnam laws ... If you encounter this species being sold, please report it to environmental officials. Dial hotline 18001522 for support.",
-        "threat": "Habitat loss, hunting and trade for local consumption"
+        "threat": "Habitat loss, hunting and trade for local consumption",
+        "laws": {
+            "CITES": "",
+            "LDT": "",
+            "ND160": "",
+            "ND06": ""
+        }
     }
 }
