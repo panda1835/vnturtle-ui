@@ -104,6 +104,11 @@
         "description": ""
     },
 
+    "contributeThankyouMessage": "Thank you for your contribution. Your contribution will help us have more data to improve the recognition quality of VNTurtle.",
+    "@contributeThankyouMessage": {
+        "description": ""
+    },
+
     "close": "Close",
     "@close": {
         "description": ""

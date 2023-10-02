@@ -132,43 +132,54 @@ class _ConfirmPageState extends State<ConfirmPage> {
               ),
             ),
             SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: _isContributed ? null : _makeAPICall,
-              child: Text(AppLocalizations.of(context)!.contributeImage),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(width: 20,),
+                ElevatedButton(
+                  onPressed: _isContributed ? null : _makeAPICall,
+                  child: Text(AppLocalizations.of(context)!.contributeImage),
+                ),
+
+                Container(
+                  width: 20,
+                  child: Tooltip(
+                    message: AppLocalizations.of(context)!.contributeImageMessage,
+                    height: 10,
+                    child: IconButton(
+                      icon: Icon(Icons.help_outline),
+                      onPressed: () {
+                        // Handle the tooltip button click
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: Text(AppLocalizations.of(context)!.contributeImage),
+                              content: Text(AppLocalizations.of(context)!.contributeImageMessage),
+                              actions: [
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: Text(AppLocalizations.of(context)!.close),
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                      }
+                    )
+                  ),
+                ),
+              ],
             ),
             SizedBox(height: 20),
-            Tooltip(
-              message: AppLocalizations.of(context)!.contributeImageMessage,
-              height: 10,
-              child: IconButton(
-                icon: Icon(Icons.help_outline),
-                onPressed: () {
-                  // Handle the tooltip button click
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return AlertDialog(
-                        title: Text(AppLocalizations.of(context)!.contributeImage),
-                        content: Text(AppLocalizations.of(context)!.contributeImageMessage),
-                        actions: [
-                          TextButton(
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                            child: Text(AppLocalizations.of(context)!.close),
-                          ),
-                        ],
-                      );
-                    },
-                  );
-                }
-              )
-            ),
+            
             if (_isContributed)
               Container(
                 width: 400,
                 child: Text(
-                  """Cảm ơn đóng góp của bạn. Đóng góp của bạn sẽ giúp chúng mình có thêm dữ liệu để cải thiện chất lượng nhận diện của VNTurtle!""",
+                  AppLocalizations.of(context)!.contributeThankyouMessage,
                 ),
               ),
           ],
