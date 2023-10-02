@@ -125,41 +125,40 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                   itemBuilder: (BuildContext context, int index) {
                     final lawKey = speciesInfo['laws'].keys.elementAt(index);
                     final lawValue = speciesInfo['laws'][lawKey];
-                    if (lawKey == 'CITES' && lawValue != ""){
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 32.0),
-                        child: Row(
-                          children: [
-                            Flexible(
-                              child: Text("- ${lawInfo[lawKey][lawValue]['full_name'][currentLocale]}")
-                            ),
-                          ],
-                        ),
+                    if (lawValue != ""){
+                      return Row(
+                        children: [
+                          SizedBox(width: 32,),
+                          Flexible(
+                            child: Text("- ${lawInfo[lawKey][lawValue]['full_name'][currentLocale]}")
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.help_outline),
+                            iconSize: 14,
+                            onPressed: () {
+                              // Handle the tooltip button click
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return AlertDialog(
+                                    title: Text(AppLocalizations.of(context)!.lawInfoTitle),
+                                    content: Text(lawInfo[lawKey][lawValue]['brief_description'][currentLocale]),
+                                    actions: [
+                                      TextButton(
+                                        onPressed: () {
+                                          Navigator.of(context).pop();
+                                        },
+                                        child: Text(AppLocalizations.of(context)!.close),
+                                      ),
+                                    ],
+                                  );
+                                },
+                              );
+                            }
+                          )
+                        ],
                       );
                     } 
-                    if (lawKey == 'ND06' && lawValue != ""){
-                      return Padding(
-                        padding: const EdgeInsets.only(left: 32.0),
-                        child: Row(
-                          children: [
-                            Flexible(
-                              child: Text("- ${lawInfo[lawKey][lawValue]['full_name'][currentLocale]}")
-                            )
-                          ],
-                        ),
-                      );
-                    } 
-                    if (lawKey == 'ND160' && lawValue == 'x'){
-                      return Padding(
-                        padding: EdgeInsets.only(left: 32),
-                        child: Row(
-                          children: [
-                            Flexible(
-                              child: Text("- ${lawInfo[lawKey]['full_name'][currentLocale]}")
-                            )
-                          ]),
-                      );
-                    }
 
                     return SizedBox(height: 1,);
                   }

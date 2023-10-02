@@ -109,6 +109,11 @@
         "description": ""
     },
 
+    "lawInfoTitle": "Law information",
+    "@lawInfoTitle": {
+        "description": ""
+    },
+
     "close": "Close",
     "@close": {
         "description": ""
