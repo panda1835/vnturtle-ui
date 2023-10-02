@@ -77,5 +77,10 @@
     "imageReportedNoti": "We have received your report",
     "@imageReportedNoti": {
         "description": ""
+    },
+
+    "legalProtection": "Legal protection",
+    "@legalProtection": {
+        "description": ""
     }
 }

@@ -17,6 +17,7 @@ class DetailedSpeciesPage extends StatefulWidget {
 
 class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
   Map<String, dynamic> speciesData = {};
+  Map<String, dynamic> lawInfo = {};
 
   String currentLocale = "";
 
@@ -26,14 +27,23 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
     return jsonDecode(jsonString);
   }
 
+  Future<Map<String, dynamic>> loadLawInfo() async {
+    String jsonString =
+        await rootBundle.loadString('content/laws.json');
+    return jsonDecode(jsonString);
+  }
+
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
+
     if (currentLocale != Localizations.localeOf(context).languageCode){
       setState(() {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
-      
+      loadLawInfo().then((value) => setState(() {
+        lawInfo = value;
+      }));
     }
     return FutureBuilder(
       future: loadSpeciesData(currentLocale),
@@ -101,7 +111,60 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     ],
                   ),
                 ),
-               
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text(
+                    "${AppLocalizations.of(context)!.legalProtection}",
+                    style: TextStyle(fontSize: 18.0),
+                  ),
+                ),
+                ListView.builder(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  itemCount: speciesInfo['laws'].length,
+                  itemBuilder: (BuildContext context, int index) {
+                    final lawKey = speciesInfo['laws'].keys.elementAt(index);
+                    final lawValue = speciesInfo['laws'][lawKey];
+                    if (lawKey == 'CITES' && lawValue != ""){
+                      return Padding(
+                        padding: const EdgeInsets.only(left: 32.0),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Text("- ${lawInfo[lawKey][lawValue]['full_name'][currentLocale]}")
+                            ),
+                          ],
+                        ),
+                      );
+                    } 
+                    if (lawKey == 'ND06' && lawValue != ""){
+                      return Padding(
+                        padding: const EdgeInsets.only(left: 32.0),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Text("- ${lawInfo[lawKey][lawValue]['full_name'][currentLocale]}")
+                            )
+                          ],
+                        ),
+                      );
+                    } 
+                    if (lawKey == 'ND160' && lawValue == 'x'){
+                      return Padding(
+                        padding: EdgeInsets.only(left: 32),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Text("- ${lawInfo[lawKey]['full_name'][currentLocale]}")
+                            )
+                          ]),
+                      );
+                    }
+
+                    return SizedBox(height: 1,);
+                  }
+                ),
+                
                 SizedBox(height: 8.0),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
