@@ -82,9 +82,9 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
           'VNTURTLE', 
         ),
         centerTitle: true,
-        actions: [
+        actions: const [
           LanguageSwitchWidget(),
-          const SizedBox(width: 12,)
+          SizedBox(width: 12,)
         ],
       ),
       body: Column(
@@ -123,7 +123,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                         width: 0.5, // Border width
                       ),
                     ),
-
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -152,7 +151,10 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                               Row(
                                 children: [
                                   Text('${AppLocalizations.of(context)!.conservationStatus}: '),
-                                  ConservationStatusText(conservationStatus: speciesInfo['iucn'],fontSize: 14,),
+                                  Flexible(
+                                    fit: FlexFit.loose,
+                                    child: ConservationStatusText(conservationStatus: speciesInfo['iucn'],fontSize: 14,)
+                                  ),
                                 ],
                               ),
                               const SizedBox(height: 8.0),
