@@ -64,11 +64,11 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
           SizedBox(width: 12,)
         ],
       ),
-      body: ListView(
-        children: [
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView(
+          children: [
+            Center(
               child: Text(
                 speciesInfo['primary_name'],
                 style: TextStyle(
@@ -78,103 +78,112 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                 ),
               ),
             ),
-          ),
-          SizedBox(height: 8.0),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Container(
-              child: Text(
-                "${AppLocalizations.of(context)!.scientificName}: ${speciesInfo['scientific_name']}",
-                style: TextStyle(fontSize: 18.0),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
-              "${AppLocalizations.of(context)!.otherName}: ${speciesInfo['other_names']}",
-              style: TextStyle(fontSize: 18.0),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
-              "${AppLocalizations.of(context)!.secondaryName}: ${speciesInfo['secondary_name']}",
-              style: TextStyle(fontSize: 18.0),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Row(
+            SizedBox(height: 16.0),
+            Row(
               children: [
-                Text(
-                  "${AppLocalizations.of(context)!.conservationStatus}: ",
-                  style: TextStyle(fontSize: 18.0),
+                Container(
+                  width: 150,
+                  child: Text(
+                    "${AppLocalizations.of(context)!.scientificName}: ",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Text(speciesInfo['scientific_name'])
+              ],
+            ),
+            SizedBox(height: 8.0),
+            Row(
+              children: [
+                Container(
+                  width: 150,
+                  child: Text(
+                    "${AppLocalizations.of(context)!.otherName}:",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Text("${speciesInfo['other_names']}")
+              ],
+            ),
+            SizedBox(height: 8.0),
+            Row(
+              children: [
+                Container(
+                  width: 150,
+                  child: Text(
+                    "${AppLocalizations.of(context)!.secondaryName}:",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Text("${speciesInfo['secondary_name']}")
+              ],
+            ),
+            SizedBox(height: 8.0),
+            Row(
+              children: [
+                Container(
+                  width: 150,
+                  child: Text(
+                    "${AppLocalizations.of(context)!.conservationStatus}: ",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ),
                 Flexible(
                   fit: FlexFit.loose,
-                  child: ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 18)
+                  child: ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 14)
                 )
               ],
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
-              "${AppLocalizations.of(context)!.legalProtection}",
-              style: TextStyle(fontSize: 18.0),
+            SizedBox(height: 8.0),
+            Text(
+              "${AppLocalizations.of(context)!.legalProtection}:",
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
-          ),
-          ListView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: speciesInfo['laws'].length,
-            itemBuilder: (BuildContext context, int index) {
-              final lawKey = speciesInfo['laws'].keys.elementAt(index);
-              final lawValue = speciesInfo['laws'][lawKey];
-              if (lawValue != ""){
-                return Row(
-                  children: [
-                    SizedBox(width: 32,),
-                    Flexible(
-                      child: Text("- ${lawInfo[lawKey][lawValue]['full_name'][currentLocale]}")
-                    ),
-                    IconButton(
-                      icon: Icon(Icons.help_outline),
-                      iconSize: 14,
-                      onPressed: () {
-                        // Handle the tooltip button click
-                        showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return AlertDialog(
-                              title: Text(AppLocalizations.of(context)!.lawInfoTitle),
-                              content: Text(lawInfo[lawKey][lawValue]['brief_description'][currentLocale]),
-                              actions: [
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  child: Text(AppLocalizations.of(context)!.close),
-                                ),
-                              ],
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: speciesInfo['laws'].keys
+                .map<Widget>((lawKey) {
+                  final lawValue = speciesInfo['laws'][lawKey];
+                  if (lawValue != "") {
+                    return Row(
+                      children: [
+                        SizedBox(width: 32),
+                        Flexible(
+                          child: Text("- ${lawInfo[lawKey][lawValue]['full_name'][currentLocale]}"),
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.help_outline),
+                          iconSize: 14,
+                          onPressed: () {
+                            // Handle the tooltip button click
+                            showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return AlertDialog(
+                                  title: Text(AppLocalizations.of(context)!.lawInfoTitle),
+                                  content: Text(lawInfo[lawKey][lawValue]['brief_description'][currentLocale]),
+                                  actions: [
+                                    TextButton(
+                                      onPressed: () {
+                                        Navigator.of(context).pop();
+                                      },
+                                      child: Text(AppLocalizations.of(context)!.close),
+                                    ),
+                                  ],
+                                );
+                              },
                             );
                           },
-                        );
-                      }
-                    )
-                  ],
-                );
-              } 
-
-              return SizedBox(height: 1,);
-            }
-          ),
-          
-          SizedBox(height: 8.0),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: SingleChildScrollView(
+                        ),
+                      ],
+                    );
+                  }
+                  return SizedBox(height: 1);
+                })
+                .toList(),
+            ),
+            
+            SizedBox(height: 8.0),
+            SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: speciesInfo['reference_images']
@@ -189,36 +198,69 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     .toList(),
               ),
             ),
-          ),
-          SizedBox(height: 16.0),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
+            SizedBox(height: 16.0),
+            Text(
               AppLocalizations.of(context)!.taxonomy,
               style: TextStyle(
-                fontSize: 18.0,
+                fontSize: 20.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
-          ),
-          SizedBox(height: 16.0),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
+            SizedBox(height: 8,),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      width: 60,
+                      child: Text(
+                        "${AppLocalizations.of(context)!.taxonomyClass}:",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Text(speciesInfo['taxonomy']['class'])
+                  ],
+                ),
+                SizedBox(height: 8,),
+                Row(
+                  children: [
+                    Container(
+                      width: 60,
+                      child: Text(
+                        "${AppLocalizations.of(context)!.taxonomyOrder}:",
+                        style: TextStyle(fontWeight: FontWeight.bold)
+                      ),
+                    ),
+                    Text(speciesInfo['taxonomy']['order'])
+                  ],
+                ),
+                SizedBox(height: 8,),
+                Row(
+                  children: [
+                    Container(
+                      width: 60,
+                      child: Text(
+                        "${AppLocalizations.of(context)!.taxonomyFamily}:",
+                        style: TextStyle(fontWeight: FontWeight.bold)
+                      ),
+                    ),
+                    Text(speciesInfo['taxonomy']['family'])
+                  ],
+                )
+              ],
+            ),
+            SizedBox(height: 16.0),
+            Text(
               AppLocalizations.of(context)!.characteristics,
               style: TextStyle(
-                fontSize: 18.0,
+                fontSize: 20.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Text(speciesInfo['characteristics']),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: SingleChildScrollView(
+            SizedBox(height: 8.0),
+            Text(speciesInfo['characteristics']),
+            SizedBox(height: 16.0),
+            SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: speciesInfo['identification_images']
@@ -233,31 +275,45 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     .toList(),
               ),
             ),
-          ),
-        
-          SizedBox(height: 8.0),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
-              AppLocalizations.of(context)!.distribution,
-              style: TextStyle(fontSize: 18.0),
+          
+            SizedBox(height: 16.0),
+            Text(
+              AppLocalizations.of(context)!.habitat,
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
+            SizedBox(height: 8.0),
+            Text(
+              speciesInfo['habitat'],
+            ),
+            SizedBox(height: 16.0),
+            Text(
+              AppLocalizations.of(context)!.distribution,
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 8.0),
+            Text(
               speciesInfo['distribution'],
             ),
-          ),
-          SizedBox(height: 8.0),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text(
-              'Thông tin thú vị: ${speciesInfo['fun_fact']}',
-              style: TextStyle(fontSize: 18.0),
+            SizedBox(height: 16.0),
+            Text(
+              AppLocalizations.of(context)!.funFacts,
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
-          ),
-        ],
+            SizedBox(height: 8.0),
+            Text(
+              speciesInfo['fun_fact'],
+            ),
+            SizedBox(height: 16.0),
+            Text(
+              AppLocalizations.of(context)!.referenceSources,
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 8.0),
+            Text(
+              speciesInfo['reference_sources'][0],
+            ),
+          ],
+        ),
       ),
     );
   }
