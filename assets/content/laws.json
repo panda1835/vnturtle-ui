@@ -1,0 +1,62 @@
+{
+    "CITES": {
+        "I": {
+            "brief_description": {
+                "vi": "Giải thích CITES I",
+                "en": "CITES I brief_description"
+            },
+            "hex_color": "#B53522"
+        },
+        "II": {
+            "brief_description": {
+                "vi": "Giải thích CITES II",
+                "en": "CITES I brief_description"
+            },
+            "hex_color": "#E38A47"
+        },
+        "III": {
+            "brief_description": {
+                "vi": "Giải thích CITES III",
+                "en": "CITES I brief_description"
+            },
+            "hex_color": "#F7CB47"
+        }
+    },
+    "LDT": {
+        "brief_description": {
+            "vi": "Giải thích LDT",
+            "en": "LDT brief_description"
+        },
+        "hex_color": "#000000"
+    },
+    "ND160": {
+        "brief_description": {
+            "vi": "Giải thích ND160",
+            "en": "ND160 brief_description"
+        },
+        "hex_color": "#000000"
+    },
+    "ND06": {
+        "IB": {
+            "brief_description": {
+                "vi": "Giải thích ND06 I",
+                "en": "ND06 I brief_description"
+            },
+            "hex_color": "#B53522"
+        },
+        "IIB": {
+            "brief_description": {
+                "vi": "Giải thích ND06 I",
+                "en": "ND06 I brief_description"
+            },
+            "hex_color": "#E38A47"
+        },
+        "IIIB": {
+            "brief_description": {
+                "vi": "Giải thích ND06 I",
+                "en": "ND06 I brief_description"
+            },
+            "hex_color": "#F7CB47"
+        }
+    }
+}
