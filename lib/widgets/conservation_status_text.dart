@@ -2,10 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
-import 'package:vnturtle/l10n/l10n.dart';
-import 'package:vnturtle/provider/locale_provider.dart';
 
+// ignore: must_be_immutable
 class ConservationStatusText extends StatefulWidget {
   final String conservationStatus;
   double fontSize;
@@ -21,13 +19,12 @@ class ConservationStatusText extends StatefulWidget {
 
 class _ConservationStatusTextState extends State<ConservationStatusText> {
   Map<String, dynamic> conservationStatusData = {};
+  String currentLocale = "";
 
   @override
   void initState() {
     super.initState();
-    loadConservationStatus().then((value) => setState(() {
-      conservationStatusData = value;  
-    }));
+    
   }
 
   Future<Map<String, dynamic>> loadConservationStatus() async {
@@ -38,7 +35,14 @@ class _ConservationStatusTextState extends State<ConservationStatusText> {
 
   @override
   Widget build(BuildContext context) {
-    String currentLocale = Localizations.localeOf(context).languageCode;
+    
+    if (currentLocale != Localizations.localeOf(context).languageCode){
+      setState(() {
+        currentLocale = Localizations.localeOf(context).languageCode;
+      });
+
+      loadConservationStatus().then((value) => setState(() => conservationStatusData = value,));
+    }
 
     String hexColor = conservationStatusData[widget.conservationStatus]['hex_color'];
     String name = conservationStatusData[widget.conservationStatus][currentLocale];
