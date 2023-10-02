@@ -4,6 +4,8 @@ import 'package:vnturtle/l10n/l10n.dart';
 import 'package:vnturtle/provider/locale_provider.dart';
 
 class LanguageSwitchWidget extends StatelessWidget {
+  const LanguageSwitchWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
@@ -12,7 +14,7 @@ class LanguageSwitchWidget extends StatelessWidget {
       icon: Container(
         width: 32,
         height: 32,
-        child: const Icon(Icons.language, color: Colors.green),
+        child: Icon(Icons.language, color: theme.primaryColor),
       ),
       itemBuilder: (BuildContext context) {
         return L10n.all.map(

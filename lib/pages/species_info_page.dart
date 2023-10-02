@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vnturtle/widgets/conservation_status_text.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 import 'dart:convert';
 import 'detailed_species_page.dart';
@@ -26,11 +27,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     super.initState();
   }
 
-  Future<Map<String, dynamic>> loadConservationStatus() async {
-    String jsonString =
-        await rootBundle.loadString('content/conservation_status.json');
-    return jsonDecode(jsonString);
-  }
 
   Future<Map<String, dynamic>> loadSpeciesData(locale) async {
     String jsonString =
@@ -64,24 +60,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     );
   }
 
-  Widget buildConservationStatusText(Map<String, dynamic> speciesInfo) {
-    String conservationStatus = speciesInfo['iucn'];
-    // Map<String, dynamic> statusInfo = speciesInfo['conservation_status'];
-
-    String hexColor = conservationStatusData[conservationStatus]['hex_color'];
-    String viName = conservationStatusData[conservationStatus][currentLocale];
-
-    String newText = '$viName ($conservationStatus)';
-
-    return Text(
-      newText,
-      style: TextStyle(
-        color: Color(int.parse(hexColor.substring(1, 7), radix: 16) + 0xFF000000),
-        fontWeight: FontWeight.bold
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -90,12 +68,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
       setState(() {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
-      loadConservationStatus().then((value) {
-        setState(() {
-          conservationStatusData = value;
-        });
-      });
-
+    
       loadSpeciesData(currentLocale).then((value) => setState(() {
         speciesData = value;
         speciesNames = speciesData.keys.toList();
@@ -179,7 +152,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                               Row(
                                 children: [
                                   Text('${AppLocalizations.of(context)!.conservationStatus}: '),
-                                  buildConservationStatusText(speciesInfo),
+                                  ConservationStatusText(conservationStatus: speciesInfo['iucn'],fontSize: 14,),
                                 ],
                               ),
                               const SizedBox(height: 8.0),
