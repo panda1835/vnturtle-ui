@@ -17,5 +17,8 @@
     "noMatchFoundPrompt": "Nếu không tìm thấy loài rùa tương ứng thì hãy cho chúng mình biết.",
     "reportNoMatchButton": "Báo cáo ảnh",
     "imageReportedNoti": "Báo cáo của bạn đã được hệ thống ghi nhận.",
-    "legalProtection": "Pháp luật bảo vệ"
+    "legalProtection": "Pháp luật bảo vệ",
+    "contributeImage": "Đóng góp ảnh",
+    "contributeImageMessage": "Khi bạn chọn 'Đóng góp ảnh', ảnh của bạn sẽ được lưu trên hệ thống. Đóng góp của bạn sẽ giúp nâng cao độ chính xác và hiệu suất của ứng dụng.",
+    "close": "Đóng"
 }

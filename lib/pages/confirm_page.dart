@@ -18,19 +18,13 @@ class ConfirmPage extends StatefulWidget {
 class _ConfirmPageState extends State<ConfirmPage> {
   bool _isContributed = false;
   Map<String, dynamic> speciesData = {};
-  String imagePath = '';
-  String speciesName = '';
-  String warning = '';
+  String currentLocale = '';
 
-  Future<void> loadSpeciesData() async {
+  Future<Map<String, dynamic>> loadSpeciesData(String locale) async {
     String jsonString =
-        await rootBundle.loadString('content/species_info_vi.json');
-    setState(() {
-      speciesData = jsonDecode(jsonString)[widget.scientificName];
-      imagePath = speciesData['reference_images'][0];
-      speciesName = speciesData['primary_name'];
-      warning = speciesData['warning'];
-    });
+        await rootBundle.loadString('content/species_info_$locale.json');
+      
+    return jsonDecode(jsonString);
   }
 
   Future<void> _makeAPICall() async {
@@ -46,12 +40,23 @@ class _ConfirmPageState extends State<ConfirmPage> {
   @override
   void initState() {
     super.initState();
-    loadSpeciesData();
   }
 
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
+    if (currentLocale != Localizations.localeOf(context).languageCode){
+      setState(() {
+        currentLocale = Localizations.localeOf(context).languageCode;
+      });
+
+      loadSpeciesData(currentLocale).then((value) => {
+        setState(() {
+          speciesData = value[widget.scientificName];
+        })
+      });
+
+    }
     return Scaffold(
       appBar: AppBar(
         title: Text('VNTURTLE'),
@@ -69,12 +74,12 @@ class _ConfirmPageState extends State<ConfirmPage> {
               // margin: EdgeInsets.only(top: 100),
               child: CircleAvatar(
                 radius: 100,
-                backgroundImage: AssetImage(imagePath), // Replace with your image path
+                backgroundImage: AssetImage(speciesData['reference_images'][0]), // Replace with your image path
               ),
             ),
             SizedBox(height: 20),
             Text(
-              speciesName,
+              speciesData['primary_name'],
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -93,24 +98,21 @@ class _ConfirmPageState extends State<ConfirmPage> {
             SizedBox(height: 20),
             Container(
               width: 400,
-              child: Text(
-                warning,
-                style: TextStyle(
-                  fontSize: 15,
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-            Container(
-              width: 400,
               child: RichText(
                 text: TextSpan(
-                  text: "${AppLocalizations.of(context)!.contactHotline} ",
+                  text: speciesData['warning'],
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.black,
                   ),
                   children: [
+                    TextSpan(
+                      text: ' ${AppLocalizations.of(context)!.contactHotline} ',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.black,
+                      ),
+                    ),
                     TextSpan(
                       text: '18001522',
                       style: TextStyle(
@@ -132,11 +134,12 @@ class _ConfirmPageState extends State<ConfirmPage> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: _isContributed ? null : _makeAPICall,
-              child: Text('Đóng góp ảnh'),
+              child: Text(AppLocalizations.of(context)!.contributeImage),
             ),
             SizedBox(height: 20),
             Tooltip(
-              message: 'Khi bạn chọn "Đóng góp ảnh", ảnh của bạn sẽ được lưu trên hệ thống. Đóng góp của bạn sẽ giúp nâng cao độ chính xác và hiệu suất của ứng dụng',
+              message: AppLocalizations.of(context)!.contributeImageMessage,
+              height: 10,
               child: IconButton(
                 icon: Icon(Icons.help_outline),
                 onPressed: () {
@@ -145,14 +148,14 @@ class _ConfirmPageState extends State<ConfirmPage> {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: Text('Đóng góp ảnh'),
-                        content: Text('Khi bạn chọn "Đóng góp ảnh", ảnh của bạn sẽ được lưu trên hệ thống. Đóng góp của bạn sẽ giúp nâng cao độ chính xác và hiệu suất của ứng dụng.'),
+                        title: Text(AppLocalizations.of(context)!.contributeImage),
+                        content: Text(AppLocalizations.of(context)!.contributeImageMessage),
                         actions: [
                           TextButton(
                             onPressed: () {
                               Navigator.of(context).pop();
                             },
-                            child: Text('Đóng'),
+                            child: Text(AppLocalizations.of(context)!.close),
                           ),
                         ],
                       );

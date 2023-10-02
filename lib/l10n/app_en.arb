@@ -92,5 +92,20 @@
     "legalProtection": "Legal protection",
     "@legalProtection": {
         "description": ""
+    },
+
+    "contributeImage": "Contribute your image",
+    "@contributeImage": {
+        "description": ""
+    },
+
+    "contributeImageMessage": "When you select 'Contribute your image,' your photo will be saved in the system. Your contribution will help improve the accuracy and performance of the prediction model.",
+    "@contributeImageMessage": {
+        "description": ""
+    },
+
+    "close": "Close",
+    "@close": {
+        "description": ""
     }
 }
