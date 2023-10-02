@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:vnturtle/widgets/language_switch.dart';
 
 class ConfirmPage extends StatefulWidget {
   final String scientificName;
@@ -53,6 +55,11 @@ class _ConfirmPageState extends State<ConfirmPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('VNTURTLE'),
+        centerTitle: true,
+        actions: const [
+          LanguageSwitchWidget(),
+          SizedBox(width: 12,)
+        ],
       ),
       body: Center(
         child: Column(
@@ -98,21 +105,21 @@ class _ConfirmPageState extends State<ConfirmPage> {
               width: 400,
               child: RichText(
                 text: TextSpan(
-                  text: 'Liên hệ đường dây nóng bảo vệ động vật hoang dã ',
+                  text: "${AppLocalizations.of(context)!.contactHotline} ",
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.black,
                   ),
                   children: [
                     TextSpan(
-                      text: '1800-1522',
+                      text: '18001522',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.red,
                       ),
                     ),
                     TextSpan(
-                      text: ' để được hỗ trợ.',
+                      text: ' ${AppLocalizations.of(context)!.forAssistance}.',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.black,

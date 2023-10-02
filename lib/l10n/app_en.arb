@@ -29,8 +29,18 @@
         "description": ""
     },
 
-    "hotline": "Hotline to report wildlife crime",
+    "hotline": "Wildlife protection hotline",
     "@hotline": {
+        "description": ""
+    },
+
+    "contactHotline": "Please contact the hotline for wildlife protection at",
+    "@contactHotline": {
+        "description": ""
+    },
+
+    "forAssistance": "for assistance",
+    "@forAssistance": {
         "description": ""
     },
 
