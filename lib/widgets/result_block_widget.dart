@@ -6,7 +6,6 @@ import '../pages/confirm_page.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ResultBlock extends StatefulWidget {
-  // final String scientificName;
   final String nameVi;
   final String scientificName;
   final int score;
@@ -147,7 +146,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       showModalBottomSheet(
                           context: context,
                           builder: (BuildContext context) =>
-                              DetailedSpeciesPage(speciesName: widget.scientificName));
+                              DetailedSpeciesPage(speciesName: widget.scientificName,));
                     },
                     child: Text(AppLocalizations.of(context)!.moreInfoButton),
                   ),

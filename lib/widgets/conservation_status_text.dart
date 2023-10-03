@@ -6,11 +6,13 @@ import 'package:flutter/services.dart';
 // ignore: must_be_immutable
 class ConservationStatusText extends StatefulWidget {
   final String conservationStatus;
-  double fontSize;
+  final double fontSize;
+  final Map<String, dynamic> conservationStatusData;
 
-  ConservationStatusText({super.key, 
+  ConservationStatusText({ 
     required this.conservationStatus,
-    required this.fontSize
+    required this.fontSize,
+    required this.conservationStatusData
   });
 
   @override
@@ -18,37 +20,29 @@ class ConservationStatusText extends StatefulWidget {
 }
 
 class _ConservationStatusTextState extends State<ConservationStatusText> {
-  Map<String, dynamic> conservationStatusData = {};
   String currentLocale = "";
+  String hexColor = "";
+  String name = "";
+  String newText = "";
 
   @override
   void initState() {
     super.initState();
-    
-  }
-
-  Future<Map<String, dynamic>> loadConservationStatus() async {
-    String jsonString =
-        await rootBundle.loadString('content/conservation_status.json');
-    return jsonDecode(jsonString);
   }
 
   @override
   Widget build(BuildContext context) {
-    
+  
     if (currentLocale != Localizations.localeOf(context).languageCode){
       setState(() {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
-
-      loadConservationStatus().then((value) => setState(() => conservationStatusData = value,));
     }
 
-    String hexColor = conservationStatusData[widget.conservationStatus]['hex_color'];
-    String name = conservationStatusData[widget.conservationStatus][currentLocale];
-
-    String newText = '$name (${widget.conservationStatus})';
-
+    hexColor = widget.conservationStatusData[widget.conservationStatus]['hex_color'];
+    name = widget.conservationStatusData[widget.conservationStatus][currentLocale];
+    newText = '$name (${widget.conservationStatus})';
+    
     return Text(
       newText,
       style: TextStyle(
