@@ -117,5 +117,70 @@
     "close": "Close",
     "@close": {
         "description": ""
+    },
+
+    "characteristics": "Characteristics",
+    "@characteristics": {
+        "description": ""
+    },
+
+    "distribution": "distribution",
+    "@distribution": {
+        "description": ""
+    },
+
+    "taxonomy": "Taxonomy",
+    "@taxonomy": {
+        "description": ""
+    },
+
+    "rederingError": "Displaying information issue. Please try again later.",
+    "@rederingError": {
+        "description": ""
+    },
+    
+    "taxonomyClass": "Class",
+    "@taxonomyClass": {
+        "description": ""
+    },
+
+    "taxonomyOrder": "Order",
+    "@taxonomyOrder": {
+        "description": ""
+    },
+
+    "taxonomyFamily": "Family",
+    "@taxonomyFamily": {
+        "description": ""
+    },
+
+    "taxonomyGenus": "Genus",
+    "@taxonomyGenus": {
+        "description": ""
+    },
+
+    "habitat": "Habitat",
+    "@habitat": {
+        "description": ""
+    },
+
+    "funFacts": "Fun facts",
+    "@funFacts": {
+        "description": ""
+    },
+
+    "referenceSources": "Reference sources",
+    "@referenceSources": {
+        "description": ""
+    },
+
+    "native": "native",
+    "@native": {
+        "description": ""
+    },
+
+    "nonNative": "introduced",
+    "@nonNative": {
+        "description": ""
     }
 }

@@ -22,5 +22,18 @@
     "contributeImageMessage": "Khi bạn chọn 'Đóng góp ảnh', ảnh của bạn sẽ được lưu trên hệ thống. Đóng góp của bạn sẽ giúp nâng cao độ chính xác và hiệu suất của ứng dụng.",
     "contributeThankyouMessage": "Cảm ơn đóng góp của bạn. Đóng góp của bạn sẽ giúp chúng mình có thêm dữ liệu để cải thiện chất lượng nhận diện của VNTurtle.",
     "lawInfoTitle": "Thông tin luật",
-    "close": "Đóng"
+    "close": "Đóng",
+    "characteristics": "Đặc điểm nhận dạng",
+    "distribution": "Phân bố",
+    "taxonomy": "Phân loại sinh học",
+    "rederingError": "Sự cố hiển thị thông tin. Vui lòng thử lại sau.",
+    "taxonomyClass": "Lớp",
+    "taxonomyOrder": "Bộ",
+    "taxonomyFamily": "Họ",
+    "taxonomyGenus": "Chi",
+    "habitat": "Môi trường sống",
+    "funFacts": "Thông tin thú vị",
+    "referenceSources": "Nguồn tham khảo",
+    "native": "bản địa",
+    "nonNative": "ngoại lai"
 }
