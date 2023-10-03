@@ -48,11 +48,13 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
         String conservationStatus = speciesInfo['iucn'];
         String nameEn = speciesInfo['secondary_name'];
         String nameSci = speciesInfo['scientific_name'];
+        String otherName = speciesInfo['other_names'];
 
         return nameVi.toLowerCase().contains(query.toLowerCase()) ||
             conservationStatus.toLowerCase().contains(query.toLowerCase()) ||
             nameSci.toLowerCase().contains(query.toLowerCase()) ||
-            nameEn.toLowerCase().contains(query.toLowerCase());
+            nameEn.toLowerCase().contains(query.toLowerCase()) ||
+            otherName.toLowerCase().contains(query.toLowerCase());
       }).toList();
     });
   }
@@ -98,12 +100,20 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left: 16, right: 16),
+        padding: const EdgeInsets.only(left: 16, right: 16, top: 32, bottom: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Text(
+              AppLocalizations.of(context)!.speciesInfo,
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: theme.primaryColor,
+              ),
+            ),
             Padding(
-              padding: const EdgeInsets.only(top: 32, bottom: 32),
+              padding: const EdgeInsets.only(top: 8, bottom: 32),
               child: TextField(
                 controller: searchController,
                 onChanged: filterSpeciesList,
@@ -119,7 +129,15 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                 itemBuilder: (context, index) {
                   String speciesName = filteredSpeciesNames[index];
                   Map<String, dynamic> speciesInfo = speciesData[speciesName];
-      
+                  String native = "";
+                  Color nativeColor = Colors.black;
+                  if (speciesInfo['native'] == "true"){
+                    native = AppLocalizations.of(context)!.native;
+                    nativeColor = Colors.green.shade300;
+                  } else {
+                    native = AppLocalizations.of(context)!.nonNative;
+                    nativeColor = Colors.orange.shade300;
+                  }
                   return GestureDetector(
                     onTap: () => navigateToDetailPage(speciesName),
                     child: Container(
@@ -152,22 +170,39 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  speciesInfo['primary_name'],
-                                  style:
-                                      TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                                Row(
+                                  children: [
+                                    Text(
+                                      speciesInfo['primary_name'],
+                                      style: const TextStyle(
+                                        fontSize: 18.0, 
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(width: 2,),
+                                    Text(
+                                      "($native)",
+                                      style: TextStyle(
+                                        color: nativeColor,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    )
+                                  ],
                                 ),
                                 const SizedBox(height: 8.0),
-                                // Row(
-                                //   children: [
-                                    // Text('${AppLocalizations.of(context)!.conservationStatus}: '),
-                                    ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 14, conservationStatusData: conservationStatusData,),
-                                //   ],
-                                // ),
+                                Text(
+                                  speciesInfo['scientific_name'], 
+                                  style: const TextStyle(
+                                    fontStyle: FontStyle.italic
+                                  ),
+                                ),
                                 const SizedBox(height: 8.0),
-                                Text('${AppLocalizations.of(context)!.scientificName}: ${speciesInfo['scientific_name']}'),
+                                
+                                ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 14, conservationStatusData: conservationStatusData,),
+                                
                                 const SizedBox(height: 8.0),
-                                Text('${AppLocalizations.of(context)!.secondaryName}: ${speciesInfo['secondary_name']}'),
+                                Text('${AppLocalizations.of(context)!.otherName}: ${speciesInfo['other_names']}'),
                               ],
                             ),
                           ),
