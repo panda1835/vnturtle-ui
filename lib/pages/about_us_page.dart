@@ -10,6 +10,7 @@ class VeChungToiPage extends StatefulWidget {
 
 class _VeChungToiPageState extends State<VeChungToiPage> {
   String currentLocale = '';
+  
   Future<String> _loadAboutUsContent(String locale) async {
     return await rootBundle.loadString('content/about_us_$locale.md');
   }
@@ -17,7 +18,9 @@ class _VeChungToiPageState extends State<VeChungToiPage> {
   @override
   Widget build(BuildContext context) {
     if (currentLocale != Localizations.localeOf(context).languageCode){
-      currentLocale = Localizations.localeOf(context).languageCode;
+      setState(() {
+        currentLocale = Localizations.localeOf(context).languageCode;
+      });
     }
     return Scaffold(
       appBar: AppBar(
