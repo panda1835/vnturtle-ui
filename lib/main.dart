@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:vnturtle/l10n/l10n.dart';
@@ -12,7 +13,18 @@ import 'package:provider/provider.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: const FirebaseOptions(
+      apiKey: "AIzaSyBuLZkKtrj18LzuVsvSstnnQuLbSp5lqFA", 
+      appId: "1:859395045927:web:c2b790e235d26a81df6c02", 
+      messagingSenderId: "859395045927", 
+      projectId: "ecstatic-design-399511"
+    )
+  );
+  runApp(MyApp());
+} 
 
 class MyApp extends StatelessWidget {
   @override
@@ -116,9 +128,9 @@ class _HomePageState extends State<HomePage> {
           'VNTURTLE',
         ),
         centerTitle: true,
-        actions: [
+        actions: const [
           LanguageSwitchWidget(),
-          const SizedBox(width: 12,)
+          SizedBox(width: 12,)
         ],
       ),
       drawer: Drawer(
@@ -139,7 +151,7 @@ class _HomePageState extends State<HomePage> {
                 padding: const EdgeInsets.only(top: 5, left: 16.0),
                 child: Text(
                   choices[index],
-                  style: TextStyle(color: Colors.red),
+                  style: const TextStyle(color: Colors.red),
                 ),
               );
             }
