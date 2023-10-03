@@ -25,7 +25,8 @@ class _CauHoiThuongGapPageState extends State<CauHoiThuongGapPage> {
 
   @override
   Widget build(BuildContext context) {
-    
+    ThemeData theme = Theme.of(context);
+
     if (curentLocale != Localizations.localeOf(context).languageCode){
       setState(() {
         curentLocale = Localizations.localeOf(context).languageCode;
@@ -55,8 +56,9 @@ class _CauHoiThuongGapPageState extends State<CauHoiThuongGapPage> {
               child: Text(
                 AppLocalizations.of(context)!.fAQ,
                 style: TextStyle(
-                  fontSize: 20.0,
+                  fontSize: 25.0,
                   fontWeight: FontWeight.bold,
+                  color: theme.primaryColor,
                 ),
               ),
             ),
