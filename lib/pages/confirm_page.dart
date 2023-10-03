@@ -5,10 +5,10 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 
 class ConfirmPage extends StatefulWidget {
-  final String scientificName;
+  final Map<String, dynamic> speciesInfo;
 
   const ConfirmPage({
-    required this.scientificName,
+    required this.speciesInfo,
   });
 
   @override
@@ -17,7 +17,7 @@ class ConfirmPage extends StatefulWidget {
 
 class _ConfirmPageState extends State<ConfirmPage> {
   bool _isContributed = false;
-  Map<String, dynamic> speciesData = {};
+  // Map<String, dynamic> speciesData = {};
   String currentLocale = '';
 
   Future<Map<String, dynamic>> loadSpeciesData(String locale) async {
@@ -50,12 +50,6 @@ class _ConfirmPageState extends State<ConfirmPage> {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
 
-      loadSpeciesData(currentLocale).then((value) => {
-        setState(() {
-          speciesData = value[widget.scientificName];
-        })
-      });
-
     }
     return Scaffold(
       appBar: AppBar(
@@ -74,46 +68,44 @@ class _ConfirmPageState extends State<ConfirmPage> {
               // margin: EdgeInsets.only(top: 100),
               child: CircleAvatar(
                 radius: 100,
-                backgroundImage: AssetImage(speciesData['reference_images'][0]), // Replace with your image path
+                backgroundImage: AssetImage(widget.speciesInfo['reference_images'][0]), // Replace with your image path
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
-              speciesData['primary_name'],
+              widget.speciesInfo['primary_name'],
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
                 color: theme.primaryColor,
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
-              widget.scientificName,
-              style: TextStyle(
-                // fontSize: 30,
+              widget.speciesInfo['scientific_name'],
+              style: const TextStyle(
                 fontStyle: FontStyle.italic,
-                // color: theme.primaryColor,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
               width: 400,
               child: RichText(
                 text: TextSpan(
-                  text: speciesData['warning'],
-                  style: TextStyle(
+                  text: widget.speciesInfo['warning'],
+                  style: const TextStyle(
                     fontSize: 15,
                     color: Colors.black,
                   ),
                   children: [
                     TextSpan(
                       text: ' ${AppLocalizations.of(context)!.contactHotline} ',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 15,
                         color: Colors.black,
                       ),
                     ),
-                    TextSpan(
+                    const TextSpan(
                       text: '18001522',
                       style: TextStyle(
                         fontSize: 15,
@@ -122,7 +114,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                     ),
                     TextSpan(
                       text: ' ${AppLocalizations.of(context)!.forAssistance}.',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 15,
                         color: Colors.black,
                       ),
@@ -136,44 +128,43 @@ class _ConfirmPageState extends State<ConfirmPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(width: 20,),
+                SizedBox(width: 10,),
                 ElevatedButton(
                   onPressed: _isContributed ? null : _makeAPICall,
                   child: Text(AppLocalizations.of(context)!.contributeImage),
                 ),
-
+                SizedBox(width: 10,),
                 Container(
                   width: 20,
-                  child: Tooltip(
-                    message: AppLocalizations.of(context)!.contributeImageMessage,
-                    height: 10,
-                    child: IconButton(
-                      icon: Icon(Icons.help_outline),
-                      onPressed: () {
-                        // Handle the tooltip button click
-                        showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return AlertDialog(
-                              title: Text(AppLocalizations.of(context)!.contributeImage),
-                              content: Text(AppLocalizations.of(context)!.contributeImageMessage),
-                              actions: [
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  child: Text(AppLocalizations.of(context)!.close),
-                                ),
-                              ],
-                            );
-                          },
-                        );
-                      }
-                    )
+                  child: IconButton(
+                    icon: const Icon(Icons.help_outline),
+                    splashRadius: 5,
+                    tooltip: AppLocalizations.of(context)!.contributeImageMessage,
+                    onPressed: () {
+                      // Handle the tooltip button click
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text(AppLocalizations.of(context)!.contributeImage),
+                            content: Text(AppLocalizations.of(context)!.contributeImageMessage),
+                            actions: [
+                              TextButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Text(AppLocalizations.of(context)!.close),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    }
                   ),
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             
             if (_isContributed)
               Container(

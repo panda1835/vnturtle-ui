@@ -156,21 +156,13 @@ class _ResultPageState extends State<ResultPage> {
                             in jsonResponse['predictions']!.entries.toList()
                             ..sort((a, b) => (b.value as double).compareTo(a.value as double)))
                           ResultBlock(
-                            scientificName: entry.key,
-                            nameVi: speciesInfo[entry.key]['primary_name'],
+                            speciesInfo: speciesInfo[entry.key],
                             score: ((entry.value*100).toInt()),
-                            imagePaths: (speciesInfo[entry.key]
-                                    ['reference_images'] as List<dynamic>)
-                                .cast<String>(),
-                            imageUrl: "",
                           ),
 
                         const ResultBlock(
-                            scientificName: 'No match',
-                            nameVi: '',
+                            speciesInfo: {"scientific_name": "No match"},
                             score: 0,
-                            imagePaths: [],
-                            imageUrl: "",
                           ),
                       ],
                     ),
