@@ -6,18 +6,12 @@ import '../pages/confirm_page.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ResultBlock extends StatefulWidget {
-  final String nameVi;
-  final String scientificName;
   final int score;
-  final List<String> imagePaths;
-  final String imageUrl;
+  final Map<String, dynamic> speciesInfo;
 
   const ResultBlock({
-    required this.scientificName,
-    required this.nameVi,
+    required this.speciesInfo,
     required this.score,
-    required this.imagePaths,
-    required this.imageUrl,
   });
 
   @override
@@ -37,7 +31,7 @@ class _ResultBlockState extends State<ResultBlock> {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
-    if (widget.scientificName == 'No match') {
+    if (widget.speciesInfo['scientific_name'] == "No match") {
       return Card(
         elevation: 5,
         margin: const EdgeInsets.all(10),
@@ -84,7 +78,7 @@ class _ResultBlockState extends State<ResultBlock> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   // Use the reference_images field from species_info_vi.json
-                  for (final imagePath in widget.imagePaths)
+                  for (final imagePath in widget.speciesInfo['identification_images'])
                     Image.asset(
                       imagePath,
                       height: 150,
@@ -102,7 +96,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       margin: const EdgeInsets.only(top: 10, bottom: 10),
                       width: 200.0,
                       child: Text(
-                        widget.nameVi,
+                        widget.speciesInfo['primary_name'],
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
@@ -131,7 +125,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ConfirmPage(scientificName: widget.scientificName,),
+                          builder: (context) => ConfirmPage(speciesInfo: widget.speciesInfo,),
                         ),
                       );
                     },
@@ -146,7 +140,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       showModalBottomSheet(
                           context: context,
                           builder: (BuildContext context) =>
-                              DetailedSpeciesPage(speciesName: widget.scientificName,));
+                              DetailedSpeciesPage(speciesName: widget.speciesInfo['scientific_name'],));
                     },
                     child: Text(AppLocalizations.of(context)!.moreInfoButton),
                   ),
