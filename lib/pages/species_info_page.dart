@@ -16,7 +16,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
   List<String> speciesNames = [];
   List<String> filteredSpeciesNames = [];
   Map<String, dynamic> speciesData = {};
-  Map<String, dynamic> conservationStatusData = {};
 
   String currentLocale = '';
 
@@ -34,11 +33,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     return jsonDecode(jsonString);
   }
 
-  Future<Map<String, dynamic>> loadConservationStatusData() async {
-    String jsonString =
-        await rootBundle.loadString('content/conservation_status.json');
-    return jsonDecode(jsonString);
-  }
 
   void filterSpeciesList(String query) {
     setState(() {
@@ -83,9 +77,6 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
         filteredSpeciesNames = speciesNames;
       },));
 
-      loadConservationStatusData().then((value) => setState(() {
-        conservationStatusData = value;
-      }));
     }
 
     return Scaffold(
@@ -199,7 +190,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                                 ),
                                 const SizedBox(height: 8.0),
                                 
-                                ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 14, conservationStatusData: conservationStatusData,),
+                                ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 14,),
                                 
                                 const SizedBox(height: 8.0),
                                 Text('${AppLocalizations.of(context)!.otherName}: ${speciesInfo['other_names']}'),

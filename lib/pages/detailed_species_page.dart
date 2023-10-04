@@ -20,7 +20,6 @@ class DetailedSpeciesPage extends StatefulWidget {
 class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
   Map<String, dynamic> speciesData = {};
   Map<String, dynamic> lawInfo = {};
-  Map<String, dynamic> conservationStatusData = {};
   Map<String, dynamic> speciesInfo = {};
 
   String currentLocale = "";
@@ -35,14 +34,11 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
         await rootBundle.loadString('content/species_info_$locale.json');
     String jsonLaw =
         await rootBundle.loadString('content/laws.json');
-    String jsonConservationStatus =
-        await rootBundle.loadString('content/conservation_status.json');
     
     setState(() {
       speciesData = jsonDecode(jsonSpeciesData);
       speciesInfo = speciesData[widget.speciesName];
       lawInfo = jsonDecode(jsonLaw);
-      conservationStatusData = jsonDecode(jsonConservationStatus);
     });
 
     return true;
@@ -76,7 +72,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
         builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
           if (snapshot.data == true) {
             if (snapshot.hasError) {
-              return Center(
+              return const Center(
                 child: Text(
                   'Failed to load data.'
                 ),
@@ -96,7 +92,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Row(
                       children: [
                         Container(
@@ -109,27 +105,27 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                         Text(speciesInfo['scientific_name'])
                       ],
                     ),
-                    SizedBox(height: 8.0),
+                    const SizedBox(height: 8.0),
                     Row(
                       children: [
                         Container(
                           width: 150,
                           child: Text(
                             "${AppLocalizations.of(context)!.otherName}:",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
                         Text("${speciesInfo['other_names']}")
                       ],
                     ),
-                    SizedBox(height: 8.0),
+                    const SizedBox(height: 8.0),
                     Row(
                       children: [
                         Container(
                           width: 150,
                           child: Text(
                             "${AppLocalizations.of(context)!.secondaryName}:",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
                         Text("${speciesInfo['secondary_name']}")
@@ -142,19 +138,19 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                           width: 150,
                           child: Text(
                             "${AppLocalizations.of(context)!.conservationStatus}: ",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
                         Flexible(
                           fit: FlexFit.loose,
-                          child: ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 14, conservationStatusData: conservationStatusData,)
+                          child: ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 14,)
                         )
                       ],
                     ),
                     SizedBox(height: 8.0),
                     Text(
                       "${AppLocalizations.of(context)!.legalProtection}:",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -164,7 +160,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                           if (lawValue != "") {
                             return Row(
                               children: [
-                                SizedBox(width: 32),
+                                const SizedBox(width: 32),
                                 Flexible(
                                   child: Text("- ${lawInfo[lawKey][lawValue]['full_name'][currentLocale]}"),
                                 ),
@@ -195,12 +191,12 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                               ],
                             );
                           }
-                          return SizedBox(height: 1);
+                          return const SizedBox(height: 1);
                         })
                         .toList(),
                     ),
                     
-                    SizedBox(height: 8.0),
+                    const SizedBox(height: 8.0),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
@@ -216,10 +212,10 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                             .toList(),
                       ),
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Text(
                       AppLocalizations.of(context)!.taxonomy,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
                       ),
@@ -252,7 +248,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                             Text(speciesInfo['taxonomy']['order'])
                           ],
                         ),
-                        SizedBox(height: 8,),
+                        const SizedBox(height: 8,),
                         Row(
                           children: [
                             Container(
@@ -267,10 +263,10 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                         )
                       ],
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Text(
                       AppLocalizations.of(context)!.characteristics,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
                       ),
@@ -294,39 +290,39 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                       ),
                     ),
                   
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Text(
                       AppLocalizations.of(context)!.habitat,
-                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 8.0),
+                    const SizedBox(height: 8.0),
                     Text(
                       speciesInfo['habitat'],
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Text(
                       AppLocalizations.of(context)!.distribution,
-                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 8.0),
+                    const SizedBox(height: 8.0),
                     Text(
                       speciesInfo['distribution'],
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Text(
                       AppLocalizations.of(context)!.funFacts,
-                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 8.0),
+                    const SizedBox(height: 8.0),
                     Text(
                       speciesInfo['fun_fact'],
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Text(
                       AppLocalizations.of(context)!.referenceSources,
-                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 8.0),
+                    const SizedBox(height: 8.0),
                     Text(
                       speciesInfo['reference_sources'][0],
                     ),
@@ -335,7 +331,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
               );
             }
           } else {
-            return Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator());
           }
         },
       ),
