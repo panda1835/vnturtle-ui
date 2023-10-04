@@ -120,13 +120,13 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                 itemBuilder: (context, index) {
                   String speciesName = filteredSpeciesNames[index];
                   Map<String, dynamic> speciesInfo = speciesData[speciesName];
-                  String native = "";
+                  String isNative = "";
                   Color nativeColor = Colors.black;
                   if (speciesInfo['native'] == "true"){
-                    native = AppLocalizations.of(context)!.native;
+                    isNative = AppLocalizations.of(context)!.native;
                     nativeColor = Colors.green.shade300;
                   } else {
-                    native = AppLocalizations.of(context)!.nonNative;
+                    isNative = AppLocalizations.of(context)!.nonNative;
                     nativeColor = Colors.orange.shade300;
                   }
                   return GestureDetector(
@@ -146,16 +146,50 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            width: 100,
                             height: 100,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8.0),
-                              image: DecorationImage(
-                                image: AssetImage(speciesInfo['reference_images'][0]),
-                                fit: BoxFit.cover,
-                              ),
+                            width: 100,
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  top: 0,
+                                  right: 0,
+                                  child: Container(
+                                    width: 100,
+                                    height: 100,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8.0),
+                                      image: DecorationImage(
+                                        image: AssetImage(speciesInfo['reference_images'][0]),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  )
+                                ),
+                                Positioned(
+                                  top: 0,
+                                  left: 0,
+                                  child: Transform.rotate(
+                                    angle: -0.785398, // 45 degrees in radians
+                                    child: Container(
+                                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8.0),
+                                        color: nativeColor
+                                      ),
+                                      child: Text(
+                                        isNative,
+                                        style: const TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
+
                           const SizedBox(width: 16.0),
                           Expanded(
                             child: Column(
@@ -163,22 +197,16 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Text(
-                                      speciesInfo['primary_name'],
-                                      style: const TextStyle(
-                                        fontSize: 18.0, 
-                                        fontWeight: FontWeight.bold,
+                                    Flexible(
+                                      child: Text(
+                                        speciesInfo['primary_name'],
+                                        style: const TextStyle(
+                                          fontSize: 18.0, 
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
-                                    SizedBox(width: 2,),
-                                    Text(
-                                      "($native)",
-                                      style: TextStyle(
-                                        color: nativeColor,
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold
-                                      ),
-                                    )
+                                    
                                   ],
                                 ),
                                 const SizedBox(height: 8.0),
@@ -210,4 +238,3 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     );
   }
 }
-
