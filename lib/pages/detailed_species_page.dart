@@ -323,8 +323,9 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                       style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 8.0),
+                    for (var reference in speciesInfo['reference_sources'])
                     Text(
-                      speciesInfo['reference_sources'][0],
+                      "- ${reference}",
                     ),
                   ],
                 ),
@@ -335,11 +336,6 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
           }
         },
       ),
-      
-      
-      
-      
-      
     );
   }
 }
