@@ -115,7 +115,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Text("${speciesInfo['other_names']}")
+                        Flexible(child: Text("${speciesInfo['other_names']}"))
                       ],
                     ),
                     const SizedBox(height: 8.0),
