@@ -72,11 +72,11 @@ class _ResultPageState extends State<ResultPage> {
     // Create a Firestore document reference
     final DocumentReference<Map<String, dynamic>> documentReference =
         FirebaseFirestore.instance.collection('no-classification-images').doc();
+
     // Create a Cloud storage reference from our app
     final storageRef = FirebaseStorage.instance.ref();
-
     // Create a reference to the image in the storage
-    final mountainsRef = storageRef.child("no-classification-images/${documentReference.id}.jpg");
+    final newReportImageRef = storageRef.child("no-classification-images/${documentReference.id}.jpg");
     Uint8List imageForReport = widget.image.files.single.bytes!;
 
     // Add timestamp to the record
@@ -90,7 +90,7 @@ class _ResultPageState extends State<ResultPage> {
     try {
       // Upload the data to Firestore
       await documentReference.set(dataForUpload);
-      await mountainsRef.putData(imageForReport);
+      await newReportImageRef.putData(imageForReport);
 
       // Update the state to reflect the successful upload
       setState(() {
@@ -163,125 +163,127 @@ class _ResultPageState extends State<ResultPage> {
           const SizedBox(width: 12,)
         ],
       ),
-      body: Column(
-        children: [
-          // First Half - Title and Image
-          Container(
-            height: 200,
-            child: Stack(
-              children: [
-                // Center(
-                  Image.memory(
-                      widget.image.files.single.bytes!,
-                      height: display_image_height,
-                  ),
-                // ),
-                Positioned(
-                  top: bbox_top,
-                  left: bbox_left,
-                  width: bbox_width,
-                  height: bbox_height,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      border: Border.all(
-                        color: Colors.red,
-                        width: 2.0,
+      body: Center(
+        child: Column(
+          children: [
+            // First Half - Title and Image
+            Container(
+              height: 200,
+              child: Stack(
+                children: [
+                  // Center(
+                    Image.memory(
+                        widget.image.files.single.bytes!,
+                        height: display_image_height,
+                    ),
+                  // ),
+                  Positioned(
+                    top: bbox_top,
+                    left: bbox_left,
+                    width: bbox_width,
+                    height: bbox_height,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.transparent,
+                        border: Border.all(
+                          color: Colors.red,
+                          width: 2.0,
+                        ),
                       ),
                     ),
                   ),
-                ),
-
-              ]
-            ),
-            ),
-          // Second Half - List View (wrapped with SingleChildScrollView)
-          _hasNoClassification 
-              ? Center( // if the user submit a report then collapse all predictions
-                child: Card(
-                  elevation: 5,
-                  margin: const EdgeInsets.all(10),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10),
+      
+                ]
+              ),
+              ),
+            // Second Half - List View (wrapped with SingleChildScrollView)
+            _hasNoClassification 
+                ? Center( // if the user submit a report then collapse all predictions
+                  child: Card(
+                    elevation: 5,
+                    margin: const EdgeInsets.all(10),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Column(
+                        children: [
+                          Text(
+                            AppLocalizations.of(context)!.noMatchFoundPrompt,
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          ElevatedButton(
+                            onPressed: _isReported ? null : _reportImage,
+                            child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            AppLocalizations.of(context)!.imageReportedNoti,
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ) : Expanded(
+              flex: 2,
+              child: _isPredictionLoading
+                ? const Center(
+                    child: CircularProgressIndicator(),
+                  )
+                : SingleChildScrollView(
                     child: Column(
                       children: [
-                        Text(
-                          AppLocalizations.of(context)!.noMatchFoundPrompt,
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        ElevatedButton(
-                          onPressed: _isReported ? null : _reportImage,
-                          child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          AppLocalizations.of(context)!.imageReportedNoti,
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                        )
+                        for (final entry
+                            in jsonResponse['predictions']!.entries.toList()
+                            ..sort((a, b) => (b.value as double).compareTo(a.value as double)))
+                          ResultBlock(
+                            speciesInfo: speciesInfo[entry.key],
+                            score: ((entry.value*100).toInt()),
+                            image: widget.image,
+                          ),
+      
+                          Card(
+                            elevation: 5,
+                            margin: const EdgeInsets.all(10),
+                            child: Padding(
+                              padding: const EdgeInsets.all(10),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    AppLocalizations.of(context)!.noMatchFoundPrompt,
+                                    style: const TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  _isReportLoading
+                                    ? CircularProgressIndicator() // Show a progress indicator while loading
+                                    : ElevatedButton(
+                                      onPressed: _isReported ? null : _reportImage,
+                                      child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
+                                    ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  if (_isReported)
+                                    Text(
+                                      AppLocalizations.of(context)!.imageReportedNoti,
+                                      style: const TextStyle(fontWeight: FontWeight.bold),
+                                    )
+                                ],
+                              ),
+                            ),
+                          )
                       ],
                     ),
                   ),
-                ),
-              ) : Expanded(
-            flex: 2,
-            child: _isPredictionLoading
-              ? const Center(
-                  child: CircularProgressIndicator(),
-                )
-              : SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      for (final entry
-                          in jsonResponse['predictions']!.entries.toList()
-                          ..sort((a, b) => (b.value as double).compareTo(a.value as double)))
-                        ResultBlock(
-                          speciesInfo: speciesInfo[entry.key],
-                          score: ((entry.value*100).toInt()),
-                          image: widget.image,
-                        ),
-
-                        Card(
-                          elevation: 5,
-                          margin: const EdgeInsets.all(10),
-                          child: Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: Column(
-                              children: [
-                                Text(
-                                  AppLocalizations.of(context)!.noMatchFoundPrompt,
-                                  style: const TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                _isReportLoading
-                                  ? CircularProgressIndicator() // Show a progress indicator while loading
-                                  : ElevatedButton(
-                                    onPressed: _isReported ? null : _reportImage,
-                                    child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
-                                  ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                if (_isReported)
-                                  Text(
-                                    AppLocalizations.of(context)!.imageReportedNoti,
-                                    style: const TextStyle(fontWeight: FontWeight.bold),
-                                  )
-                              ],
-                            ),
-                          ),
-                        )
-                    ],
-                  ),
-                ),
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }
