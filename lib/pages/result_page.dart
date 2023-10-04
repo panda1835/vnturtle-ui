@@ -26,6 +26,7 @@ class _ResultPageState extends State<ResultPage> {
   bool _isPredictionLoading = true;
   bool _isReportLoading = false;
   bool _isReported = false;
+  bool _hasNoClassification = false;
   String currentLocale = '';
   Map<String, dynamic> jsonResponse = {
     "bbox": {
@@ -80,7 +81,7 @@ class _ResultPageState extends State<ResultPage> {
 
     // Add timestamp to the record
     var dataForUpload = jsonResponse;
-    dataForUpload['time'] = Timestamp.now();
+    dataForUpload['timestamp'] = Timestamp.now();
 
     setState(() {
       _isReportLoading = true;
@@ -95,6 +96,7 @@ class _ResultPageState extends State<ResultPage> {
       setState(() {
         _isReported = true;
         _isReportLoading = false;
+        _hasNoClassification = true;
       });
     } catch (error) {
       // Handle any errors that occurred during the upload
@@ -200,7 +202,38 @@ class _ResultPageState extends State<ResultPage> {
               ? Center(
                   child: CircularProgressIndicator(),
                 )
-              : SingleChildScrollView(
+              : _hasNoClassification 
+              ? Center( // if the user submit a report then collapse all predictions
+                child: Card(
+                  elevation: 5,
+                  margin: const EdgeInsets.all(10),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Column(
+                      children: [
+                        Text(
+                          AppLocalizations.of(context)!.noMatchFoundPrompt,
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        ElevatedButton(
+                          onPressed: _isReported ? null : _reportImage,
+                          child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          AppLocalizations.of(context)!.imageReportedNoti,
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ) : SingleChildScrollView(
                   child: Column(
                     children: [
                       for (final entry
@@ -209,6 +242,7 @@ class _ResultPageState extends State<ResultPage> {
                         ResultBlock(
                           speciesInfo: speciesInfo[entry.key],
                           score: ((entry.value*100).toInt()),
+                          image: widget.image,
                         ),
 
                         Card(

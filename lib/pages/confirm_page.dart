@@ -1,14 +1,19 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:file_picker/file_picker.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/services.dart' show Uint8List, rootBundle;
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 
 class ConfirmPage extends StatefulWidget {
   final Map<String, dynamic> speciesInfo;
+  final FilePickerResult image;
 
   const ConfirmPage({
     required this.speciesInfo,
+    required this.image
   });
 
   @override
@@ -16,6 +21,7 @@ class ConfirmPage extends StatefulWidget {
 }
 
 class _ConfirmPageState extends State<ConfirmPage> {
+  bool _isContributeLoading = false;
   bool _isContributed = false;
   // Map<String, dynamic> speciesData = {};
   String currentLocale = '';
@@ -27,14 +33,41 @@ class _ConfirmPageState extends State<ConfirmPage> {
     return jsonDecode(jsonString);
   }
 
-  Future<void> _makeAPICall() async {
-    // Make the POST request to the API
-    // Replace API_URL with your actual API endpoint
-    
-    await Future.delayed(Duration(seconds: 1));
+  Future<void> _contributeImage() async {
+    // Create a Firestore document reference
+    final DocumentReference<Map<String, dynamic>> documentReference =
+        FirebaseFirestore.instance.collection('contribute-images').doc();
+    // Create a Cloud storage reference from our app
+    final storageRef = FirebaseStorage.instance.ref();
+
+    // Create a reference to the image in the storage
+    final mountainsRef = storageRef.child("contribute-images/${documentReference.id}.jpg");
+    Uint8List imageForReport = widget.image.files.single.bytes!;
+
+    // Add timestamp to the record
+    var dataForUpload = {
+      "scientific_name": widget.speciesInfo['scientific_name'],
+      "timestamp": DateTime.now(),
+    };
+
     setState(() {
-      _isContributed = true;
+      _isContributeLoading = true;
     });
+
+    try {
+      // Upload the data to Firestore
+      await documentReference.set(dataForUpload);
+      await mountainsRef.putData(imageForReport);
+
+      // Update the state to reflect the successful upload
+      setState(() {
+        _isContributed = true;
+        _isContributeLoading = false;
+      });
+    } catch (error) {
+      // Handle any errors that occurred during the upload
+      print('Error uploading data to Firestore: $error');
+    }
   }
 
   @override
@@ -129,8 +162,12 @@ class _ConfirmPageState extends State<ConfirmPage> {
               children: [
                 Container(width: 20,),
                 SizedBox(width: 10,),
-                ElevatedButton(
-                  onPressed: _isContributed ? null : _makeAPICall,
+                _isContributeLoading
+                ? Center(
+                    child: CircularProgressIndicator(),
+                  )
+                : ElevatedButton(
+                  onPressed: _isContributed ? null : _contributeImage,
                   child: Text(AppLocalizations.of(context)!.contributeImage),
                 ),
                 SizedBox(width: 10,),

@@ -1,3 +1,4 @@
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import '../pages/detailed_species_page.dart';
 
@@ -8,10 +9,12 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class ResultBlock extends StatefulWidget {
   final int score;
   final Map<String, dynamic> speciesInfo;
+  final FilePickerResult image;
 
   const ResultBlock({
     required this.speciesInfo,
     required this.score,
+    required this.image
   });
 
   @override
@@ -86,7 +89,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ConfirmPage(speciesInfo: widget.speciesInfo,),
+                          builder: (context) => ConfirmPage(speciesInfo: widget.speciesInfo, image: widget.image,),
                         ),
                       );
                     },
