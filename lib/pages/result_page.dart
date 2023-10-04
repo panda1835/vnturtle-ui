@@ -68,9 +68,12 @@ class _ResultPageState extends State<ResultPage> {
     final DocumentReference<Map<String, dynamic>> documentReference =
         FirebaseFirestore.instance.collection('no-classification-images').doc();
 
+    var uploadData = jsonResponse;
+    uploadData['time'] = Timestamp.now();
+
     try {
       // Upload the data to Firestore
-      await documentReference.set(jsonResponse);
+      await documentReference.set(uploadData);
 
       // Update the state to reflect the successful upload
       setState(() {
