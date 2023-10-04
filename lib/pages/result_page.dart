@@ -23,7 +23,8 @@ class ResultPage extends StatefulWidget {
 }
 
 class _ResultPageState extends State<ResultPage> {
-  bool _isLoading = true;
+  bool _isPredictionLoading = true;
+  bool _isReportLoading = false;
   bool _isReported = false;
   String currentLocale = '';
   Map<String, dynamic> jsonResponse = {
@@ -70,24 +71,30 @@ class _ResultPageState extends State<ResultPage> {
     // Create a Firestore document reference
     final DocumentReference<Map<String, dynamic>> documentReference =
         FirebaseFirestore.instance.collection('no-classification-images').doc();
-    // Create a storage reference from our app
+    // Create a Cloud storage reference from our app
     final storageRef = FirebaseStorage.instance.ref();
 
-    // Create a reference to the image
+    // Create a reference to the image in the storage
     final mountainsRef = storageRef.child("no-classification-images/${documentReference.id}.jpg");
     Uint8List imageForReport = widget.image.files.single.bytes!;
 
+    // Add timestamp to the record
     var dataForUpload = jsonResponse;
     dataForUpload['time'] = Timestamp.now();
+
+    setState(() {
+      _isReportLoading = true;
+    });
 
     try {
       // Upload the data to Firestore
       await documentReference.set(dataForUpload);
       await mountainsRef.putData(imageForReport);
-      
+
       // Update the state to reflect the successful upload
       setState(() {
         _isReported = true;
+        _isReportLoading = false;
       });
     } catch (error) {
       // Handle any errors that occurred during the upload
@@ -130,7 +137,7 @@ class _ResultPageState extends State<ResultPage> {
     bbox_height = _convertBboxToPixels(jsonResponse['bbox']['height'], jsonResponse['image_size']['height']);
     
     setState(() {
-      _isLoading = false;
+      _isPredictionLoading = false;
     });
   }
 
@@ -189,7 +196,7 @@ class _ResultPageState extends State<ResultPage> {
           // Second Half - List View (wrapped with SingleChildScrollView)
           Expanded(
             flex: 2,
-            child: _isLoading
+            child: _isPredictionLoading
               ? Center(
                   child: CircularProgressIndicator(),
                 )
@@ -218,10 +225,12 @@ class _ResultPageState extends State<ResultPage> {
                                 const SizedBox(
                                   height: 10,
                                 ),
-                                ElevatedButton(
-                                  onPressed: _isReported ? null : _reportImage,
-                                  child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
-                                ),
+                                _isReportLoading
+                                  ? CircularProgressIndicator() // Show a progress indicator while loading
+                                  : ElevatedButton(
+                                    onPressed: _isReported ? null : _reportImage,
+                                    child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
+                                  ),
                                 const SizedBox(
                                   height: 10,
                                 ),
