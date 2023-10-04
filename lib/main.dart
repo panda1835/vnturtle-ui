@@ -20,7 +20,8 @@ void main() async {
       apiKey: "AIzaSyBuLZkKtrj18LzuVsvSstnnQuLbSp5lqFA", 
       appId: "1:859395045927:web:c2b790e235d26a81df6c02", 
       messagingSenderId: "859395045927", 
-      projectId: "ecstatic-design-399511"
+      projectId: "ecstatic-design-399511",
+      storageBucket: "gs://ecstatic-design-399511.appspot.com",
     )
   );
   runApp(MyApp());

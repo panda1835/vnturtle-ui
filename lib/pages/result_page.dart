@@ -1,4 +1,7 @@
+import 'dart:typed_data';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 import '../widgets/result_block_widget.dart';
@@ -67,14 +70,21 @@ class _ResultPageState extends State<ResultPage> {
     // Create a Firestore document reference
     final DocumentReference<Map<String, dynamic>> documentReference =
         FirebaseFirestore.instance.collection('no-classification-images').doc();
+    // Create a storage reference from our app
+    final storageRef = FirebaseStorage.instance.ref();
 
-    var uploadData = jsonResponse;
-    uploadData['time'] = Timestamp.now();
+    // Create a reference to the image
+    final mountainsRef = storageRef.child("no-classification-images/${documentReference.id}.jpg");
+    Uint8List imageForReport = widget.image.files.single.bytes!;
+
+    var dataForUpload = jsonResponse;
+    dataForUpload['time'] = Timestamp.now();
 
     try {
       // Upload the data to Firestore
-      await documentReference.set(uploadData);
-
+      await documentReference.set(dataForUpload);
+      await mountainsRef.putData(imageForReport);
+      
       // Update the state to reflect the successful upload
       setState(() {
         _isReported = true;
