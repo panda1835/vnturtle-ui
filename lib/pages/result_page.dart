@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 import '../widgets/result_block_widget.dart';
@@ -5,6 +6,9 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:file_picker/file_picker.dart';
 import 'package:dio/dio.dart';
+
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class ResultPage extends StatefulWidget {
   final FilePickerResult image;
@@ -17,6 +21,7 @@ class ResultPage extends StatefulWidget {
 
 class _ResultPageState extends State<ResultPage> {
   bool _isLoading = true;
+  bool _isReported = false;
   String currentLocale = '';
   Map<String, dynamic> jsonResponse = {
     "bbox": {
@@ -29,7 +34,11 @@ class _ResultPageState extends State<ResultPage> {
       "height": 10,
       "width": 10
     },
-    "predictions": {}
+    "predictions": {},
+    "version": {
+      "detect": "",
+      "classify": "",
+    }
   };
 
   Map<String, dynamic> speciesInfo = {};
@@ -38,6 +47,8 @@ class _ResultPageState extends State<ResultPage> {
   double bbox_left=0;
   double bbox_width=0;
   double bbox_height=0;
+
+  
 
   @override
   void initState() {
@@ -49,6 +60,26 @@ class _ResultPageState extends State<ResultPage> {
     final jsonString =
         await rootBundle.loadString('content/species_info_$locale.json');
     return json.decode(jsonString);
+  }
+
+
+  Future<void> _reportImage() async {
+    // Create a Firestore document reference
+    final DocumentReference<Map<String, dynamic>> documentReference =
+        FirebaseFirestore.instance.collection('no-classification-images').doc();
+
+    try {
+      // Upload the data to Firestore
+      await documentReference.set(jsonResponse);
+
+      // Update the state to reflect the successful upload
+      setState(() {
+        _isReported = true;
+      });
+    } catch (error) {
+      // Handle any errors that occurred during the upload
+      print('Error uploading data to Firestore: $error');
+    }
   }
 
   Future<Map<String, dynamic>> uploadImage() async {
@@ -146,27 +177,53 @@ class _ResultPageState extends State<ResultPage> {
           Expanded(
             flex: 2,
             child: _isLoading
-                ? Center(
-                    child: CircularProgressIndicator(),
-                  )
-                : SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        for (final entry
-                            in jsonResponse['predictions']!.entries.toList()
-                            ..sort((a, b) => (b.value as double).compareTo(a.value as double)))
-                          ResultBlock(
-                            speciesInfo: speciesInfo[entry.key],
-                            score: ((entry.value*100).toInt()),
-                          ),
+              ? Center(
+                  child: CircularProgressIndicator(),
+                )
+              : SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      for (final entry
+                          in jsonResponse['predictions']!.entries.toList()
+                          ..sort((a, b) => (b.value as double).compareTo(a.value as double)))
+                        ResultBlock(
+                          speciesInfo: speciesInfo[entry.key],
+                          score: ((entry.value*100).toInt()),
+                        ),
 
-                        const ResultBlock(
-                            speciesInfo: {"scientific_name": "No match"},
-                            score: 0,
+                        Card(
+                          elevation: 5,
+                          margin: const EdgeInsets.all(10),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Column(
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context)!.noMatchFoundPrompt,
+                                  style: const TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                ElevatedButton(
+                                  onPressed: _isReported ? null : _reportImage,
+                                  child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                if (_isReported)
+                                  Text(
+                                    AppLocalizations.of(context)!.imageReportedNoti,
+                                    style: const TextStyle(fontWeight: FontWeight.bold),
+                                  )
+                              ],
+                            ),
                           ),
-                      ],
-                    ),
+                        )
+                    ],
                   ),
+                ),
           ),
         ],
       ),

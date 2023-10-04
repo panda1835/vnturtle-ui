@@ -19,50 +19,11 @@ class ResultBlock extends StatefulWidget {
 }
 
 class _ResultBlockState extends State<ResultBlock> {
-  bool _isReported = false;
-
-  Future<void> _reportImage() async {
-    await Future.delayed(Duration(seconds: 1));
-    setState(() {
-          _isReported = true;
-    });
-  }
-
+  
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
-    if (widget.speciesInfo['scientific_name'] == "No match") {
-      return Card(
-        elevation: 5,
-        margin: const EdgeInsets.all(10),
-        child: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Column(
-            children: [
-              Text(
-                AppLocalizations.of(context)!.noMatchFoundPrompt,
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              ElevatedButton(
-                onPressed: _isReported ? null : _reportImage,
-                child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              if (_isReported)
-                Text(
-                  AppLocalizations.of(context)!.imageReportedNoti,
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                )
-            ],
-          ),
-        ),
-      );
-    }
+
     return Card(
       elevation: 5,
       margin: const EdgeInsets.all(10),
