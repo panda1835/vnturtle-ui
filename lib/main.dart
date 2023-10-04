@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
             // buttonTheme: ButtonThemeData(buttonColor: Colors.black),
             appBarTheme: AppBarTheme(
               backgroundColor: Colors.green.shade50,
-              iconTheme: const IconThemeData(color: Colors.black),
+              iconTheme: const IconThemeData(color: Colors.green),
               titleTextStyle: const TextStyle(
                 color: Colors.green,
                 fontFamily: "Happy Monkey",
