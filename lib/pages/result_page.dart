@@ -196,13 +196,7 @@ class _ResultPageState extends State<ResultPage> {
             ),
             ),
           // Second Half - List View (wrapped with SingleChildScrollView)
-          Expanded(
-            flex: 2,
-            child: _isPredictionLoading
-              ? Center(
-                  child: CircularProgressIndicator(),
-                )
-              : _hasNoClassification 
+          _hasNoClassification 
               ? Center( // if the user submit a report then collapse all predictions
                 child: Card(
                   elevation: 5,
@@ -233,7 +227,13 @@ class _ResultPageState extends State<ResultPage> {
                     ),
                   ),
                 ),
-              ) : SingleChildScrollView(
+              ) : Expanded(
+            flex: 2,
+            child: _isPredictionLoading
+              ? const Center(
+                  child: CircularProgressIndicator(),
+                )
+              : SingleChildScrollView(
                   child: Column(
                     children: [
                       for (final entry
