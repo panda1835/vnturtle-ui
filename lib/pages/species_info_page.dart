@@ -43,11 +43,17 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
         String nameEn = speciesInfo['secondary_name'];
         String nameSci = speciesInfo['scientific_name'];
         String otherName = speciesInfo['other_names'];
-
+        String isNative = "";
+        if (speciesInfo['native'] == "true"){
+          isNative = AppLocalizations.of(context)!.native;
+        } else {
+          isNative = AppLocalizations.of(context)!.nonNative;
+        }
         return nameVi.toLowerCase().contains(query.toLowerCase()) ||
             conservationStatus.toLowerCase().contains(query.toLowerCase()) ||
             nameSci.toLowerCase().contains(query.toLowerCase()) ||
             nameEn.toLowerCase().contains(query.toLowerCase()) ||
+            isNative.toLowerCase().contains(query.toLowerCase()) ||
             otherName.toLowerCase().contains(query.toLowerCase());
       }).toList();
     });
