@@ -145,6 +145,7 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   Widget build(BuildContext context) {
+    ThemeData theme = Theme.of(context);
     if (currentLocale != Localizations.localeOf(context).languageCode){
       setState(() {
         currentLocale = Localizations.localeOf(context).languageCode;
@@ -272,7 +273,7 @@ class _ResultPageState extends State<ResultPage> {
                                   if (_isReported)
                                     Text(
                                       AppLocalizations.of(context)!.imageReportedNoti,
-                                      style: const TextStyle(fontWeight: FontWeight.bold),
+                                      style: TextStyle(fontWeight: FontWeight.bold, color: theme.primaryColor),
                                     )
                                 ],
                               ),

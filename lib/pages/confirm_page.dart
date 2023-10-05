@@ -208,6 +208,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                 width: 400,
                 child: Text(
                   AppLocalizations.of(context)!.contributeThankyouMessage,
+                  style: TextStyle(color: theme.primaryColor),
                 ),
               ),
           ],
