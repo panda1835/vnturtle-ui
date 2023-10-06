@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'dart:convert';
 import 'package:flutter/services.dart' show Uint8List, rootBundle;
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
@@ -25,13 +24,6 @@ class _ConfirmPageState extends State<ConfirmPage> {
   bool _isContributed = false;
   // Map<String, dynamic> speciesData = {};
   String currentLocale = '';
-
-  Future<Map<String, dynamic>> loadSpeciesData(String locale) async {
-    String jsonString =
-        await rootBundle.loadString('content/species_info_$locale.json');
-      
-    return jsonDecode(jsonString);
-  }
 
   Future<void> _contributeImage() async {
     // Create a Firestore document reference
@@ -106,7 +98,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
             ),
             const SizedBox(height: 20),
             Text(
-              widget.speciesInfo['primary_name'],
+              widget.speciesInfo['primary_name'][currentLocale],
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -125,7 +117,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
               width: 400,
               child: RichText(
                 text: TextSpan(
-                  text: widget.speciesInfo['warning'],
+                  text: widget.speciesInfo['warning'][currentLocale],
                   style: const TextStyle(
                     fontSize: 15,
                     color: Colors.black,

@@ -27,9 +27,9 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
   }
 
 
-  Future<Map<String, dynamic>> loadSpeciesData(locale) async {
+  Future<Map<String, dynamic>> loadSpeciesData() async {
     String jsonString =
-        await rootBundle.loadString('content/species_info_$locale.json');
+        await rootBundle.loadString('content/species_info.json');
     return jsonDecode(jsonString);
   }
 
@@ -77,7 +77,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
     
-      loadSpeciesData(currentLocale).then((value) => setState(() {
+      loadSpeciesData().then((value) => setState(() {
         speciesData = value;
         speciesNames = speciesData.keys.toList();
         filteredSpeciesNames = speciesNames;
@@ -205,7 +205,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                                   children: [
                                     Flexible(
                                       child: Text(
-                                        speciesInfo['primary_name'],
+                                        speciesInfo['primary_name'][currentLocale],
                                         style: const TextStyle(
                                           fontSize: 18.0, 
                                           fontWeight: FontWeight.bold,
@@ -224,10 +224,10 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                                 ),
                                 const SizedBox(height: 8.0),
                                 
-                                ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 14,),
+                                ConservationStatusText(conservationStatus: speciesInfo['conservation_status']['iucn'], fontSize: 14,),
                                 
                                 const SizedBox(height: 8.0),
-                                Text('${AppLocalizations.of(context)!.otherName}: ${speciesInfo['other_names']}'),
+                                Text('${AppLocalizations.of(context)!.otherName}: ${speciesInfo['other_names'][currentLocale]}'),
                               ],
                             ),
                           ),

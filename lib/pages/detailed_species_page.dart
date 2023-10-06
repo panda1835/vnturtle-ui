@@ -29,9 +29,9 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
     super.initState();
   }
 
-  Future<bool> loadData(String locale) async {
+  Future<bool> loadData() async {
     String jsonSpeciesData =
-        await rootBundle.loadString('content/species_info_$locale.json');
+        await rootBundle.loadString('content/species_info.json');
     String jsonLaw =
         await rootBundle.loadString('content/laws.json');
     
@@ -53,7 +53,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
 
-      loadData(currentLocale);
+      loadData();
     }
     
     return Scaffold(
@@ -68,7 +68,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
         ],
       ),
       body: FutureBuilder(
-        future: loadData(currentLocale),
+        future: loadData(),
         builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
           if (snapshot.data == true) {
             if (snapshot.hasError) {
@@ -84,7 +84,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                   children: [
                     Center(
                       child: Text(
-                        speciesInfo['primary_name'],
+                        speciesInfo['primary_name'][currentLocale],
                         style: TextStyle(
                           fontSize: 24.0,
                           fontWeight: FontWeight.bold,
@@ -115,7 +115,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Flexible(child: Text("${speciesInfo['other_names']}"))
+                        Flexible(child: Text("${speciesInfo['other_names'][currentLocale]}"))
                       ],
                     ),
                     const SizedBox(height: 8.0),
@@ -128,7 +128,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Text("${speciesInfo['secondary_name']}")
+                        Text("${speciesInfo['secondary_name'][currentLocale]}")
                       ],
                     ),
                     SizedBox(height: 8.0),
@@ -143,7 +143,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                         ),
                         Flexible(
                           fit: FlexFit.loose,
-                          child: ConservationStatusText(conservationStatus: speciesInfo['iucn'], fontSize: 14,)
+                          child: ConservationStatusText(conservationStatus: speciesInfo['conservation_status']['iucn'], fontSize: 14,)
                         )
                       ],
                     ),
@@ -232,7 +232,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                             ),
-                            Text(speciesInfo['taxonomy']['class'])
+                            Text(speciesInfo['taxonomy']['class'][currentLocale])
                           ],
                         ),
                         SizedBox(height: 8,),
@@ -245,7 +245,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                                 style: TextStyle(fontWeight: FontWeight.bold)
                               ),
                             ),
-                            Text(speciesInfo['taxonomy']['order'])
+                            Text(speciesInfo['taxonomy']['order'][currentLocale])
                           ],
                         ),
                         const SizedBox(height: 8,),
@@ -258,7 +258,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                                 style: TextStyle(fontWeight: FontWeight.bold)
                               ),
                             ),
-                            Text(speciesInfo['taxonomy']['family'])
+                            Text(speciesInfo['taxonomy']['family'][currentLocale])
                           ],
                         )
                       ],
@@ -272,7 +272,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                       ),
                     ),
                     SizedBox(height: 8.0),
-                    Text(speciesInfo['characteristics']),
+                    Text(speciesInfo['characteristics'][currentLocale]),
                     SizedBox(height: 16.0),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
@@ -280,7 +280,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                         children: speciesInfo['identification_images']
                             .map<Widget>(
                               (image) => Image.asset(
-                                image,
+                                image["image"],
                                 width: 200,
                                 height: 200,
                                 fit: BoxFit.cover,
@@ -297,7 +297,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     ),
                     const SizedBox(height: 8.0),
                     Text(
-                      speciesInfo['habitat'],
+                      speciesInfo['habitat'][currentLocale],
                     ),
                     const SizedBox(height: 16.0),
                     Text(
@@ -306,7 +306,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     ),
                     const SizedBox(height: 8.0),
                     Text(
-                      speciesInfo['distribution'],
+                      speciesInfo['distribution'][currentLocale],
                     ),
                     const SizedBox(height: 16.0),
                     Text(
@@ -315,7 +315,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     ),
                     const SizedBox(height: 8.0),
                     Text(
-                      speciesInfo['fun_fact'],
+                      speciesInfo['fun_fact'][currentLocale],
                     ),
                     const SizedBox(height: 16.0),
                     Text(
@@ -323,7 +323,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                       style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 8.0),
-                    for (var reference in speciesInfo['reference_sources'])
+                    for (var reference in speciesInfo['reference_sources'][currentLocale])
                     Text(
                       "- ${reference}",
                     ),

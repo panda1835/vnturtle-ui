@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
+import 'package:vnturtle/widgets/unsupported_species_panel_widget.dart';
 import '../widgets/result_block_widget.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
@@ -61,9 +62,9 @@ class _ResultPageState extends State<ResultPage> {
     runPrediction();
   }
 
-  Future<Map<String, dynamic>> loadSpeciesInfo(String locale) async {
+  Future<Map<String, dynamic>> loadSpeciesInfo() async {
     final jsonString =
-        await rootBundle.loadString('content/species_info_$locale.json');
+        await rootBundle.loadString('content/species_info.json');
     return json.decode(jsonString);
   }
 
@@ -150,7 +151,7 @@ class _ResultPageState extends State<ResultPage> {
       setState(() {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
-      loadSpeciesInfo(currentLocale).then((value) => setState(() {
+      loadSpeciesInfo().then((value) => setState(() {
         speciesInfo = value;
       },));
     }
@@ -246,7 +247,9 @@ class _ResultPageState extends State<ResultPage> {
                             score: ((entry.value*100).toInt()),
                             image: widget.image,
                           ),
-      
+
+                          UnsupportedSpeciesTogglePanel(),
+
                           Card(
                             elevation: 5,
                             margin: const EdgeInsets.all(10),

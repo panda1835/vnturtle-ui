@@ -22,10 +22,16 @@ class ResultBlock extends StatefulWidget {
 }
 
 class _ResultBlockState extends State<ResultBlock> {
-  
+  String currentLocale = "";
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
+
+    if (currentLocale != Localizations.localeOf(context).languageCode){
+      setState(() {
+        currentLocale = Localizations.localeOf(context).languageCode;
+      });
+    }
 
     return Card(
       elevation: 5,
@@ -42,9 +48,9 @@ class _ResultBlockState extends State<ResultBlock> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   // Use the reference_images field from species_info_vi.json
-                  for (final imagePath in widget.speciesInfo['identification_images'])
+                  for (final image in widget.speciesInfo['identification_images'])
                     Image.asset(
-                      imagePath,
+                      image['image'],
                       height: 150,
                     ),
                 ],
@@ -60,7 +66,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       margin: const EdgeInsets.only(top: 10, bottom: 10),
                       width: 200.0,
                       child: Text(
-                        widget.speciesInfo['primary_name'],
+                        widget.speciesInfo['primary_name'][currentLocale],
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
