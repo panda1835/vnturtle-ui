@@ -48,6 +48,7 @@ class _ResultPageState extends State<ResultPage> {
   };
 
   Map<String, dynamic> speciesInfo = {};
+  Map<String, dynamic> unsupportedSpeciesInfo = {};
   double display_image_height = 180;
   double bbox_top=0;
   double bbox_left=0;
@@ -65,6 +66,12 @@ class _ResultPageState extends State<ResultPage> {
   Future<Map<String, dynamic>> loadSpeciesInfo() async {
     final jsonString =
         await rootBundle.loadString('content/species_info.json');
+    return json.decode(jsonString);
+  }
+
+  Future<Map<String, dynamic>> loadUnsupportedSpeciesInfo() async {
+    final jsonString =
+        await rootBundle.loadString('content/unsupported_species_info.json');
     return json.decode(jsonString);
   }
 
@@ -151,8 +158,13 @@ class _ResultPageState extends State<ResultPage> {
       setState(() {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
+
       loadSpeciesInfo().then((value) => setState(() {
         speciesInfo = value;
+      },));
+
+      loadUnsupportedSpeciesInfo().then((value) => setState(() {
+        unsupportedSpeciesInfo = value;
       },));
     }
 
@@ -248,9 +260,37 @@ class _ResultPageState extends State<ResultPage> {
                             image: widget.image,
                           ),
 
-                          Card(
-                            margin: const EdgeInsets.all(10),
-                            child: UnsupportedSpeciesTogglePanel()
+                          Container(
+                            child: ElevatedButton(
+                              child: Text(AppLocalizations.of(context)!.notSupportedSpeciesButtonText),
+                              onPressed: () {
+                                showModalBottomSheet(
+                                  backgroundColor: theme.secondaryHeaderColor,
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return SingleChildScrollView(
+                                      child: Column(
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(16.0),
+                                            child: Text(
+                                              AppLocalizations.of(context)!.notSupportedSpeciesTitle,
+                                              style: TextStyle(color: theme.primaryColor, fontWeight: FontWeight.bold, fontSize: 25),
+                                            ),
+                                          ),
+                                          for (final entry in unsupportedSpeciesInfo.entries.toList())
+                                          ResultBlock(
+                                            image: widget.image, 
+                                            score: -1, 
+                                            speciesInfo: entry.value
+                                          ),
+                                        ]
+                                      ),
+                                    );
+                                  }
+                                );
+                              }, 
+                            ),
                           ),
 
                           Card(
@@ -268,7 +308,7 @@ class _ResultPageState extends State<ResultPage> {
                                     height: 10,
                                   ),
                                   _isReportLoading
-                                    ? CircularProgressIndicator() // Show a progress indicator while loading
+                                    ? const CircularProgressIndicator() // Show a progress indicator while loading
                                     : ElevatedButton(
                                       onPressed: _isReported ? null : _reportImage,
                                       child: Text(AppLocalizations.of(context)!.reportNoMatchButton),

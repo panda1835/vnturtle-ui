@@ -63,7 +63,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => DetailedSpeciesPage(speciesName: speciesName,),
+        builder: (context) => DetailedSpeciesPage(speciesInfo: speciesData[speciesName],),
       ),
     );
   }

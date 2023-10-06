@@ -7,10 +7,10 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 // ignore: must_be_immutable
 class DetailedSpeciesPage extends StatefulWidget {
-  final String speciesName;
+  final Map<String, dynamic> speciesInfo;
 
   DetailedSpeciesPage({
-    required this.speciesName,
+    required this.speciesInfo,
   });
 
   @override
@@ -18,9 +18,7 @@ class DetailedSpeciesPage extends StatefulWidget {
 }
 
 class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
-  Map<String, dynamic> speciesData = {};
   Map<String, dynamic> lawInfo = {};
-  Map<String, dynamic> speciesInfo = {};
 
   String currentLocale = "";
 
@@ -30,14 +28,10 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
   }
 
   Future<bool> loadData() async {
-    String jsonSpeciesData =
-        await rootBundle.loadString('content/species_info.json');
     String jsonLaw =
         await rootBundle.loadString('content/laws.json');
     
     setState(() {
-      speciesData = jsonDecode(jsonSpeciesData);
-      speciesInfo = speciesData[widget.speciesName];
       lawInfo = jsonDecode(jsonLaw);
     });
 
@@ -84,7 +78,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                   children: [
                     Center(
                       child: Text(
-                        speciesInfo['primary_name'][currentLocale],
+                        widget.speciesInfo['primary_name'][currentLocale],
                         style: TextStyle(
                           fontSize: 24.0,
                           fontWeight: FontWeight.bold,
@@ -102,7 +96,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Text(speciesInfo['scientific_name'])
+                        Text(widget.speciesInfo['scientific_name'])
                       ],
                     ),
                     const SizedBox(height: 8.0),
@@ -115,7 +109,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Flexible(child: Text("${speciesInfo['other_names'][currentLocale]}"))
+                        Flexible(child: Text("${widget.speciesInfo['other_names'][currentLocale]}"))
                       ],
                     ),
                     const SizedBox(height: 8.0),
@@ -128,7 +122,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Text("${speciesInfo['secondary_name'][currentLocale]}")
+                        Text("${widget.speciesInfo['secondary_name'][currentLocale]}")
                       ],
                     ),
                     SizedBox(height: 8.0),
@@ -143,7 +137,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                         ),
                         Flexible(
                           fit: FlexFit.loose,
-                          child: ConservationStatusText(conservationStatus: speciesInfo['conservation_status']['iucn'], fontSize: 14,)
+                          child: ConservationStatusText(conservationStatus: widget.speciesInfo['conservation_status']['iucn'], fontSize: 14,)
                         )
                       ],
                     ),
@@ -154,9 +148,9 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: speciesInfo['laws'].keys
+                      children: widget.speciesInfo['laws'].keys
                         .map<Widget>((lawKey) {
-                          final lawValue = speciesInfo['laws'][lawKey];
+                          final lawValue = widget.speciesInfo['laws'][lawKey];
                           if (lawValue != "") {
                             return Row(
                               children: [
@@ -200,7 +194,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                        children: speciesInfo['reference_images']
+                        children: widget.speciesInfo['reference_images']
                             .map<Widget>(
                               (image) => Image.asset(
                                 image,
@@ -232,7 +226,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                             ),
-                            Text(speciesInfo['taxonomy']['class'][currentLocale])
+                            Text(widget.speciesInfo['taxonomy']['class'][currentLocale])
                           ],
                         ),
                         SizedBox(height: 8,),
@@ -245,7 +239,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                                 style: TextStyle(fontWeight: FontWeight.bold)
                               ),
                             ),
-                            Text(speciesInfo['taxonomy']['order'][currentLocale])
+                            Text(widget.speciesInfo['taxonomy']['order'][currentLocale])
                           ],
                         ),
                         const SizedBox(height: 8,),
@@ -258,7 +252,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                                 style: TextStyle(fontWeight: FontWeight.bold)
                               ),
                             ),
-                            Text(speciesInfo['taxonomy']['family'][currentLocale])
+                            Text(widget.speciesInfo['taxonomy']['family'][currentLocale])
                           ],
                         )
                       ],
@@ -272,12 +266,12 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                       ),
                     ),
                     SizedBox(height: 8.0),
-                    Text(speciesInfo['characteristics'][currentLocale]),
+                    Text(widget.speciesInfo['characteristics'][currentLocale]),
                     SizedBox(height: 16.0),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                        children: speciesInfo['identification_images']
+                        children: widget.speciesInfo['identification_images']
                             .map<Widget>(
                               (image) => Image.asset(
                                 image["image"],
@@ -297,7 +291,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     ),
                     const SizedBox(height: 8.0),
                     Text(
-                      speciesInfo['habitat'][currentLocale],
+                      widget.speciesInfo['habitat'][currentLocale],
                     ),
                     const SizedBox(height: 16.0),
                     Text(
@@ -306,7 +300,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     ),
                     const SizedBox(height: 8.0),
                     Text(
-                      speciesInfo['distribution'][currentLocale],
+                      widget.speciesInfo['distribution'][currentLocale],
                     ),
                     const SizedBox(height: 16.0),
                     Text(
@@ -315,7 +309,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     ),
                     const SizedBox(height: 8.0),
                     Text(
-                      speciesInfo['fun_fact'][currentLocale],
+                      widget.speciesInfo['fun_fact'][currentLocale],
                     ),
                     const SizedBox(height: 16.0),
                     Text(
@@ -323,7 +317,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                       style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 8.0),
-                    for (var reference in speciesInfo['reference_sources'][currentLocale])
+                    for (var reference in widget.speciesInfo['reference_sources'][currentLocale])
                     Text(
                       "- ${reference}",
                     ),

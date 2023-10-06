@@ -63,24 +63,27 @@ class _ResultBlockState extends State<ResultBlock> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                      margin: const EdgeInsets.only(top: 10, bottom: 10),
-                      width: 200.0,
-                      child: Text(
-                        widget.speciesInfo['primary_name'][currentLocale],
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        ),
-                      )),
+                    margin: const EdgeInsets.only(top: 10, bottom: 10),
+                    width: 200.0,
+                    child: Text(
+                      widget.speciesInfo['primary_name'][currentLocale],
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    )
+                  ),
                   const SizedBox(width: 20.0),
-                  Text(
+                  widget.score > -1 // if -1 then it is unsupported species, do not display score
+                  ? Text(
                     '${widget.score.toString()}%',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: theme.primaryColor,
                       fontSize: 20,
                     ),
-                  ),
+                  )
+                  : Text(""),
                 ],
               ),
             ),
@@ -110,7 +113,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       showModalBottomSheet(
                           context: context,
                           builder: (BuildContext context) =>
-                              DetailedSpeciesPage(speciesName: widget.speciesInfo['scientific_name'],));
+                              DetailedSpeciesPage(speciesInfo: widget.speciesInfo,));
                     },
                     child: Text(AppLocalizations.of(context)!.moreInfoButton),
                   ),

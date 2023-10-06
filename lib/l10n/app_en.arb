@@ -184,8 +184,13 @@
         "description": ""
     },
 
-    "notSupportedSpeciesToggleTitle": "List of unsupported species",
-    "@notSupportedSpeciesToggleTitle": {
+    "notSupportedSpeciesButtonText": "View the list of unsupported species",
+    "@notSupportedSpeciesButtonText": {
+        "description": ""
+    },
+
+    "notSupportedSpeciesTitle": "List of unsupported species",
+    "@notSupportedSpeciesTitle": {
         "description": ""
     }
 }

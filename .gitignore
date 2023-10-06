@@ -42,3 +42,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+macos/
+windows/
+assets/images/artworks
+assets/images/temp
+test_api.dart
+python_scripts/
+.vscode/
