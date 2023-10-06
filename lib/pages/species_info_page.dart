@@ -16,6 +16,7 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
   List<String> speciesNames = [];
   List<String> filteredSpeciesNames = [];
   Map<String, dynamic> speciesData = {};
+  Map<String, dynamic> unsupportedSpeciesData = {};
 
   String currentLocale = '';
 
@@ -33,16 +34,22 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
     return jsonDecode(jsonString);
   }
 
+  Future<Map<String, dynamic>> loadUnsupportedSpeciesData() async {
+    String jsonString =
+        await rootBundle.loadString('content/unsupported_species_info.json');
+    return jsonDecode(jsonString);
+  }
+
 
   void filterSpeciesList(String query) {
     setState(() {
       filteredSpeciesNames = speciesNames.where((name) {
         Map<String, dynamic> speciesInfo = speciesData[name];
-        String nameVi = speciesInfo['primary_name'];
-        String conservationStatus = speciesInfo['iucn'];
-        String nameEn = speciesInfo['secondary_name'];
+        String nameVi = speciesInfo['primary_name'][currentLocale];
+        String conservationStatus = speciesInfo['conservation_status']['iucn'];
+        String nameEn = speciesInfo['secondary_name'][currentLocale];
         String nameSci = speciesInfo['scientific_name'];
-        String otherName = speciesInfo['other_names'];
+        String otherName = speciesInfo['other_names'][currentLocale];
         String isNative = "";
         if (speciesInfo['native'] == "true"){
           isNative = AppLocalizations.of(context)!.native;
@@ -77,8 +84,13 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
     
+      loadUnsupportedSpeciesData().then((value) => setState(() {
+        unsupportedSpeciesData = value;
+      },));
+
       loadSpeciesData().then((value) => setState(() {
         speciesData = value;
+        speciesData.addAll(unsupportedSpeciesData);
         speciesNames = speciesData.keys.toList();
         filteredSpeciesNames = speciesNames;
       },));
