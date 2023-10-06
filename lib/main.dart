@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:vnturtle/l10n/l10n.dart';
 import 'package:vnturtle/provider/locale_provider.dart';
@@ -24,6 +25,12 @@ void main() async {
       storageBucket: "gs://ecstatic-design-399511.appspot.com",
     )
   );
+
+  // Always portrait mode
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
+
   runApp(MyApp());
 } 
 
