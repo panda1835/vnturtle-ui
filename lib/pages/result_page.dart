@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
-import 'package:vnturtle/widgets/unsupported_species_panel_widget.dart';
 import '../widgets/result_block_widget.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
