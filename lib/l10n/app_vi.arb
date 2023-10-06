@@ -35,5 +35,6 @@
     "funFacts": "Thông tin thú vị",
     "referenceSources": "Nguồn tham khảo",
     "native": "bản địa",
-    "nonNative": "ngoại lai"
+    "nonNative": "ngoại lai",
+    "notSupportedSpeciesToggleTitle": "Các loài chưa được hỗ trợ"
 }

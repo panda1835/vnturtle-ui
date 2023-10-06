@@ -124,7 +124,7 @@
         "description": ""
     },
 
-    "distribution": "distribution",
+    "distribution": "Distribution",
     "@distribution": {
         "description": ""
     },
@@ -181,6 +181,11 @@
 
     "nonNative": "introduced",
     "@nonNative": {
+        "description": ""
+    },
+
+    "notSupportedSpeciesToggleTitle": "List of unsupported species",
+    "@notSupportedSpeciesToggleTitle": {
         "description": ""
     }
 }

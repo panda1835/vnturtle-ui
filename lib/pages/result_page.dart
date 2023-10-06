@@ -248,7 +248,10 @@ class _ResultPageState extends State<ResultPage> {
                             image: widget.image,
                           ),
 
-                          UnsupportedSpeciesTogglePanel(),
+                          Card(
+                            margin: const EdgeInsets.all(10),
+                            child: UnsupportedSpeciesTogglePanel()
+                          ),
 
                           Card(
                             elevation: 5,
