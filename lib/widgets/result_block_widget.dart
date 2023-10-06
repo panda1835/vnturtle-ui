@@ -23,6 +23,8 @@ class ResultBlock extends StatefulWidget {
 
 class _ResultBlockState extends State<ResultBlock> {
   String currentLocale = "";
+  final int maxWidth = 420;
+
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
@@ -32,6 +34,9 @@ class _ResultBlockState extends State<ResultBlock> {
         currentLocale = Localizations.localeOf(context).languageCode;
       });
     }
+
+    Size screenSize = MediaQuery.of(context).size;
+    double screenWidth = screenSize.width;
 
     return Card(
       elevation: 5,
@@ -73,7 +78,9 @@ class _ResultBlockState extends State<ResultBlock> {
                       ),
                     )
                   ),
-                  const SizedBox(width: 20.0),
+                  screenWidth < maxWidth
+                  ? SizedBox(width: screenWidth - 200 - 20 - 85)
+                  : SizedBox(width: 20,),
                   widget.score > -1 // if -1 then it is unsupported species, do not display score
                   ? Text(
                     '${widget.score.toString()}%',
@@ -92,7 +99,7 @@ class _ResultBlockState extends State<ResultBlock> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                  width: 130,
+                  width: 150,
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
@@ -105,9 +112,11 @@ class _ResultBlockState extends State<ResultBlock> {
                     child: Text(AppLocalizations.of(context)!.confirmButton),
                   ),
                 ),
-                const SizedBox(width: 8.0),
+                screenWidth < maxWidth
+                  ? SizedBox(width: screenWidth - 200 - 20 - 140)
+                  : SizedBox(width: 20,),
                 Container(
-                  width: 130,
+                  width: 150,
                   child: ElevatedButton(
                     onPressed: () {
                       showModalBottomSheet(
