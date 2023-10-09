@@ -287,6 +287,15 @@ class _ResultPageState extends State<ResultPage> {
                             image: widget.image,
                           ),
 
+                          const Divider(
+                            height: 20,
+                            thickness: 1,
+                            indent: 10.0,
+                            endIndent: 10.0,
+                            color: Colors.grey,
+                          ),
+
+                          // no match found
                           Container(
                             width: double.infinity,
                             child: Card(

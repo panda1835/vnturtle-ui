@@ -61,7 +61,7 @@ class _ResultBlockState extends State<ResultBlock> {
                 ],
               ),
             ),
-            // Name_vi and score
+            // Name and score
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -69,7 +69,7 @@ class _ResultBlockState extends State<ResultBlock> {
                 children: [
                   Container(
                     margin: const EdgeInsets.only(top: 10, bottom: 10),
-                    width: 200.0,
+                    width: 250.0,
                     child: Text(
                       widget.speciesInfo['primary_name'][currentLocale],
                       style: const TextStyle(
@@ -78,9 +78,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       ),
                     )
                   ),
-                  screenWidth < maxWidth
-                  ? SizedBox(width: screenWidth - 200 - 20 - 85)
-                  : SizedBox(width: 20,),
+                  SizedBox(width: 20,),
                   widget.score > -1 // if -1 then it is unsupported species, do not display score
                   ? Text(
                     '${widget.score.toString()}%',
@@ -95,7 +93,40 @@ class _ResultBlockState extends State<ResultBlock> {
               ),
             ),
             // Buttons
-            Row(
+            screenWidth < maxWidth
+            ? Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  width: 150,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ConfirmPage(speciesInfo: widget.speciesInfo, image: widget.image,),
+                        ),
+                      );
+                    },
+                    child: Text(AppLocalizations.of(context)!.confirmButton),
+                  ),
+                ),
+                Container(
+                  width: 150,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      showModalBottomSheet(
+                          context: context,
+                          builder: (BuildContext context) =>
+                              DetailedSpeciesPage(speciesInfo: widget.speciesInfo,));
+                    },
+                    child: Text(AppLocalizations.of(context)!.moreInfoButton),
+                  ),
+                ),
+                const SizedBox(width: 16.0),
+              ],
+            )
+            : Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
@@ -112,9 +143,7 @@ class _ResultBlockState extends State<ResultBlock> {
                     child: Text(AppLocalizations.of(context)!.confirmButton),
                   ),
                 ),
-                screenWidth < maxWidth
-                  ? SizedBox(width: screenWidth - 200 - 20 - 140)
-                  : SizedBox(width: 20,),
+                SizedBox(width: 20,),
                 Container(
                   width: 150,
                   child: ElevatedButton(
