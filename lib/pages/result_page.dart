@@ -222,54 +222,55 @@ class _ResultPageState extends State<ResultPage> {
               ),
             // Second Half - List View (wrapped with SingleChildScrollView)
             _hasNoClassification 
-                ? Container(
-                    width: double.infinity,
-                    child: Card(
-                      elevation: 5,
-                      margin: const EdgeInsets.all(8.0),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              AppLocalizations.of(context)!.stillNoMatchFound,
-                              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              AppLocalizations.of(context)!.letUsKnow,
-                              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  width: 300,
-                                  child: ElevatedButton(
-                                    onPressed: null,
-                                    child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
-                                  ),
+              ? Container(
+                  width: double.infinity,
+                  child: Card(
+                    elevation: 5,
+                    margin: const EdgeInsets.all(8.0),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            AppLocalizations.of(context)!.stillNoMatchFound,
+                            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            AppLocalizations.of(context)!.letUsKnow,
+                            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 300,
+                                child: ElevatedButton(
+                                  onPressed: null,
+                                  child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
                                 ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              AppLocalizations.of(context)!.reportNoMatchExplain,
-                              style: TextStyle(fontWeight: FontWeight.normal,),
-                            )
-                          ],
-                        ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            AppLocalizations.of(context)!.reportNoMatchExplain,
+                            style: TextStyle(fontWeight: FontWeight.normal,),
+                          )
+                        ],
                       ),
                     ),
-                ) : Expanded(
+                  ),
+              ) 
+              : Expanded(
               flex: 2,
               child: _isPredictionLoading
                 ? const Center(

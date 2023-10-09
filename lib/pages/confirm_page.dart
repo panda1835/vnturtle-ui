@@ -26,6 +26,9 @@ class _ConfirmPageState extends State<ConfirmPage> {
   String currentLocale = '';
 
   Future<void> _contributeImage() async {
+
+    String snackBarMessage = "";
+
     // Create a Firestore document reference
     final DocumentReference<Map<String, dynamic>> documentReference =
         FirebaseFirestore.instance.collection('contribute-images').doc();
@@ -56,10 +59,22 @@ class _ConfirmPageState extends State<ConfirmPage> {
         _isContributed = true;
         _isContributeLoading = false;
       });
+      snackBarMessage = AppLocalizations.of(context)!.imageReportedNoti;
     } catch (error) {
       // Handle any errors that occurred during the upload
+      snackBarMessage = AppLocalizations.of(context)!.genericErrorMessageToUser;
       print('Error uploading data to Firestore: $error');
     }
+
+    final snackBar = SnackBar(
+      backgroundColor: Theme.of(context).primaryColorLight,
+      content: Text(
+        snackBarMessage,
+        style: TextStyle(color: Colors.black),
+      ),
+      duration: const Duration(seconds: 5),
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
   @override
@@ -85,24 +100,27 @@ class _ConfirmPageState extends State<ConfirmPage> {
           SizedBox(width: 12,)
         ],
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              // margin: EdgeInsets.only(top: 100),
+              margin: EdgeInsets.only(top: 50),
               child: CircleAvatar(
                 radius: 100,
                 backgroundImage: AssetImage(widget.speciesInfo['reference_images'][0]), // Replace with your image path
               ),
             ),
             const SizedBox(height: 20),
-            Text(
-              widget.speciesInfo['primary_name'][currentLocale],
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                color: theme.primaryColor,
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text(
+                widget.speciesInfo['primary_name'][currentLocale],
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: theme.primaryColor,
+                ),
               ),
             ),
             const SizedBox(height: 10),
@@ -114,6 +132,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
             ),
             const SizedBox(height: 20),
             Container(
+              padding: EdgeInsets.only(left: 10, right: 10),
               width: 400,
               child: RichText(
                 text: TextSpan(
@@ -148,61 +167,69 @@ class _ConfirmPageState extends State<ConfirmPage> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(width: 20,),
-                SizedBox(width: 10,),
-                _isContributeLoading
-                ? Center(
-                    child: CircularProgressIndicator(),
-                  )
-                : ElevatedButton(
-                  onPressed: _isContributed ? null : _contributeImage,
-                  child: Text(AppLocalizations.of(context)!.contributeImage),
-                ),
-                SizedBox(width: 10,),
-                Container(
-                  width: 20,
-                  child: IconButton(
-                    icon: const Icon(Icons.help_outline),
-                    splashRadius: 5,
-                    tooltip: AppLocalizations.of(context)!.contributeImageMessage,
-                    onPressed: () {
-                      // Handle the tooltip button click
-                      showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            title: Text(AppLocalizations.of(context)!.contributeImage),
-                            content: Text(AppLocalizations.of(context)!.contributeImageMessage),
-                            actions: [
-                              TextButton(
-                                onPressed: () {
-                                  Navigator.of(context).pop();
-                                },
-                                child: Text(AppLocalizations.of(context)!.close),
-                              ),
-                            ],
-                          );
-                        },
-                      );
-                    }
+            
+            const Divider(
+              height: 20,
+              thickness: 1,
+              indent: 10.0,
+              endIndent: 10.0,
+              color: Colors.grey,
+            ),
+
+            Container(
+              width: double.infinity,
+              child: Card(
+                elevation: 5,
+                margin: const EdgeInsets.all(8.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        AppLocalizations.of(context)!.contributeToVNTurtle,
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        AppLocalizations.of(context)!.contributeYourImage,
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      _isContributeLoading
+                      ? Center(
+                          child: CircularProgressIndicator(),
+                        )
+                      : Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 200,
+                            child: ElevatedButton(
+                              onPressed: _isContributed ? null : _contributeImage,
+                              child: Text(AppLocalizations.of(context)!.contributeImage),
+                            ),
+                          ),
+                        ],
+                      ),
+                      
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      // if (_isReported)
+                      Text(
+                        AppLocalizations.of(context)!.contributeImageMessage,
+                        style: TextStyle(fontWeight: FontWeight.normal,),
+                      )
+                    ],
                   ),
                 ),
-              ],
-            ),
-            const SizedBox(height: 20),
-            
-            if (_isContributed)
-              Container(
-                width: 400,
-                child: Text(
-                  AppLocalizations.of(context)!.contributeThankyouMessage,
-                  style: TextStyle(color: theme.primaryColor),
-                ),
               ),
+            ),            
           ],
         ),
       ),

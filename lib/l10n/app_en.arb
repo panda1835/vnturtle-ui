@@ -119,13 +119,23 @@
         "description": ""
     },
 
-    "contributeImageMessage": "When you select 'Contribute your image,' your photo will be saved in the system. Your contribution will help improve the accuracy and performance of the prediction model.",
+    "contributeImageMessage": "By contributing your image, you agree for us to use it training VNTurtle AI in the future. Your contribution will help improve the accuracy and performance of the prediction model.",
     "@contributeImageMessage": {
         "description": ""
     },
 
     "contributeThankyouMessage": "Thank you for your contribution. Your contribution will help us have more data to improve the recognition quality of VNTurtle.",
     "@contributeThankyouMessage": {
+        "description": ""
+    },
+
+    "contributeToVNTurtle": "Want to contribute to improve VNTurtle?",
+    "@contributeToVNTurtle": {
+        "description": ""
+    },
+
+    "contributeYourImage": "Contribute your image.",
+    "@contributeYourImage": {
         "description": ""
     },
 
