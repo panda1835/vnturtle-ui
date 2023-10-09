@@ -204,8 +204,16 @@ class _ConfirmPageState extends State<ConfirmPage> {
                         const SizedBox(
                           height: 10,
                         ),
+                        // if (_isReported)
+                        Text(
+                          AppLocalizations.of(context)!.contributeImageMessage,
+                          style: const TextStyle(fontWeight: FontWeight.normal,),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
                         _isContributeLoading
-                        ? Center(
+                        ? const Center(
                             child: CircularProgressIndicator(),
                           )
                         : Row(
@@ -215,20 +223,11 @@ class _ConfirmPageState extends State<ConfirmPage> {
                               width: 200,
                               child: ElevatedButton(
                                 onPressed: _isContributed ? null : _contributeImage,
-                                child: Text(AppLocalizations.of(context)!.contributeImage),
+                                child: Text(AppLocalizations.of(context)!.contributeImageButton),
                               ),
                             ),
                           ],
                         ),
-                        
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        // if (_isReported)
-                        Text(
-                          AppLocalizations.of(context)!.contributeImageMessage,
-                          style: TextStyle(fontWeight: FontWeight.normal,),
-                        )
                       ],
                     ),
                   ),

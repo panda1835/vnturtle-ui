@@ -114,12 +114,12 @@
         "description": ""
     },
 
-    "contributeImage": "Contribute your image",
-    "@contributeImage": {
+    "contributeImageButton": "Contribute your image",
+    "@contributeImageButton": {
         "description": ""
     },
 
-    "contributeImageMessage": "By contributing your image, you agree for us to use it training VNTurtle AI in the future. Your contribution will help improve the accuracy and performance of the prediction model.",
+    "contributeImageMessage": "By contributing your image, you agree for us to use it for training VNTurtle AI in the future. Your contribution will help improve the accuracy and performance of the prediction model.",
     "@contributeImageMessage": {
         "description": ""
     },
@@ -134,7 +134,7 @@
         "description": ""
     },
 
-    "contributeYourImage": "Contribute your image.",
+    "contributeYourImage": "Contribute your turtle image.",
     "@contributeYourImage": {
         "description": ""
     },
