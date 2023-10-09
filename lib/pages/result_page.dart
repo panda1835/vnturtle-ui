@@ -260,67 +260,120 @@ class _ResultPageState extends State<ResultPage> {
                           ),
 
                           Container(
-                            child: ElevatedButton(
-                              child: Text(AppLocalizations.of(context)!.notSupportedSpeciesButtonText),
-                              onPressed: () {
-                                showModalBottomSheet(
-                                  backgroundColor: theme.secondaryHeaderColor,
-                                  context: context,
-                                  builder: (BuildContext context) {
-                                    return SingleChildScrollView(
-                                      child: Column(
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.all(16.0),
-                                            child: Text(
-                                              AppLocalizations.of(context)!.notSupportedSpeciesTitle,
-                                              style: TextStyle(color: theme.primaryColor, fontWeight: FontWeight.bold, fontSize: 25),
-                                            ),
-                                          ),
-                                          for (final entry in unsupportedSpeciesInfo.entries.toList())
-                                          ResultBlock(
-                                            image: widget.image, 
-                                            score: -1, 
-                                            speciesInfo: entry.value
-                                          ),
-                                        ]
+                            width: double.infinity,
+                            child: Card(
+                              elevation: 5,
+                              margin: const EdgeInsets.all(8.0),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      AppLocalizations.of(context)!.noMatchFoundPrompt,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20
                                       ),
-                                    );
-                                  }
-                                );
-                              }, 
+                                    ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text(
+                                      AppLocalizations.of(context)!.checkUnsupportedSpeciesPrompt,
+                                      style: const TextStyle(fontWeight: FontWeight.normal),
+                                    ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        ElevatedButton(
+                                          child: Text(
+                                            AppLocalizations.of(context)!.notSupportedSpeciesButtonText
+                                          ),
+                                          onPressed: () {
+                                            showModalBottomSheet(
+                                              backgroundColor: theme.secondaryHeaderColor,
+                                              context: context,
+                                              builder: (BuildContext context) {
+                                                return SingleChildScrollView(
+                                                  child: Column(
+                                                    children: [
+                                                      Padding(
+                                                        padding: const EdgeInsets.all(16.0),
+                                                        child: Text(
+                                                          AppLocalizations.of(context)!.notSupportedSpeciesTitle,
+                                                          style: TextStyle(color: theme.primaryColor, fontWeight: FontWeight.bold, fontSize: 25),
+                                                        ),
+                                                      ),
+                                                      for (final entry in unsupportedSpeciesInfo.entries.toList())
+                                                      ResultBlock(
+                                                        image: widget.image, 
+                                                        score: -1, 
+                                                        speciesInfo: entry.value
+                                                      ),
+                                                    ]
+                                                  ),
+                                                );
+                                              }
+                                            );
+                                          }, 
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ),
                           ),
 
-                          Card(
-                            elevation: 5,
-                            margin: const EdgeInsets.all(10),
-                            child: Padding(
-                              padding: const EdgeInsets.all(10),
-                              child: Column(
-                                children: [
-                                  Text(
-                                    AppLocalizations.of(context)!.noMatchFoundPrompt,
-                                    style: const TextStyle(fontWeight: FontWeight.bold),
-                                  ),
-                                  const SizedBox(
-                                    height: 10,
-                                  ),
-                                  _isReportLoading
-                                    ? const CircularProgressIndicator() // Show a progress indicator while loading
-                                    : ElevatedButton(
-                                      onPressed: _isReported ? null : _reportImage,
-                                      child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
-                                    ),
-                                  const SizedBox(
-                                    height: 10,
-                                  ),
-                                  if (_isReported)
+                          Container(
+                            width: double.infinity,
+                            child: Card(
+                              elevation: 5,
+                              margin: const EdgeInsets.all(8.0),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
                                     Text(
-                                      AppLocalizations.of(context)!.imageReportedNoti,
-                                      style: TextStyle(fontWeight: FontWeight.bold, color: theme.primaryColor),
+                                      AppLocalizations.of(context)!.stillNoMatchFound,
+                                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                    ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text(
+                                      AppLocalizations.of(context)!.letUsKnow,
+                                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                    ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    _isReportLoading
+                                      ? const CircularProgressIndicator() // Show a progress indicator while loading
+                                      : Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          ElevatedButton(
+                                            onPressed: _isReported ? null : _reportImage,
+                                            child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
+                                          ),
+                                        ],
+                                      ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    // if (_isReported)
+                                    Text(
+                                      AppLocalizations.of(context)!.reportNoMatchExplain,
+                                      style: TextStyle(fontWeight: FontWeight.normal,),
                                     )
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           )

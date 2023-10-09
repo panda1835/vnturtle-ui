@@ -74,12 +74,32 @@
         "description": ""
     },
 
-    "noMatchFoundPrompt": "No match found? Let us know.",
+    "noMatchFoundPrompt": "Can't find your turtle?",
     "@noMatchFoundPrompt": {
         "description": ""
     },
 
-    "reportNoMatchButton": "Report image",
+    "checkUnsupportedSpeciesPrompt": "Check this list of common turtle species in Vietnam that are not supported by VNTurtle.",
+    "@checkUnsupportedSpeciesPrompt": {
+        "description": ""
+    },
+
+    "stillNoMatchFound": "Still can't find your turtle?",
+    "@stillNoMatchFound": {
+        "description": ""
+    },
+
+    "letUsKnow": "Let VNTurtle know.",
+    "@letUsKnow": {
+        "description": ""
+    },
+
+    "reportNoMatchExplain": "The turtle you're seeing might not be in our database yet. Your response will help improve VNTurtle accuracy.",
+    "@reportNoMatchExplain": {
+        "description": ""
+    },
+
+    "reportNoMatchButton": "Report no matches",
     "@reportNoMatchButton": {
         "description": ""
     },
@@ -184,7 +204,7 @@
         "description": ""
     },
 
-    "notSupportedSpeciesButtonText": "View the list of unsupported species",
+    "notSupportedSpeciesButtonText": "List of unsupported species",
     "@notSupportedSpeciesButtonText": {
         "description": ""
     },
