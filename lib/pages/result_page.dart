@@ -246,21 +246,21 @@ class _ResultPageState extends State<ResultPage> {
                             const SizedBox(
                               height: 10,
                             ),
-                            _isReportLoading
-                              ? const CircularProgressIndicator() // Show a progress indicator while loading
-                              : Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  ElevatedButton(
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  width: 300,
+                                  child: ElevatedButton(
                                     onPressed: null,
                                     child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
+                            ),
                             const SizedBox(
                               height: 10,
                             ),
-                            // if (_isReported)
                             Text(
                               AppLocalizations.of(context)!.reportNoMatchExplain,
                               style: TextStyle(fontWeight: FontWeight.normal,),
@@ -317,37 +317,40 @@ class _ResultPageState extends State<ResultPage> {
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        ElevatedButton(
-                                          child: Text(
-                                            AppLocalizations.of(context)!.notSupportedSpeciesButtonText
-                                          ),
-                                          onPressed: () {
-                                            showModalBottomSheet(
-                                              backgroundColor: theme.secondaryHeaderColor,
-                                              context: context,
-                                              builder: (BuildContext context) {
-                                                return SingleChildScrollView(
-                                                  child: Column(
-                                                    children: [
-                                                      Padding(
-                                                        padding: const EdgeInsets.all(16.0),
-                                                        child: Text(
-                                                          AppLocalizations.of(context)!.notSupportedSpeciesTitle,
-                                                          style: TextStyle(color: theme.primaryColor, fontWeight: FontWeight.bold, fontSize: 25),
+                                        Container(
+                                          width: 300,
+                                          child: ElevatedButton(
+                                            child: Text(
+                                              AppLocalizations.of(context)!.notSupportedSpeciesButtonText
+                                            ),
+                                            onPressed: () {
+                                              showModalBottomSheet(
+                                                backgroundColor: theme.secondaryHeaderColor,
+                                                context: context,
+                                                builder: (BuildContext context) {
+                                                  return SingleChildScrollView(
+                                                    child: Column(
+                                                      children: [
+                                                        Padding(
+                                                          padding: const EdgeInsets.all(16.0),
+                                                          child: Text(
+                                                            AppLocalizations.of(context)!.notSupportedSpeciesTitle,
+                                                            style: TextStyle(color: theme.primaryColor, fontWeight: FontWeight.bold, fontSize: 25),
+                                                          ),
                                                         ),
-                                                      ),
-                                                      for (final entry in unsupportedSpeciesInfo.entries.toList())
-                                                      ResultBlock(
-                                                        image: widget.image, 
-                                                        score: -1, 
-                                                        speciesInfo: entry.value
-                                                      ),
-                                                    ]
-                                                  ),
-                                                );
-                                              }
-                                            );
-                                          }, 
+                                                        for (final entry in unsupportedSpeciesInfo.entries.toList())
+                                                        ResultBlock(
+                                                          image: widget.image, 
+                                                          score: -1, 
+                                                          speciesInfo: entry.value
+                                                        ),
+                                                      ]
+                                                    ),
+                                                  );
+                                                }
+                                              );
+                                            }, 
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -386,9 +389,12 @@ class _ResultPageState extends State<ResultPage> {
                                       : Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          ElevatedButton(
-                                            onPressed: _isReported ? null : _reportImage,
-                                            child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
+                                          Container(
+                                            width: 300,
+                                            child: ElevatedButton(
+                                              onPressed: _isReported ? null : _reportImage,
+                                              child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
+                                            ),
                                           ),
                                         ],
                                       ),
