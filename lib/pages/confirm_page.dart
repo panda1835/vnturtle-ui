@@ -4,6 +4,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show Uint8List;
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:vnturtle/pages/detailed_species_page.dart';
 import 'package:vnturtle/widgets/conservation_status_text.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 
@@ -23,7 +24,6 @@ class ConfirmPage extends StatefulWidget {
 class _ConfirmPageState extends State<ConfirmPage> {
   bool _isContributeLoading = false;
   bool _isContributed = false;
-  // Map<String, dynamic> speciesData = {};
   String currentLocale = '';
 
   Future<void> _contributeImage() async {
@@ -86,6 +86,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
+
     if (currentLocale != Localizations.localeOf(context).languageCode){
       setState(() {
         currentLocale = Localizations.localeOf(context).languageCode;
@@ -118,12 +119,23 @@ class _ConfirmPageState extends State<ConfirmPage> {
                 const SizedBox(height: 20),
                 Padding(
                   padding: const EdgeInsets.all(10.0),
-                  child: Text(
-                    widget.speciesInfo['primary_name'][currentLocale],
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      color: theme.primaryColor,
+                  child: GestureDetector(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DetailedSpeciesPage(speciesInfo: widget.speciesInfo,),
+                      ),
+                    ),
+                    child: MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: Text(
+                        widget.speciesInfo['primary_name'][currentLocale],
+                        style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          color: theme.primaryColor,
+                        ),
+                      ),
                     ),
                   ),
                 ),
