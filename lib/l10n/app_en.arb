@@ -79,7 +79,7 @@
         "description": ""
     },
 
-    "checkUnsupportedSpeciesPrompt": "Check this list of common turtle species in Vietnam that are not supported by VNTurtle.",
+    "checkUnsupportedSpeciesPrompt": "Please try searching in this list.",
     "@checkUnsupportedSpeciesPrompt": {
         "description": ""
     },
@@ -89,7 +89,7 @@
         "description": ""
     },
 
-    "letUsKnow": "Let VNTurtle know.",
+    "letUsKnow": "Let us know.",
     "@letUsKnow": {
         "description": ""
     },
@@ -214,13 +214,18 @@
         "description": ""
     },
 
-    "notSupportedSpeciesButtonText": "List of unsupported species",
-    "@notSupportedSpeciesButtonText": {
+    "unsupportedSpeciesButtonText": "List of unsupported species",
+    "@unsupportedSpeciesButtonText": {
         "description": ""
     },
 
-    "notSupportedSpeciesTitle": "List of unsupported species",
-    "@notSupportedSpeciesTitle": {
+    "unsupportedSpeciesTitle": "List of unsupported species",
+    "@unsupportedSpeciesTitle": {
+        "description": ""
+    },
+
+    "unsupportedSpeciesDescription": "List of common species in Vietnam unsupported by VNTurtle",
+    "@unsupportedSpeciesDescription": {
         "description": ""
     },
 

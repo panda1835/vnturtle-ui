@@ -15,9 +15,9 @@
     "confirmButton": "Xác nhận",
     "moreInfoButton": "Thông tin",
     "noMatchFoundPrompt": "Bạn không tìm thấy loài rùa tương ứng?",
-    "checkUnsupportedSpeciesPrompt": "Hãy thử tìm trong danh sách các loài rùa phổ biến ở Việt Nam chưa được VNTurtle hỗ trợ.",
+    "checkUnsupportedSpeciesPrompt": "Hãy thử tìm ở đây.",
     "stillNoMatchFound": "Bạn vẫn không tìm thấy loài rùa tương ứng?",
-    "letUsKnow": "Hãy cho VNTurtle biết.",
+    "letUsKnow": "Hãy cho chúng tôi biết.",
     "reportNoMatchExplain": "Loài rùa bạn bắt gặp có thể chưa có trong cơ sở dữ liệu của VNTurtle. Báo cáo của bạn sẽ giúp cải thiện độ chính xác của VNTurtle.",
     "reportNoMatchButton": "Báo cáo ảnh",
     "imageReportedNoti": "Báo cáo của bạn đã được hệ thống ghi nhận.",
@@ -42,7 +42,8 @@
     "referenceSources": "Nguồn tham khảo",
     "native": "bản địa",
     "nonNative": "ngoại lai",
-    "notSupportedSpeciesButtonText": "Danh sách các loài chưa được hỗ trợ",
-    "notSupportedSpeciesTitle": "Các loài chưa được hỗ trợ",
+    "unsupportedSpeciesButtonText": "Danh sách các loài chưa được hỗ trợ",
+    "unsupportedSpeciesTitle": "Các loài chưa được hỗ trợ",
+    "unsupportedSpeciesDescription": "Danh sách các loài phổ biến ở Việt Nam nhưng chưa được hỗ trợ bởi VNTurtle.",
     "genericErrorMessageToUser": "Có lỗi xảy ra, vui lòng thử lại sau."
 }

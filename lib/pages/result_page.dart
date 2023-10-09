@@ -307,20 +307,28 @@ class _ResultPageState extends State<ResultPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
-                                      AppLocalizations.of(context)!.noMatchFoundPrompt,
-                                      style: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20
-                                      ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          AppLocalizations.of(context)!.noMatchFoundPrompt,
+                                          style: const TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20
+                                          ),
+                                        ),
+                                        const SizedBox(
+                                          width: 5,
+                                        ),
+                                        Text(
+                                          AppLocalizations.of(context)!.checkUnsupportedSpeciesPrompt,
+                                          style: const TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Text(
-                                      AppLocalizations.of(context)!.checkUnsupportedSpeciesPrompt,
-                                      style: const TextStyle(fontWeight: FontWeight.normal),
-                                    ),
+                                    
                                     const SizedBox(
                                       height: 10,
                                     ),
@@ -331,7 +339,7 @@ class _ResultPageState extends State<ResultPage> {
                                           width: 300,
                                           child: ElevatedButton(
                                             child: Text(
-                                              AppLocalizations.of(context)!.notSupportedSpeciesButtonText
+                                              AppLocalizations.of(context)!.unsupportedSpeciesButtonText
                                             ),
                                             onPressed: () {
                                               showModalBottomSheet(
@@ -344,9 +352,21 @@ class _ResultPageState extends State<ResultPage> {
                                                         Padding(
                                                           padding: const EdgeInsets.all(16.0),
                                                           child: Text(
-                                                            AppLocalizations.of(context)!.notSupportedSpeciesTitle,
+                                                            AppLocalizations.of(context)!.unsupportedSpeciesTitle,
                                                             style: TextStyle(color: theme.primaryColor, fontWeight: FontWeight.bold, fontSize: 25),
                                                           ),
+                                                        ),
+                                                        Row(
+                                                          mainAxisAlignment: MainAxisAlignment.start,
+                                                          children: [
+                                                            Padding(
+                                                              padding: const EdgeInsets.all(16.0),
+                                                              child: Text(
+                                                                AppLocalizations.of(context)!.unsupportedSpeciesDescription,
+                                                                style: TextStyle(color: Colors.black),
+                                                              ),
+                                                            ),
+                                                          ],
                                                         ),
                                                         for (final entry in unsupportedSpeciesInfo.entries.toList())
                                                         ResultBlock(
@@ -380,20 +400,38 @@ class _ResultPageState extends State<ResultPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
-                                      AppLocalizations.of(context)!.stillNoMatchFound,
-                                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          AppLocalizations.of(context)!.stillNoMatchFound,
+                                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                        ),
+
+                                        const SizedBox(
+                                          width: 5,
+                                        ),
+
+                                        Text(
+                                          AppLocalizations.of(context)!.letUsKnow,
+                                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                        ),
+                                      ],
                                     ),
+                                    
                                     const SizedBox(
                                       height: 10,
                                     ),
+
+                                    // if (_isReported)
                                     Text(
-                                      AppLocalizations.of(context)!.letUsKnow,
-                                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                      AppLocalizations.of(context)!.reportNoMatchExplain,
+                                      style: TextStyle(fontWeight: FontWeight.normal,),
                                     ),
+
                                     const SizedBox(
                                       height: 10,
                                     ),
+
                                     _isReportLoading
                                       ? const CircularProgressIndicator() // Show a progress indicator while loading
                                       : Row(
@@ -407,15 +445,7 @@ class _ResultPageState extends State<ResultPage> {
                                             ),
                                           ),
                                         ],
-                                      ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    // if (_isReported)
-                                    Text(
-                                      AppLocalizations.of(context)!.reportNoMatchExplain,
-                                      style: TextStyle(fontWeight: FontWeight.normal,),
-                                    )
+                                      )
                                   ],
                                 ),
                               ),
