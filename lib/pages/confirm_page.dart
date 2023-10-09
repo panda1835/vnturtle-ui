@@ -67,10 +67,10 @@ class _ConfirmPageState extends State<ConfirmPage> {
     }
 
     final snackBar = SnackBar(
-      backgroundColor: Theme.of(context).primaryColorLight,
+      backgroundColor: Theme.of(context).primaryColor,
       content: Text(
         snackBarMessage,
-        style: TextStyle(color: Colors.black),
+        style: TextStyle(color: Colors.white),
       ),
       duration: const Duration(seconds: 5),
     );
