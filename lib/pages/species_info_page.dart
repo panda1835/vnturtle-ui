@@ -184,14 +184,16 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                                   )
                                 ),
                                 Positioned(
-                                  top: 0,
-                                  left: 0,
+                                  top: 10,
+                                  left: 40,
                                   child: Transform.rotate(
-                                    angle: -0.785398, // 45 degrees in radians
+                                    angle: 0.785398, // 45 degrees in radians
                                     child: Container(
+                                      alignment: Alignment.center,
+                                      width: 80,
                                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                       decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(8.0),
+                                        // borderRadius: BorderRadius.circular(8.0),
                                         color: nativeColor
                                       ),
                                       child: Text(
