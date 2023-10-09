@@ -33,8 +33,8 @@ void main() async {
 
   runApp(MyApp());
 } 
-
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => ResultPage(image: image),
+          builder: (context) => ResultPage(image: image,),
         ),
       );
     }

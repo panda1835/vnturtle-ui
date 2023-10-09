@@ -41,5 +41,6 @@
     "native": "bản địa",
     "nonNative": "ngoại lai",
     "notSupportedSpeciesButtonText": "Danh sách các loài chưa được hỗ trợ",
-    "notSupportedSpeciesTitle": "Các loài chưa được hỗ trợ"
+    "notSupportedSpeciesTitle": "Các loài chưa được hỗ trợ",
+    "genericErrorMessageToUser": "Có lỗi xảy ra, vui lòng thử lại sau."
 }

@@ -104,7 +104,7 @@
         "description": ""
     },
     
-    "imageReportedNoti": "We have received your report",
+    "imageReportedNoti": "Your report has been recorded in the system.",
     "@imageReportedNoti": {
         "description": ""
     },
@@ -211,6 +211,11 @@
 
     "notSupportedSpeciesTitle": "List of unsupported species",
     "@notSupportedSpeciesTitle": {
+        "description": ""
+    },
+
+    "genericErrorMessageToUser": "An error has occurred, please try again later.",
+    "@genericErrorMessageToUser": {
         "description": ""
     }
 }

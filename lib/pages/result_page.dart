@@ -54,8 +54,6 @@ class _ResultPageState extends State<ResultPage> {
   double bbox_width=0;
   double bbox_height=0;
 
-  
-
   @override
   void initState() {
     super.initState();
@@ -76,6 +74,7 @@ class _ResultPageState extends State<ResultPage> {
 
 
   Future<void> _reportImage() async {
+    String snackBarMessage = "";
     // Create a Firestore document reference
     final DocumentReference<Map<String, dynamic>> documentReference =
         FirebaseFirestore.instance.collection('no-classification-images').doc();
@@ -98,17 +97,29 @@ class _ResultPageState extends State<ResultPage> {
       // Upload the data to Firestore
       await documentReference.set(dataForUpload);
       await newReportImageRef.putData(imageForReport);
-
       // Update the state to reflect the successful upload
       setState(() {
         _isReported = true;
         _isReportLoading = false;
         _hasNoClassification = true;
       });
+
+      snackBarMessage = AppLocalizations.of(context)!.imageReportedNoti;
     } catch (error) {
       // Handle any errors that occurred during the upload
+      snackBarMessage = AppLocalizations.of(context)!.genericErrorMessageToUser;
       print('Error uploading data to Firestore: $error');
     }
+
+    final snackBar = SnackBar(
+      backgroundColor: Theme.of(context).primaryColorLight,
+      content: Text(
+        snackBarMessage,
+        style: TextStyle(color: Colors.black),
+      ),
+      duration: const Duration(seconds: 5),
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
   Future<Map<String, dynamic>> uploadImage() async {
@@ -211,36 +222,53 @@ class _ResultPageState extends State<ResultPage> {
               ),
             // Second Half - List View (wrapped with SingleChildScrollView)
             _hasNoClassification 
-                ? Center( // if the user submit a report then collapse all predictions
-                  child: Card(
-                    elevation: 5,
-                    margin: const EdgeInsets.all(10),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Column(
-                        children: [
-                          Text(
-                            AppLocalizations.of(context)!.noMatchFoundPrompt,
-                            style: const TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          ElevatedButton(
-                            onPressed: _isReported ? null : _reportImage,
-                            child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            AppLocalizations.of(context)!.imageReportedNoti,
-                            style: const TextStyle(fontWeight: FontWeight.bold),
-                          )
-                        ],
+                ? Container(
+                    width: double.infinity,
+                    child: Card(
+                      elevation: 5,
+                      margin: const EdgeInsets.all(8.0),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              AppLocalizations.of(context)!.stillNoMatchFound,
+                              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              AppLocalizations.of(context)!.letUsKnow,
+                              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            _isReportLoading
+                              ? const CircularProgressIndicator() // Show a progress indicator while loading
+                              : Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  ElevatedButton(
+                                    onPressed: null,
+                                    child: Text(AppLocalizations.of(context)!.reportNoMatchButton),
+                                  ),
+                                ],
+                              ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            // if (_isReported)
+                            Text(
+                              AppLocalizations.of(context)!.reportNoMatchExplain,
+                              style: TextStyle(fontWeight: FontWeight.normal,),
+                            )
+                          ],
+                        ),
                       ),
                     ),
-                  ),
                 ) : Expanded(
               flex: 2,
               child: _isPredictionLoading
