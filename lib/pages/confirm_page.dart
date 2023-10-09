@@ -4,6 +4,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show Uint8List;
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:vnturtle/widgets/conservation_status_text.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 
 class ConfirmPage extends StatefulWidget {
@@ -133,6 +134,8 @@ class _ConfirmPageState extends State<ConfirmPage> {
                     fontStyle: FontStyle.italic,
                   ),
                 ),
+                const SizedBox(height: 20),
+                ConservationStatusText(conservationStatus: widget.speciesInfo['conservation_status']['iucn'], fontSize: 14),
                 const SizedBox(height: 20),
                 Container(
                   padding: EdgeInsets.only(left: 10, right: 10),
