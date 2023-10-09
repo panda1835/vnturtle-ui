@@ -74,7 +74,7 @@
         "description": ""
     },
 
-    "noMatchFoundPrompt": "Can't find your turtle?",
+    "noMatchFoundPrompt": "Can't find your turtle? Please try searching in this list.",
     "@noMatchFoundPrompt": {
         "description": ""
     },
@@ -84,7 +84,7 @@
         "description": ""
     },
 
-    "stillNoMatchFound": "Still can't find your turtle?",
+    "stillNoMatchFound": "Still can't find your turtle? Let us know.",
     "@stillNoMatchFound": {
         "description": ""
     },
@@ -129,7 +129,7 @@
         "description": ""
     },
 
-    "contributeToVNTurtle": "Want to contribute to improve VNTurtle?",
+    "contributeToVNTurtle": "Want to contribute to improve VNTurtle? Send us your turtle image.",
     "@contributeToVNTurtle": {
         "description": ""
     },

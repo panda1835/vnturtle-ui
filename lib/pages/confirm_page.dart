@@ -209,13 +209,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                           AppLocalizations.of(context)!.contributeToVNTurtle,
                           style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                         ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          AppLocalizations.of(context)!.contributeYourImage,
-                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                        ),
+                      
                         const SizedBox(
                           height: 10,
                         ),

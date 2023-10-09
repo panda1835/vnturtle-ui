@@ -307,26 +307,12 @@ class _ResultPageState extends State<ResultPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Row(
-                                      children: [
-                                        Text(
-                                          AppLocalizations.of(context)!.noMatchFoundPrompt,
-                                          style: const TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20
-                                          ),
-                                        ),
-                                        const SizedBox(
-                                          width: 5,
-                                        ),
-                                        Text(
-                                          AppLocalizations.of(context)!.checkUnsupportedSpeciesPrompt,
-                                          style: const TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 20
-                                          ),
-                                        ),
-                                      ],
+                                    Text(
+                                      AppLocalizations.of(context)!.noMatchFoundPrompt,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20
+                                      ),
                                     ),
                                     
                                     const SizedBox(
@@ -400,24 +386,11 @@ class _ResultPageState extends State<ResultPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Row(
-                                      children: [
-                                        Text(
-                                          AppLocalizations.of(context)!.stillNoMatchFound,
-                                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                                        ),
-
-                                        const SizedBox(
-                                          width: 5,
-                                        ),
-
-                                        Text(
-                                          AppLocalizations.of(context)!.letUsKnow,
-                                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                                        ),
-                                      ],
+                                    Text(
+                                      AppLocalizations.of(context)!.stillNoMatchFound,
+                                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                     ),
-                                    
+
                                     const SizedBox(
                                       height: 10,
                                     ),
