@@ -269,18 +269,48 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                     Text(widget.speciesInfo['characteristics'][currentLocale]),
                     SizedBox(height: 16.0),
                     SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: widget.speciesInfo['identification_images']
-                            .map<Widget>(
-                              (image) => Image.asset(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: widget.speciesInfo['identification_images']
+                          .map<Widget>(
+                            (image) => GestureDetector(
+                              onTap: () {
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return Dialog(
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Image.asset(
+                                            image["image"],
+                                            height: 200,
+                                            fit: BoxFit.cover,
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.all(16.0),
+                                            child: Text(
+                                              image["description"][currentLocale],
+                                              style: TextStyle(
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    );
+                                  },
+                                );
+                              },
+                              child: Image.asset(
                                 image["image"],
-                                // width: 200,
                                 height: 200,
                                 fit: BoxFit.cover,
                               ),
-                            )
-                            .toList(),
+                            ),
+                          )
+                          .toList(),
                       ),
                     ),
                   
