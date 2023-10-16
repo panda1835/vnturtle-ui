@@ -24,9 +24,7 @@
         "distribution": {
             "vi": "Cambodia, miền Nam Trung Quốc, Lào, Myanmar, Thái Lan, Việt Nam",
             "en": "Cambodia, southern China, Laos, Myanmar, Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Thác nước và suối chảy siết",
@@ -136,9 +134,7 @@
         "distribution": {
             "vi": "Bangladesh, Bhutan, Brunei, Cambodia, Ấn Độ, Indonesia, Malaysia, Lào, Myanmar (?), Philippines (?), Thái Lan, Việt Nam",
             "en": "Bangladesh, Bhutan, Brunei, Cambodia, India, Indonesia, Malaysia, Laos, Myanmar (?), Philippines (?), Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Khu vực đất trũng, ngập nước, ao, đàm lầy và thác nước chảy chậm",
@@ -248,9 +244,7 @@
         "distribution": {
             "vi": "Miền Nam Trung Quốc, Lào, Việt Nam",
             "en": "Southern China, Laos, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
@@ -360,9 +354,7 @@
         "distribution": {
             "vi": "Lào, Việt Nam",
             "en": "Laos, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
@@ -465,9 +457,7 @@
         "distribution": {
             "vi": "Miền Trung Việt Nam",
             "en": "Central Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Rừng thưa và rừng thường xanh từ độ cao trung bình trở lên",
@@ -558,9 +548,9 @@
             "images/reference_images/Cuora_mouhotii/Cuora_mouhotii_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -577,9 +567,7 @@
         "distribution": {
             "vi": "Bangladesh, Bhutan, Trung Quốc, Ấn Độ, Lào, Myanmar, Việt Nam, Thái Lan (?)",
             "en": "Bangladesh, Bhutan, China, India, Laos, Myanmar, Vietnam, Thailand (?)",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Rừng, hang động trên núi đá vôi",
@@ -670,9 +658,9 @@
             "images/reference_images/Cuora_cyclornata/Cuora_cyclornata_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
-            "ND160": "",
-            "ND06": ""
+            "CITES": "II",
+            "ND160": "x",
+            "ND06": "IB"
         },
         "native": "true",
         "artworks": [
@@ -689,9 +677,7 @@
         "distribution": {
             "vi": "Trung Quốc, Lào, Việt Nam",
             "en": "China, Laos, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
@@ -789,9 +775,9 @@
             "images/reference_images/Cyclemys_oldhamii/Cyclemys_oldhamii_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -808,9 +794,7 @@
         "distribution": {
             "vi": "Cambodia, Trung Quốc, Lào, Myanmar, Thái Lan, Việt Nam",
             "en": "Cambodia, China, Laos, Myanmar, Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
@@ -901,9 +885,9 @@
             "images/reference_images/Cyclemys_pulchristriata/Cyclemys_pulchristriata_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -920,9 +904,7 @@
         "distribution": {
             "vi": "Cambodia, Việt Nam",
             "en": "Cambodia, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
@@ -1013,7 +995,7 @@
             "images/reference_images/Cyclemys_atripons/Cyclemys_atripons_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
             "ND06": ""
         },
@@ -1032,9 +1014,7 @@
         "distribution": {
             "vi": "Cambodia, Thái Lan, Việt Nam",
             "en": "Cambodia, Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Các con suối và đầm lầy từ độ cao thấp đến trung bình",
@@ -1125,9 +1105,9 @@
             "images/reference_images/Geoemyda_spengleri/Geoemyda_spengleri_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -1144,9 +1124,7 @@
         "distribution": {
             "vi": "Trung Quốc, Lào, Việt Nam",
             "en": "China, Laos, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Rừng thường xanh từ độ cao trung bình",
@@ -1244,9 +1222,9 @@
             "images/reference_images/Heosemys_grandis/Heosemys_grandis_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -1263,9 +1241,7 @@
         "distribution": {
             "vi": "Cambodia, Lào, Malaysia (bán đảo), Myanmar, Thái Lan, Việt Nam",
             "en": "Cambodia, Laos, Malaysia (Peninsular), Myanmar, Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Sông, suối, đầm lầy và vùng đất ngập nước ở độ cao thấp đến trung bình",
@@ -1356,9 +1332,9 @@
             "images/reference_images/Heosemys_annandalii/Heosemys_annandalii_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -1375,9 +1351,7 @@
         "distribution": {
             "vi": "Cambodia, Lào, Malaysia (Peninsular), Thái Lan, Việt Nam",
             "en": "Cambodia, Laos, Malaysia (Peninsular), Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "sông, ao chảy chậm, vùng đất ngập nước",
@@ -1475,9 +1449,9 @@
             "images/reference_images/Malayemys_subtrijuga/Malayemys_subtrijuga_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -1494,9 +1468,7 @@
         "distribution": {
             "vi": "Cambodia, Lào, Thái Lan (?), Việt Nam",
             "en": "Cambodia, Laos, Thailand (?), Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Ao, suối, đầm lầy và vùng đất ngập nước ở độ cao thấp",
@@ -1587,9 +1559,9 @@
             "images/reference_images/Mauremys_annamensis/Mauremys_annamensis_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
-            "ND160": "",
-            "ND06": ""
+            "CITES": "I",
+            "ND160": "x",
+            "ND06": "IB"
         },
         "native": "true",
         "artworks": [
@@ -1606,9 +1578,7 @@
         "distribution": {
             "vi": "Central Việt Nam",
             "en": "Central Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "ao, hồ, vùng đất ngập nước, suối chảy chậm ở độ cao thấp",
@@ -1699,9 +1669,9 @@
             "images/reference_images/Mauremys_mutica/Mauremys_mutica_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -1718,9 +1688,7 @@
         "distribution": {
             "vi": "Trung Quốc, Nhật Bản, Đài Loan, Việt Nam",
             "en": "China, Japan, Taiwan, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "ao, hồ, đầm lầy, vùng đất ngập nước và suối chảy chậm",
@@ -1804,7 +1772,7 @@
             "images/reference_images/Mauremys_sinensis/Mauremys_sinensis_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "III",
             "ND160": "",
             "ND06": ""
         },
@@ -1823,9 +1791,7 @@
         "distribution": {
             "vi": "Trung Quốc, Đài Loan, Việt Nam",
             "en": "China, Taiwan, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "sông, ao, hồ và vùng đất ngập nước ở độ cao thấp",
@@ -1916,9 +1882,9 @@
             "images/reference_images/Sacalia_quadriocellata/Sacalia_quadriocellata_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -1935,9 +1901,7 @@
         "distribution": {
             "vi": "Trung Quốc, Lào, Việt Nam",
             "en": "China, Laos, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "suối trong rừng thường xanh",
@@ -2028,9 +1992,9 @@
             "images/reference_images/Siebenrockiella_crassicollis/Siebenrockiella_crassicollis_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -2047,9 +2011,7 @@
         "distribution": {
             "vi": "Cambodia, Indonesia, Lào, Malaysia, Myanmar, Singapore, Thái Lan, Việt Nam",
             "en": "Cambodia, Indonesia, Laos, Malaysia, Myanmar, Singapore, Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "suối, sông chảy chậm, ao và đầm lầy",
@@ -2140,9 +2102,9 @@
             "images/reference_images/Indotestudo_elongata/Indotestudo_elongata_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -2159,9 +2121,7 @@
         "distribution": {
             "vi": "Bangladesh, Bhutan, Cambodia, Ấn Độ, Lào, Malaysia, Myanmar, Nepal, Thái Lan, Việt Nam",
             "en": "Bangladesh, Bhutan, Cambodia, India, Laos, Malaysia, Myanmar, Nepal, Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "Forests, grasslands and scrublands at low-mid elevations",
@@ -2252,9 +2212,9 @@
             "images/reference_images/Manouria_impressa/Manouria_impressa_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -2271,9 +2231,7 @@
         "distribution": {
             "vi": "Cambodia, Trung Quốc, Lào, Malaysia, Myanmar, Thái Lan, Việt Nam",
             "en": "Cambodia, China, Laos, Malaysia, Myanmar, Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "đồi núi và rừng thường xanh từ độ cao trung bình",
@@ -2371,9 +2329,9 @@
             "images/reference_images/Amyda_ornata/Amyda_ornata_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -2390,9 +2348,7 @@
         "distribution": {
             "vi": "Bangladesh, Cambodia, Ấn Độ, Lào, Myanmar, Thái Lan, Việt Nam",
             "en": "Bangladesh, Cambodia, India, Laos, Myanmar, Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "sông, hồ và suối",
@@ -2454,9 +2410,9 @@
             "images/reference_images/Palea_steindachneri/Palea_steindachneri_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
+            "CITES": "II",
             "ND160": "",
-            "ND06": ""
+            "ND06": "IIB"
         },
         "native": "true",
         "artworks": [
@@ -2473,9 +2429,7 @@
         "distribution": {
             "vi": "Trung Quốc, Việt Nam",
             "en": "China, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "suối, sông, hồ, ao và đầm lầy ở độ cao thấp đến trung bình",
@@ -2573,9 +2527,9 @@
             "images/reference_images/Pelochelys_cantorii/Pelochelys_cantorii_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
-            "ND160": "",
-            "ND06": ""
+            "CITES": "II",
+            "ND160": "x",
+            "ND06": "IB"
         },
         "native": "true",
         "artworks": [
@@ -2592,9 +2546,7 @@
         "distribution": {
             "vi": "Bangladesh, Cambodia, Trung Quốc, Ấn Độ, Indonesia, Lào, Malaysia, Myanmar, Philippines, Thái Lan, Việt Nam",
             "en": "Bangladesh, Cambodia, China, India, Indonesia, Laos, Malaysia, Myanmar, Philippines, Thailand, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "sông, hồ lớn và vùng nước gần biển",
@@ -2704,9 +2656,7 @@
         "distribution": {
             "vi": "Trung Quốc, Việt Nam",
             "en": "China, Vietnam",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "sông, suối, hồ, ao và đầm lấy",
@@ -2816,9 +2766,7 @@
         "distribution": {
             "vi": "Trung Quốc, Việt Nam, Đài Loan, Hàn Quốc, Nga, và Nhật Bản",
             "en": "Trung Quốc, Việt Nam, Đài Loan, Hàn Quốc, Nga, và Nhật Bản",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "sông, suối, hồ, ao và các khu vực đất ngập nước",
@@ -2909,9 +2857,9 @@
             "images/reference_images/Rafetus_swinhoei/Rafetus_swinhoei_thumbnail.jpg"
         ],
         "laws": {
-            "CITES": "",
-            "ND160": "",
-            "ND06": ""
+            "CITES": "II",
+            "ND160": "x",
+            "ND06": "IB"
         },
         "native": "true",
         "artworks": [
@@ -2928,9 +2876,7 @@
         "distribution": {
             "vi": ":",
             "en": ":",
-            "maps": [
-                
-            ]
+            "maps": []
         },
         "habitat": {
             "vi": "sông, hồ lớn và vùng đất ngập nước",
