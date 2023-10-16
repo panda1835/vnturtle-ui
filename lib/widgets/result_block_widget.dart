@@ -49,16 +49,50 @@ class _ResultBlockState extends State<ResultBlock> {
             // Horizontal sliding gallery of images
             Container(
               height: 200,
-              child: ListView(
+              child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                children: [
-                  // Use the reference_images field from species_info_vi.json
-                  for (final image in widget.speciesInfo['identification_images'])
-                    Image.asset(
-                      image['image'],
-                      height: 150,
-                    ),
-                ],
+                child: Row(
+                  children: widget.speciesInfo['identification_images']
+                      .map<Widget>(
+                        (image) => GestureDetector(
+                          onTap: () {
+                            showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return Dialog(
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Image.asset(
+                                        image["image"],
+                                        height: 200,
+                                        fit: BoxFit.cover,
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsets.all(16.0),
+                                        child: Text(
+                                          image["description"][currentLocale],
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
+                            );
+                          },
+                          child: Image.asset(
+                            image["image"],
+                            height: 200,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      )
+                      .toList(),
+                  ),
               ),
             ),
             // Name and score
