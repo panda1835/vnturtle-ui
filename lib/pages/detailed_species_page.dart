@@ -275,7 +275,7 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                             .map<Widget>(
                               (image) => Image.asset(
                                 image["image"],
-                                width: 200,
+                                // width: 200,
                                 height: 200,
                                 fit: BoxFit.cover,
                               ),
