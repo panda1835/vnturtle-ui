@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:vnturtle/widgets/conservation_status_text.dart';
+import 'package:vnturtle/widgets/identification_image_row_widget.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -265,55 +266,10 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 8.0),
+                    const SizedBox(height: 8.0),
                     Text(widget.speciesInfo['characteristics'][currentLocale]),
-                    SizedBox(height: 16.0),
-                    SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: widget.speciesInfo['identification_images']
-                            .map<Widget>(
-                              (image) => GestureDetector(
-                                onTap: () {
-                                  showDialog(
-                                    context: context,
-                                    builder: (BuildContext context) {
-                                      return Dialog(
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Image.asset(
-                                              image["image"],
-                                              height: 200,
-                                              fit: BoxFit.cover,
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsets.all(16.0),
-                                              child: Text(
-                                                image["description"][currentLocale],
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      );
-                                    },
-                                  );
-                                },
-                                child: Image.asset(
-                                  image["image"],
-                                  height: 200,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            )
-                            .toList(),
-                        ),
-                    ),
-                  
+                    const SizedBox(height: 16.0),
+                    IdentificationImageRow(speciesInfo: widget.speciesInfo,),
                     const SizedBox(height: 16.0),
                     Text(
                       AppLocalizations.of(context)!.habitat,

@@ -1,5 +1,6 @@
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:vnturtle/widgets/identification_image_row_widget.dart';
 import '../pages/detailed_species_page.dart';
 
 import '../pages/confirm_page.dart';
@@ -49,51 +50,7 @@ class _ResultBlockState extends State<ResultBlock> {
             // Horizontal sliding gallery of images
             Container(
               height: 200,
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: widget.speciesInfo['identification_images']
-                      .map<Widget>(
-                        (image) => GestureDetector(
-                          onTap: () {
-                            showDialog(
-                              context: context,
-                              builder: (BuildContext context) {
-                                return Dialog(
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Image.asset(
-                                        image["image"],
-                                        height: 200,
-                                        fit: BoxFit.cover,
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsets.all(16.0),
-                                        child: Text(
-                                          image["description"][currentLocale],
-                                          style: TextStyle(
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                );
-                              },
-                            );
-                          },
-                          child: Image.asset(
-                            image["image"],
-                            height: 200,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      )
-                      .toList(),
-                  ),
-              ),
+              child: IdentificationImageRow(speciesInfo: widget.speciesInfo,)
             ),
             // Name and score
             Padding(
@@ -112,7 +69,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       ),
                     )
                   ),
-                  SizedBox(width: 20,),
+                  const SizedBox(width: 20,),
                   widget.score > -1 // if -1 then it is unsupported species, do not display score
                   ? Text(
                     '${widget.score.toString()}%',
@@ -122,7 +79,7 @@ class _ResultBlockState extends State<ResultBlock> {
                       fontSize: 20,
                     ),
                   )
-                  : Text(""),
+                  : const Text(""),
                 ],
               ),
             ),
@@ -177,7 +134,7 @@ class _ResultBlockState extends State<ResultBlock> {
                     child: Text(AppLocalizations.of(context)!.confirmButton),
                   ),
                 ),
-                SizedBox(width: 20,),
+                const SizedBox(width: 20,),
                 Container(
                   width: 150,
                   child: ElevatedButton(
