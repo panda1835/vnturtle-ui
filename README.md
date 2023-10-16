@@ -1,16 +1,12 @@
-# vnturtle
+# VNTurtle - Vietnam Turtle Recognition App
 
-A new Flutter project.
+This Flutter app provides a user interface for an AI model that recognizes Vietnam's freshwater turtles and tortoises. The purpose of this app is to contribute to turtle conservation efforts in Vietnam by facilitating the identification and monitoring of these endangered species.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- User-friendly interface built with Flutter framework
+- Integration with an AI model for accurate recognition of Vietnam's freshwater turtles and tortoises
+- Provide ecological and conservation information and actionable steps for the user to take appropriate actions towards protecting their encountered turtle.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Web App
+Check out the [web app](https://panda1835.github.io/vnturtle-web/) version of the project for a convenient way to access the turtle recognition functionality directly from your web browser.
