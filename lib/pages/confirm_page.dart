@@ -95,7 +95,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: Text('VNTURTLE'),
+        title: const Text('VNTURTLE'),
         centerTitle: true,
         actions: const [
           LanguageSwitchWidget(),
@@ -110,7 +110,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 50),
+                  margin: const EdgeInsets.only(top: 50),
                   child: CircleAvatar(
                     radius: 100,
                     backgroundImage: AssetImage(widget.speciesInfo['reference_images'][0]), // Replace with your image path
@@ -118,7 +118,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                 ),
                 const SizedBox(height: 20),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: GestureDetector(
                     onTap: () => Navigator.push(
                       context,
@@ -130,6 +130,7 @@ class _ConfirmPageState extends State<ConfirmPage> {
                       cursor: SystemMouseCursors.click,
                       child: Text(
                         widget.speciesInfo['primary_name'][currentLocale],
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
@@ -139,18 +140,17 @@ class _ConfirmPageState extends State<ConfirmPage> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 10),
                 Text(
                   widget.speciesInfo['scientific_name'],
                   style: const TextStyle(
                     fontStyle: FontStyle.italic,
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 8.0),
                 ConservationStatusText(conservationStatus: widget.speciesInfo['conservation_status']['iucn'], fontSize: 14),
                 const SizedBox(height: 20),
                 Container(
-                  padding: EdgeInsets.only(left: 10, right: 10),
+                  padding: const EdgeInsets.only(left: 10, right: 10),
                   // width: 400,
                   child: RichText(
                     text: TextSpan(

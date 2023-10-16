@@ -119,7 +119,7 @@
         "description": ""
     },
 
-    "contributeImageMessage": "By contributing your image, you agree for us to use it for training VNTurtle AI in the future. Your contribution will help improve the accuracy and performance of the prediction model.",
+    "contributeImageMessage": "By contributing images, you agree to let us use them to train and improve the accuracy of the prediction model in the future.",
     "@contributeImageMessage": {
         "description": ""
     },
