@@ -240,8 +240,8 @@ class _ThongTinLoaiPageState extends State<ThongTinLoaiPage> {
                                 
                                 ConservationStatusText(conservationStatus: speciesInfo['conservation_status']['iucn'], fontSize: 14,),
                                 
-                                const SizedBox(height: 8.0),
-                                Text('${AppLocalizations.of(context)!.otherName}: ${speciesInfo['other_names'][currentLocale]}'),
+                                // const SizedBox(height: 8.0),
+                                // Text('${AppLocalizations.of(context)!.otherName}: ${speciesInfo['other_names'][currentLocale]}'),
                               ],
                             ),
                           ),
