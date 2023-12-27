@@ -51,3 +51,4 @@ test_api.dart
 python_scripts/
 .vscode/
 images/
+.env
