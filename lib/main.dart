@@ -11,18 +11,22 @@ import 'pages/about_us_page.dart';
 import 'pages/result_page.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Load the .env file
+  await dotenv.load(); 
+
   await Firebase.initializeApp(
-    options: const FirebaseOptions(
-      apiKey: "AIzaSyBuLZkKtrj18LzuVsvSstnnQuLbSp5lqFA", 
-      appId: "1:859395045927:web:c2b790e235d26a81df6c02", 
-      messagingSenderId: "859395045927", 
-      projectId: "ecstatic-design-399511",
-      storageBucket: "gs://ecstatic-design-399511.appspot.com",
+    options: FirebaseOptions(
+      apiKey: dotenv.env['FIREBASE_API_KEY']!, 
+      appId: dotenv.env['FIREBASE_APP_ID']!, 
+      messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID']!,
+      projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+      storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET'],
     )
   );
 
