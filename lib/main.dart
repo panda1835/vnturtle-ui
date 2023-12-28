@@ -6,27 +6,24 @@ import 'package:vnturtle/l10n/l10n.dart';
 import 'package:vnturtle/provider/locale_provider.dart';
 import 'package:vnturtle/widgets/language_switch.dart';
 import 'pages/species_info_page.dart';
+import 'pages/manual_guide_page.dart';
 import 'pages/faq_page.dart';
 import 'pages/about_us_page.dart';
 import 'pages/result_page.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Load the .env file
-  await dotenv.load(); 
-
   await Firebase.initializeApp( 
-    options: FirebaseOptions(
-      apiKey: dotenv.env['FIREBASE_API_KEY']!, 
-      appId: dotenv.env['FIREBASE_APP_ID']!, 
-      messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID']!,
-      projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
-      storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET'],
+    options: const FirebaseOptions(
+      apiKey: "AIzaSyBuLZkKtrj18LzuVsvSstnnQuLbSp5lqFA", 
+      appId: "1:859395045927:web:c2b790e235d26a81df6c02", 
+      messagingSenderId: "859395045927", 
+      projectId: "ecstatic-design-399511",
+      storageBucket: "gs://ecstatic-design-399511.appspot.com",
     )
   );
 
@@ -214,6 +211,30 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ],
+            ),
+
+            const SizedBox(height: 50),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GestureDetector(
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ManualGuidePage(),
+                  ),
+                ),
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: Text(
+                    AppLocalizations.of(context)!.manualGuide,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: theme.primaryColor,
+                    ),
+                  ),
+                ),
+              ),
             ),
           ]
         ),
