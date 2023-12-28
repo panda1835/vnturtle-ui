@@ -47,6 +47,12 @@ class _ResultBlockState extends State<ResultBlock> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Text(
+              AppLocalizations.of(context)!.clickImageForDetails,
+              style: const TextStyle(
+                fontSize: 15,
+              ),
+            ),
             // Horizontal sliding gallery of images
             Container(
               height: 200,

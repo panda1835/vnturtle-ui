@@ -40,7 +40,7 @@ class _ManualGuidePageState extends State<ManualGuidePage> {
             if (snapshot.hasError) {
               return Center(
                 child: Text(
-                  'Failed to load about us content.'
+                  'Failed to load content.'
                 ),
               );
             } else {
