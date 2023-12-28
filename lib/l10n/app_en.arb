@@ -232,5 +232,15 @@
     "genericErrorMessageToUser": "An error has occurred, please try again later.",
     "@genericErrorMessageToUser": {
         "description": ""
+    },
+
+    "warningNoShare": "The app is currently in beta version and is intended for sharing with specific individuals to gather feedback. Please note that there are still some parts of the app that have not been completed. We kindly request that you refrain from sharing it.",
+    "@warningNoShare": {
+        "description": ""
+    },
+
+    "clickImageForDetails": "Click on each image to read the descriptions.",
+    "@clickImageForDetails": {
+        "description": ""
     }
 }
