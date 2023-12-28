@@ -161,14 +161,14 @@ class _ConfirmPageState extends State<ConfirmPage> {
                       ),
                       children: [
                         TextSpan(
-                          text: ' ${AppLocalizations.of(context)!.contactHotline} ',
+                          text: '\n${AppLocalizations.of(context)!.contactHotline} ',
                           style: const TextStyle(
                             fontSize: 15,
                             color: Colors.black,
                           ),
                         ),
                         const TextSpan(
-                          text: '18001522',
+                          text: '1800 1522',
                           style: TextStyle(
                             fontSize: 15,
                             color: Colors.red,
