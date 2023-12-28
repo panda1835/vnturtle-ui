@@ -239,10 +239,6 @@ class _ResultPageState extends State<ResultPage> {
                           const SizedBox(
                             height: 10,
                           ),
-                          Text(
-                            AppLocalizations.of(context)!.letUsKnow,
-                            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                          ),
                           const SizedBox(
                             height: 10,
                           ),
