@@ -169,7 +169,9 @@ class _DetailedSpeciesPageState extends State<DetailedSpeciesPage> {
                                       builder: (BuildContext context) {
                                         return AlertDialog(
                                           title: Text(AppLocalizations.of(context)!.lawInfoTitle),
-                                          content: Text(lawInfo[lawKey][lawValue]['brief_description'][currentLocale]),
+                                          content: SingleChildScrollView(
+                                            child: Text(lawInfo[lawKey][lawValue]['brief_description'][currentLocale]),
+                                          ),
                                           actions: [
                                             TextButton(
                                               onPressed: () {
