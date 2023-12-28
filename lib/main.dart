@@ -236,9 +236,22 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+
+            const SizedBox(height: 30),
+            Container(
+        padding: const EdgeInsets.all(8.0),
+        color: Colors.yellow,
+        child: Text(
+          AppLocalizations.of(context)!.warningNoShare,
+          style: TextStyle(
+            fontSize: 15,
+            color: Colors.red,
+          ),
+        ),
+      ),
           ]
         ),
-      )
+      ),
       
     );
   }
