@@ -24,6 +24,11 @@
         "description": ""
     },
 
+    "manualGuide": "Manual Guide",
+    "@manualGuide": {
+        "description": ""
+    },
+
     "search": "Search",
     "@search": {
         "description": ""
@@ -39,7 +44,7 @@
         "description": ""
     },
 
-    "forAssistance": "for assistance",
+    "forAssistance": "for assistance in reporting wildlife crime or handing wildlife over to the relevant authorities",
     "@forAssistance": {
         "description": ""
     },
@@ -86,11 +91,6 @@
 
     "stillNoMatchFound": "Still can't find your turtle? Let us know.",
     "@stillNoMatchFound": {
-        "description": ""
-    },
-
-    "letUsKnow": "Let us know.",
-    "@letUsKnow": {
         "description": ""
     },
 
